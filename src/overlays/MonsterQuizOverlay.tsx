@@ -37,6 +37,7 @@ export const MonsterQuizOverlay: React.FC<Props> = ({
   const [attempts, setAttempts] = useState(1);
   const [feedback, setFeedback] = useState<string | null>(null);
   const [textInput, setTextInput] = useState('');
+  const [sttDisplay, setSttDisplay] = useState<{ text: string; isCorrect: boolean | null } | null>(null);
   const { isListening, transcript, startListening, isSupported, reset } = useSpeechRecognition();
 
   const speakWord = useCallback(() => {
@@ -57,13 +58,19 @@ export const MonsterQuizOverlay: React.FC<Props> = ({
         normalized.includes(target) ||
         levenshteinDistance(normalized, target) <= 1;
 
+      // Show STT result with animation
+      setSttDisplay({ text: normalized, isCorrect });
+
       if (isCorrect) {
         setFeedback('✅ 정답!');
         setTimeout(() => {
           onAnswer(monsterData.monsterId, true, attempts);
-        }, 800);
+        }, 1200);
       } else {
-        setFeedback(`❌ "${normalized}" - 다시 시도하세요!`);
+        setFeedback(`❌ 다시 시도하세요!`);
+        setTimeout(() => {
+          setSttDisplay(null);
+        }, 2000);
         setAttempts(a => a + 1);
         reset();
       }
@@ -131,9 +138,17 @@ export const MonsterQuizOverlay: React.FC<Props> = ({
     <div className="overlay-backdrop">
       <div className="overlay-panel monster-quiz-panel">
         {/* Monster display */}
-        <div className="monster-display">
+        <div className="monster-display" style={{ position: 'relative' }}>
           <span style={{ fontSize: '64px' }}>{emoji}</span>
           <div style={{ fontSize: '14px', color: '#aaa', marginTop: 4 }}>{monsterData.type}</div>
+
+          {/* STT recognized word - speech bubble */}
+          {sttDisplay && (
+            <div className={`stt-bubble ${sttDisplay.isCorrect ? 'stt-correct' : 'stt-wrong'}`}>
+              <span className="stt-bubble-text">"{sttDisplay.text}"</span>
+              <div className="stt-bubble-arrow" />
+            </div>
+          )}
         </div>
 
         {/* Word hints */}
@@ -167,6 +182,14 @@ export const MonsterQuizOverlay: React.FC<Props> = ({
                 {isListening ? '🎙️ 듣는 중...' : '🎤 눌러서 말하기'}
               </button>
             ) : null}
+
+            {/* Live listening indicator */}
+            {isListening && (
+              <div className="stt-listening-indicator">
+                <span className="stt-wave">🔊</span>
+                <span style={{ color: '#4A90D9', fontSize: 14 }}>음성을 인식하고 있습니다...</span>
+              </div>
+            )}
 
             <div className="text-input-section">
               <input
