@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "A-E 단모음", "description": "기본 모음 소리 배우기", "orderNum": 1, "phonicsFocus": "a, e, i, o, u (short vowels)", "emoji": "🅰️" },
+  { "id": 2, "name": "F-J 자음", "description": "자음 소리 배우기 1", "orderNum": 2, "phonicsFocus": "f, g, h, i, j", "emoji": "🔤" },
+  { "id": 3, "name": "K-O 자음", "description": "자음 소리 배우기 2", "orderNum": 3, "phonicsFocus": "k, l, m, n, o", "emoji": "📝" },
+  { "id": 4, "name": "P-T 자음", "description": "자음 소리 배우기 3", "orderNum": 4, "phonicsFocus": "p, q, r, s, t", "emoji": "📖" },
+  { "id": 5, "name": "U-Z + 복합", "description": "복합 자음과 모음", "orderNum": 5, "phonicsFocus": "u, v, w, x, y, z + blends", "emoji": "🌟" }
+]

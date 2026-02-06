@@ -1,0 +1,13 @@
+[
+  { "id": 1, "unitId": 1, "name": "Stage 1-1", "orderNum": 1, "monsterCount": 3, "requiredStars": 0 },
+  { "id": 2, "unitId": 1, "name": "Stage 1-2", "orderNum": 2, "monsterCount": 4, "requiredStars": 1 },
+  { "id": 3, "unitId": 1, "name": "Stage 1-3", "orderNum": 3, "monsterCount": 5, "requiredStars": 3 },
+  { "id": 4, "unitId": 2, "name": "Stage 2-1", "orderNum": 1, "monsterCount": 3, "requiredStars": 0 },
+  { "id": 5, "unitId": 2, "name": "Stage 2-2", "orderNum": 2, "monsterCount": 4, "requiredStars": 1 },
+  { "id": 6, "unitId": 3, "name": "Stage 3-1", "orderNum": 1, "monsterCount": 3, "requiredStars": 0 },
+  { "id": 7, "unitId": 3, "name": "Stage 3-2", "orderNum": 2, "monsterCount": 4, "requiredStars": 1 },
+  { "id": 8, "unitId": 4, "name": "Stage 4-1", "orderNum": 1, "monsterCount": 3, "requiredStars": 0 },
+  { "id": 9, "unitId": 4, "name": "Stage 4-2", "orderNum": 2, "monsterCount": 4, "requiredStars": 1 },
+  { "id": 10, "unitId": 5, "name": "Stage 5-1", "orderNum": 1, "monsterCount": 4, "requiredStars": 0 },
+  { "id": 11, "unitId": 5, "name": "Stage 5-2", "orderNum": 2, "monsterCount": 5, "requiredStars": 2 }
+]

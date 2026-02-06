@@ -1,0 +1,292 @@
+.game-wrapper {
+  position: relative;
+  width: 800px;
+  height: 480px;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.phaser-container {
+  width: 100%;
+  height: 100%;
+}
+
+.phaser-container canvas {
+  display: block;
+}
+
+/* Overlay backdrop */
+.overlay-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.overlay-panel {
+  background: #1a1a2e;
+  border: 2px solid #333;
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 420px;
+  width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+
+.shake {
+  animation: shake 0.4s ease;
+}
+
+/* Monster display */
+.monster-display {
+  text-align: center;
+  padding: 8px 0;
+}
+
+/* Mode tabs */
+.mode-tabs {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.mode-tab {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  background: #2a2a4a;
+  color: #aaa;
+  font-size: 14px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mode-tab.active {
+  background: #3a3a5a;
+  color: #fff;
+  border-color: #4A90D9;
+}
+
+/* Quiz section */
+.quiz-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.mic-btn {
+  padding: 12px 24px;
+  border-radius: 50px;
+  background: #4A90D9;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mic-btn.listening {
+  background: #E53E3E;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.mic-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.text-input-section {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.quiz-text-input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 2px solid #333;
+  background: #2a2a4a;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+.quiz-text-input:focus {
+  border-color: #4A90D9;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #48BB78;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-btn:active {
+  background: #38A169;
+}
+
+/* Attack section */
+.attack-section {
+  text-align: center;
+  padding: 8px 0;
+}
+
+.attack-action-btn {
+  padding: 14px 32px;
+  border-radius: 12px;
+  background: #D69E2E;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.attack-action-btn:disabled {
+  background: #666;
+  cursor: not-allowed;
+}
+
+.attack-action-btn:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+/* Speak button */
+.speak-btn {
+  margin-top: 8px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  background: #2a2a4a;
+  color: #4A90D9;
+  font-size: 14px;
+  border: 1px solid #4A90D9;
+  cursor: pointer;
+}
+
+/* Quiz feedback */
+.quiz-feedback {
+  text-align: center;
+  padding: 8px;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  background: #2a2a4a;
+}
+
+/* Mobile controls */
+.mobile-controls {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 16px;
+  pointer-events: none;
+  z-index: 50;
+}
+
+.dpad {
+  display: flex;
+  gap: 8px;
+  pointer-events: auto;
+}
+
+.dpad-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.dpad-btn:active {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.action-btn {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+  pointer-events: auto;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.attack-btn {
+  background: rgba(214, 158, 46, 0.4);
+}
+
+/* Back button */
+.back-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 14px;
+  border: 1px solid #555;
+  cursor: pointer;
+  z-index: 50;
+}

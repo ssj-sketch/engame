@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(cd:*)",
+      "Bash(git -C \"D:\\\\app\\\\engame\" log --oneline --all)",
+      "Bash(git -C \"D:\\\\app\\\\engame\" branch -a)",
+      "Bash(git -C \"D:\\\\app\\\\engame\" config --list)",
+      "Bash(git -C \"D:\\\\app\\\\engame\" log --oneline -10)",
+      "Bash(npx create-react-app . --template typescript)",
+      "Bash(npx create-react-app:*)",
+      "Bash(xcopy /E /Y /I \"D:\\\\app\\\\engame-temp\\\\*\" \"D:\\\\app\\\\engame\"\")",
+      "Bash(robocopy:*)",
+      "Bash(echo:*)",
+      "Bash(npm install)",
+      "Bash(npm install:*)",
+      "Bash(npx react-scripts build)",
+      "Bash(npx react-scripts start)",
+      "Bash(find:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

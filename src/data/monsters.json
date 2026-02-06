@@ -1,0 +1,54 @@
+[
+  { "id": 1, "stageId": 1, "wordId": 1, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 500 },
+  { "id": 2, "stageId": 1, "wordId": 2, "type": "goblin", "hp": 100, "hintDropRate": 0.5, "positionX": 1000 },
+  { "id": 3, "stageId": 1, "wordId": 3, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 1500 },
+
+  { "id": 4, "stageId": 2, "wordId": 4, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 500 },
+  { "id": 5, "stageId": 2, "wordId": 5, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 1000 },
+  { "id": 6, "stageId": 2, "wordId": 6, "type": "dragon", "hp": 150, "hintDropRate": 0.4, "positionX": 1500 },
+  { "id": 7, "stageId": 2, "wordId": 7, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 2000 },
+
+  { "id": 8, "stageId": 3, "wordId": 8, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 500 },
+  { "id": 9, "stageId": 3, "wordId": 9, "type": "dragon", "hp": 150, "hintDropRate": 0.4, "positionX": 1000 },
+  { "id": 10, "stageId": 3, "wordId": 10, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 1500 },
+  { "id": 11, "stageId": 3, "wordId": 11, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 2000 },
+  { "id": 12, "stageId": 3, "wordId": 12, "type": "dragon", "hp": 150, "hintDropRate": 0.4, "positionX": 2500 },
+
+  { "id": 13, "stageId": 4, "wordId": 13, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 500 },
+  { "id": 14, "stageId": 4, "wordId": 14, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 1000 },
+  { "id": 15, "stageId": 4, "wordId": 15, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 1500 },
+
+  { "id": 16, "stageId": 5, "wordId": 16, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 500 },
+  { "id": 17, "stageId": 5, "wordId": 17, "type": "dragon", "hp": 150, "hintDropRate": 0.4, "positionX": 1000 },
+  { "id": 18, "stageId": 5, "wordId": 18, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 1500 },
+  { "id": 19, "stageId": 5, "wordId": 19, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 2000 },
+
+  { "id": 20, "stageId": 6, "wordId": 20, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 500 },
+  { "id": 21, "stageId": 6, "wordId": 21, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 1000 },
+  { "id": 22, "stageId": 6, "wordId": 22, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 1500 },
+
+  { "id": 23, "stageId": 7, "wordId": 23, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 500 },
+  { "id": 24, "stageId": 7, "wordId": 24, "type": "dragon", "hp": 150, "hintDropRate": 0.4, "positionX": 1000 },
+  { "id": 25, "stageId": 7, "wordId": 25, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 1500 },
+  { "id": 26, "stageId": 7, "wordId": 26, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 2000 },
+
+  { "id": 27, "stageId": 8, "wordId": 27, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 500 },
+  { "id": 28, "stageId": 8, "wordId": 28, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 1000 },
+  { "id": 29, "stageId": 8, "wordId": 29, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 1500 },
+
+  { "id": 30, "stageId": 9, "wordId": 30, "type": "dragon", "hp": 150, "hintDropRate": 0.4, "positionX": 500 },
+  { "id": 31, "stageId": 9, "wordId": 31, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 1000 },
+  { "id": 32, "stageId": 9, "wordId": 32, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 1500 },
+  { "id": 33, "stageId": 9, "wordId": 33, "type": "dragon", "hp": 150, "hintDropRate": 0.4, "positionX": 2000 },
+
+  { "id": 34, "stageId": 10, "wordId": 34, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 500 },
+  { "id": 35, "stageId": 10, "wordId": 35, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 1000 },
+  { "id": 36, "stageId": 10, "wordId": 36, "type": "dragon", "hp": 150, "hintDropRate": 0.4, "positionX": 1500 },
+  { "id": 37, "stageId": 10, "wordId": 37, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 2000 },
+
+  { "id": 38, "stageId": 11, "wordId": 38, "type": "dragon", "hp": 150, "hintDropRate": 0.4, "positionX": 500 },
+  { "id": 39, "stageId": 11, "wordId": 39, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 1000 },
+  { "id": 40, "stageId": 11, "wordId": 40, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 1500 },
+  { "id": 41, "stageId": 11, "wordId": 41, "type": "dragon", "hp": 150, "hintDropRate": 0.4, "positionX": 2000 },
+  { "id": 42, "stageId": 11, "wordId": 42, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 2500 }
+]
