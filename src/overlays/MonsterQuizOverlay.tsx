@@ -45,7 +45,24 @@ export const MonsterQuizOverlay: React.FC<Props> = ({
     utterance.lang = 'en-US';
     utterance.rate = 0.8;
     speechSynthesis.speak(utterance);
+    return utterance;
   }, [monsterData.word]);
+
+  // Auto: speak word then start listening on mount
+  useEffect(() => {
+    if (!isSupported) return;
+    const utterance = new SpeechSynthesisUtterance(monsterData.word);
+    utterance.lang = 'en-US';
+    utterance.rate = 0.8;
+    utterance.onend = () => {
+      // Small delay after TTS finishes before starting STT
+      setTimeout(() => {
+        startListening();
+      }, 300);
+    };
+    speechSynthesis.speak(utterance);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [monsterData.monsterId]);
 
   // Evaluate voice transcript
   useEffect(() => {
