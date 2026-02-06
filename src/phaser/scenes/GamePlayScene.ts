@@ -190,6 +190,7 @@ export class GamePlayScene extends Phaser.Scene {
   }
 
   private handleQuizAnswered = (data: { monsterId: number; correct: boolean }) => {
+    if (!this.levelData) return;
     const monster = this.levelData.monsters.find(m => m.monsterData.id === data.monsterId);
     if (!monster) return;
 
@@ -199,7 +200,7 @@ export class GamePlayScene extends Phaser.Scene {
 
       // Check stage complete
       const allDefeated = this.levelData.monsters.every(m => m.isDefeated);
-      if (allDefeated) {
+      if (allDefeated && this.scene && this.tweens) {
         // Show arrow pointing to treasure
         const arrow = this.add.text(
           this.levelData.treasureBox.x,

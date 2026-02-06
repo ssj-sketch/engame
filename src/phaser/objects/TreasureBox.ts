@@ -38,12 +38,14 @@ export class TreasureBox extends Phaser.GameObjects.Container {
   open() {
     this.isOpened = true;
     this.sprite.setText('🎁');
-    this.scene.tweens.add({
-      targets: this,
-      scaleX: 1.2,
-      scaleY: 1.2,
-      duration: 300,
-      yoyo: true,
-    });
+    if (this.scene && this.scene.tweens) {
+      this.scene.tweens.add({
+        targets: this,
+        scaleX: 1.2,
+        scaleY: 1.2,
+        duration: 300,
+        yoyo: true,
+      });
+    }
   }
 }

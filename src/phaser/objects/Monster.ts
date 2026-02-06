@@ -66,15 +66,19 @@ export class Monster extends Phaser.GameObjects.Container {
 
   defeat() {
     this.isDefeated = true;
-    this.scene.tweens.add({
-      targets: this,
-      alpha: 0,
-      scale: 0.5,
-      duration: 500,
-      ease: 'Power2',
-      onComplete: () => {
-        this.setActive(false).setVisible(false);
-      },
-    });
+    if (this.scene && this.scene.tweens) {
+      this.scene.tweens.add({
+        targets: this,
+        alpha: 0,
+        scale: 0.5,
+        duration: 500,
+        ease: 'Power2',
+        onComplete: () => {
+          this.setActive(false).setVisible(false);
+        },
+      });
+    } else {
+      this.setActive(false).setVisible(false);
+    }
   }
 }
