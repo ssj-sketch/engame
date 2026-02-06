@@ -75,12 +75,15 @@ export const PhaserGame: React.FC = () => {
         });
       }
 
-      // Update HUD
-      EventBridge.emit('hud:update', {
-        gems: store.user.totalGems,
-        jams: store.user.totalJams,
-        durability: store.weapon.durability,
-      });
+      // Update HUD after a short delay to ensure UIScene is created
+      setTimeout(() => {
+        const currentState = useGameStore.getState();
+        EventBridge.emit('hud:update', {
+          gems: currentState.user.totalGems,
+          jams: currentState.user.totalJams,
+          durability: currentState.weapon.durability,
+        });
+      }, 100);
     };
 
     const handleMonsterEncounter = (data: MonsterEncounterData) => {

@@ -32,21 +32,30 @@ export class UIScene extends Phaser.Scene {
     this.durabilityText = this.add.text(280, 12, '100%', { fontSize: '14px', color: '#fff' });
     this.drawDurabilityBar();
 
-    // Listen for HUD updates
+    // Listen for HUD updates (guard against calls before scene is fully ready)
     EventBridge.on('hud:update', (data: { gems?: number; jams?: number; durability?: number }) => {
       if (data.gems !== undefined) {
         this.gems = data.gems;
-        this.gemsText.setText(String(this.gems));
+        if (this.gemsText?.active) this.gemsText.setText(String(this.gems));
       }
       if (data.jams !== undefined) {
         this.jams = data.jams;
-        this.jamsText.setText(String(this.jams));
+        if (this.jamsText?.active) this.jamsText.setText(String(this.jams));
       }
       if (data.durability !== undefined) {
         this.durability = data.durability;
-        this.durabilityText.setText(`${this.durability}%`);
-        this.drawDurabilityBar();
+        if (this.durabilityText?.active) {
+          this.durabilityText.setText(`${this.durability}%`);
+          this.drawDurabilityBar();
+        }
       }
+    });
+
+    // Emit initial values now that UI is ready
+    EventBridge.emit('hud:update', {
+      gems: this.gems,
+      jams: this.jams,
+      durability: this.durability,
     });
   }
 
