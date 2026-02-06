@@ -101,7 +101,9 @@ export const PhaserGame: React.FC = () => {
       const currentState = useGameStore.getState();
       const sessionLogs = currentState.session.sessionQuizLogs;
       const totalMonsters = (monstersData as MonsterData[]).filter(m => m.stageId === stageIdNum).length;
-      const correctFirst = sessionLogs.filter(q => q.isCorrect && q.attempts === 1).length;
+      // Only count monster quizzes (exclude treasure box spelling quizzes)
+      const monsterLogs = sessionLogs.filter(q => q.monsterId !== 0);
+      const correctFirst = monsterLogs.filter(q => q.isCorrect && q.attempts === 1).length;
       const score = totalMonsters > 0 ? Math.round((correctFirst / totalMonsters) * 100) : 100;
       setStageScore(score);
       currentState.completeStage(stageIdNum, score);

@@ -1,12 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { useSpeechRecognition, levenshteinDistance } from '../hooks/useSpeechRecognition';
+import { useSpeechRecognition, matchWord } from '../hooks/useSpeechRecognition';
 import { BALANCE } from '../data/gameBalance';
-
-const MONSTER_EMOJI: Record<string, string> = {
-  slime: '🟢',
-  goblin: '👾',
-  dragon: '🐉',
-};
 
 interface MonsterEncounterData {
   monsterId: number;
@@ -38,7 +32,12 @@ export const MonsterQuizOverlay: React.FC<Props> = ({
   const [feedback, setFeedback] = useState<string | null>(null);
   const [textInput, setTextInput] = useState('');
   const [sttDisplay, setSttDisplay] = useState<{ text: string; isCorrect: boolean | null } | null>(null);
-  const { isListening, transcript, startListening, isSupported, reset } = useSpeechRecognition();
+  const [resolved, setResolved] = useState(false);
+
+  const {
+    isListening, transcript, interimTranscript,
+    allAlternatives, startListening, isSupported, reset,
+  } = useSpeechRecognition();
 
   const speakWord = useCallback(() => {
     const utterance = new SpeechSynthesisUtterance(monsterData.word);
@@ -58,48 +57,41 @@ export const MonsterQuizOverlay: React.FC<Props> = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [monsterData.monsterId]);
 
-  // Evaluate voice transcript
+  // Evaluate voice transcript using enhanced matchWord
   useEffect(() => {
-    if (transcript) {
-      const normalized = transcript.toLowerCase().trim();
-      const target = monsterData.word.toLowerCase().trim();
+    if (!transcript || resolved) return;
 
-      const isCorrect =
-        normalized === target ||
-        normalized.includes(target) ||
-        levenshteinDistance(normalized, target) <= 1;
+    const result = matchWord(monsterData.word, allAlternatives, transcript);
 
-      // Show STT result with animation
-      setSttDisplay({ text: normalized, isCorrect });
+    // Show STT result with animation
+    setSttDisplay({ text: result.bestMatch, isCorrect: result.matched });
 
-      if (isCorrect) {
-        setFeedback('✅ 정답!');
-        setTimeout(() => {
-          onAnswer(monsterData.monsterId, true, attempts);
-        }, 1200);
-      } else {
-        setFeedback(`❌ 다시 시도하세요!`);
-        setTimeout(() => {
-          setSttDisplay(null);
-        }, 2000);
-        setAttempts(a => a + 1);
-        reset();
-      }
+    if (result.matched) {
+      setResolved(true);
+      setFeedback('✅ 정답!');
+      setTimeout(() => {
+        onAnswer(monsterData.monsterId, true, attempts);
+      }, 1200);
+    } else {
+      setFeedback('❌ 다시 시도하세요!');
+      setTimeout(() => {
+        setSttDisplay(null);
+      }, 2000);
+      setAttempts(a => a + 1);
+      reset();
     }
-  }, [transcript, monsterData, attempts, onAnswer, reset]);
+  }, [transcript, monsterData, attempts, onAnswer, reset, allAlternatives, resolved]);
 
   const handleTextSubmit = () => {
-    const normalized = textInput.toLowerCase().trim();
-    const target = monsterData.word.toLowerCase().trim();
-    const isCorrect = normalized === target || levenshteinDistance(normalized, target) <= 1;
+    const result = matchWord(monsterData.word, [], textInput);
 
-    if (isCorrect) {
+    if (result.matched) {
       setFeedback('✅ 정답!');
       setTimeout(() => {
         onAnswer(monsterData.monsterId, true, attempts);
       }, 800);
     } else {
-      setFeedback(`❌ "${normalized}" - 다시 시도하세요!`);
+      setFeedback(`❌ "${textInput.toLowerCase().trim()}" - 다시 시도하세요!`);
       setAttempts(a => a + 1);
       setTextInput('');
     }
@@ -116,30 +108,13 @@ export const MonsterQuizOverlay: React.FC<Props> = ({
     }, 600);
   };
 
-  const emoji = MONSTER_EMOJI[monsterData.type] || '👹';
-
-  // Render word with hint highlights
-  const renderWordHints = () => {
+  // Render word with hint highlights - bigger, game-like style
+  const renderWordDisplay = () => {
     return monsterData.word.split('').map((letter, i) => {
       const isHinted = collectedHints.includes(letter);
       return (
-        <span
-          key={i}
-          style={{
-            display: 'inline-block',
-            width: 32,
-            height: 40,
-            lineHeight: '40px',
-            textAlign: 'center',
-            fontSize: '24px',
-            fontWeight: 'bold',
-            margin: '0 3px',
-            borderBottom: '3px solid',
-            borderColor: isHinted ? '#FFD700' : '#555',
-            color: isHinted ? '#FFD700' : '#888',
-          }}
-        >
-          {isHinted ? letter.toUpperCase() : '_'}
+        <span key={i} className={`word-letter ${isHinted ? 'hinted' : 'hidden'}`}>
+          {isHinted ? letter.toUpperCase() : '?'}
         </span>
       );
     });
@@ -148,26 +123,29 @@ export const MonsterQuizOverlay: React.FC<Props> = ({
   return (
     <div className="overlay-backdrop">
       <div className="overlay-panel monster-quiz-panel">
-        {/* Monster display */}
-        <div className="monster-display" style={{ position: 'relative' }}>
-          <span style={{ fontSize: '64px' }}>{emoji}</span>
-          <div style={{ fontSize: '14px', color: '#aaa', marginTop: 4 }}>{monsterData.type}</div>
 
-          {/* STT recognized word - speech bubble */}
-          {sttDisplay && (
-            <div className={`stt-bubble ${sttDisplay.isCorrect ? 'stt-correct' : 'stt-wrong'}`}>
-              <span className="stt-bubble-text">"{sttDisplay.text}"</span>
-              <div className="stt-bubble-arrow" />
-            </div>
-          )}
+        {/* Word display - centered, prominent */}
+        <div className="quiz-word-area">
+          <div className="quiz-word-label">Say the word!</div>
+          <div className="quiz-word-letters">{renderWordDisplay()}</div>
+          <button onClick={speakWord} className="speak-btn-game">
+            🔊
+          </button>
         </div>
 
-        {/* Word hints */}
-        <div style={{ textAlign: 'center', margin: '16px 0' }}>
-          <div style={{ marginBottom: 8, fontSize: 14, color: '#aaa' }}>이 단어를 말하거나 입력하세요:</div>
-          <div>{renderWordHints()}</div>
-          <button onClick={speakWord} className="speak-btn">🔊 듣기</button>
-        </div>
+        {/* STT speech bubble - floating above word */}
+        {sttDisplay && (
+          <div className={`stt-result-badge ${sttDisplay.isCorrect ? 'stt-correct' : 'stt-wrong'}`}>
+            "{sttDisplay.text}"
+          </div>
+        )}
+
+        {/* Interim transcript - real-time display */}
+        {isListening && interimTranscript && !sttDisplay && (
+          <div className="stt-interim">
+            🎙️ {interimTranscript}
+          </div>
+        )}
 
         {/* Mode tabs */}
         <div className="mode-tabs">
@@ -195,7 +173,7 @@ export const MonsterQuizOverlay: React.FC<Props> = ({
             ) : null}
 
             {/* Live listening indicator */}
-            {isListening && (
+            {isListening && !interimTranscript && (
               <div className="stt-listening-indicator">
                 <span className="stt-wave">🔊</span>
                 <span style={{ color: '#4A90D9', fontSize: 14 }}>음성을 인식하고 있습니다...</span>
