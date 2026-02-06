@@ -200,20 +200,24 @@ export class GamePlayScene extends Phaser.Scene {
 
       // Check stage complete
       const allDefeated = this.levelData.monsters.every(m => m.isDefeated);
-      if (allDefeated && this.scene && this.tweens) {
-        // Show arrow pointing to treasure
-        const arrow = this.add.text(
-          this.levelData.treasureBox.x,
-          this.levelData.treasureBox.y - 60,
-          '⬇️', { fontSize: '28px' }
-        ).setOrigin(0.5);
-        this.tweens.add({
-          targets: arrow,
-          y: arrow.y + 10,
-          duration: 500,
-          yoyo: true,
-          repeat: -1,
-        });
+      if (allDefeated && this.sys && this.sys.isActive()) {
+        try {
+          // Show arrow pointing to treasure
+          const arrow = this.add.text(
+            this.levelData.treasureBox.x,
+            this.levelData.treasureBox.y - 60,
+            '⬇️', { fontSize: '28px' }
+          ).setOrigin(0.5);
+          this.tweens.add({
+            targets: arrow,
+            y: arrow.y + 10,
+            duration: 500,
+            yoyo: true,
+            repeat: -1,
+          });
+        } catch (e) {
+          // Scene may have been destroyed during HMR
+        }
       }
     }
   }
@@ -225,13 +229,18 @@ export class GamePlayScene extends Phaser.Scene {
 
   private handleTreasureOpened = (data: { success: boolean }) => {
     if (data.success) {
-      this.levelData.treasureBox.open();
+      if (this.levelData) this.levelData.treasureBox.open();
       this.isOverlayOpen = false;
 
       // Stage complete
-      this.time.delayedCall(1000, () => {
+      if (this.sys && this.sys.isActive()) {
+        this.time.delayedCall(1000, () => {
+          EventBridge.emit(EVENTS.STAGE_COMPLETE, { stageId: this.stageId });
+        });
+      } else {
+        // Fallback: emit immediately if scene is not active
         EventBridge.emit(EVENTS.STAGE_COMPLETE, { stageId: this.stageId });
-      });
+      }
     }
   }
 
