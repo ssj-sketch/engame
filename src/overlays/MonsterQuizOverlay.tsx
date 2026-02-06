@@ -48,26 +48,13 @@ export const MonsterQuizOverlay: React.FC<Props> = ({
     return utterance;
   }, [monsterData.word]);
 
-  // Auto: wait for overlay animation, speak word, then start listening
+  // Auto: start listening after overlay animation finishes (no TTS)
   useEffect(() => {
     if (!isSupported) return;
-    // Wait for overlay slide-up animation to finish (0.3s) + extra pause
     const delayTimer = setTimeout(() => {
-      const utterance = new SpeechSynthesisUtterance(monsterData.word);
-      utterance.lang = 'en-US';
-      utterance.rate = 0.8;
-      utterance.onend = () => {
-        // Small delay after TTS finishes before starting STT
-        setTimeout(() => {
-          startListening();
-        }, 300);
-      };
-      speechSynthesis.speak(utterance);
+      startListening();
     }, 800);
-    return () => {
-      clearTimeout(delayTimer);
-      speechSynthesis.cancel();
-    };
+    return () => clearTimeout(delayTimer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [monsterData.monsterId]);
 
