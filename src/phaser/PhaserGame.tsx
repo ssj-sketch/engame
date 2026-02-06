@@ -169,22 +169,28 @@ export const PhaserGame: React.FC = () => {
       return;
     }
 
+    // Consume durability
     currentState.updateDurability(-BALANCE.ATTACK_DURABILITY_COST);
-    const hintDropped = Math.random() < monster.hintDropRate;
-    let hintLetter: string | undefined;
 
-    if (hintDropped) {
-      const allWords = wordsData as Word[];
-      const word = allWords.find(w => w.id === monster.wordId)?.word || 'cat';
-      const availableLetters = word.split('').filter(l => !currentState.session.collectedHints.includes(l));
-      if (availableLetters.length > 0) {
-        hintLetter = availableLetters[Math.floor(Math.random() * availableLetters.length)];
-      }
-    }
+    // Record as skipped quiz (not correct, so no score contribution)
+    currentState.recordQuiz({
+      wordId: monster.wordId,
+      monsterId,
+      quizType: 'voice',
+      isCorrect: false,
+      attempts: 0,
+      hintsUsed: 0,
+      timeSpentMs: 0,
+    });
+
+    currentState.defeatMonster(monsterId);
+
+    // Defeat monster in Phaser scene (no gem reward for skipping)
+    EventBridge.emit(EVENTS.QUIZ_ANSWERED, { monsterId, correct: true });
 
     const updatedState = useGameStore.getState();
-    EventBridge.emit(EVENTS.ATTACK_EXECUTE, { monsterId, hintDropped: !!hintLetter, hintLetter });
     EventBridge.emit('hud:update', { durability: updatedState.weapon.durability });
+    setOverlay('none');
   }, []);
 
   const handleTreasureSubmit = useCallback((correct: boolean) => {

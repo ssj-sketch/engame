@@ -58,12 +58,12 @@ export const MonsterQuizOverlay: React.FC<Props> = ({
         levenshteinDistance(normalized, target) <= 1;
 
       if (isCorrect) {
-        setFeedback('✅ Correct!');
+        setFeedback('✅ 정답!');
         setTimeout(() => {
           onAnswer(monsterData.monsterId, true, attempts);
         }, 800);
       } else {
-        setFeedback(`❌ "${normalized}" - Try again!`);
+        setFeedback(`❌ "${normalized}" - 다시 시도하세요!`);
         setAttempts(a => a + 1);
         reset();
       }
@@ -76,12 +76,12 @@ export const MonsterQuizOverlay: React.FC<Props> = ({
     const isCorrect = normalized === target || levenshteinDistance(normalized, target) <= 1;
 
     if (isCorrect) {
-      setFeedback('✅ Correct!');
+      setFeedback('✅ 정답!');
       setTimeout(() => {
         onAnswer(monsterData.monsterId, true, attempts);
       }, 800);
     } else {
-      setFeedback(`❌ "${normalized}" - Try again!`);
+      setFeedback(`❌ "${normalized}" - 다시 시도하세요!`);
       setAttempts(a => a + 1);
       setTextInput('');
     }
@@ -89,11 +89,13 @@ export const MonsterQuizOverlay: React.FC<Props> = ({
 
   const handleAttack = () => {
     if (weaponDurability <= BALANCE.WEAPON_BROKEN_THRESHOLD) {
-      setFeedback('⚠️ Weapon broken! Visit the Forge to repair.');
+      setFeedback('⚠️ 무기가 부서졌어요! 대장간에서 수리하세요.');
       return;
     }
-    onAttack(monsterData.monsterId);
-    setFeedback(`⚔️ Attack! Durability: ${weaponDurability - BALANCE.ATTACK_DURABILITY_COST}%`);
+    setFeedback('⚔️ 처치! 퀴즈를 건너뜁니다...');
+    setTimeout(() => {
+      onAttack(monsterData.monsterId);
+    }, 600);
   };
 
   const emoji = MONSTER_EMOJI[monsterData.type] || '👹';
@@ -136,9 +138,9 @@ export const MonsterQuizOverlay: React.FC<Props> = ({
 
         {/* Word hints */}
         <div style={{ textAlign: 'center', margin: '16px 0' }}>
-          <div style={{ marginBottom: 8, fontSize: 14, color: '#aaa' }}>Say or spell this word:</div>
+          <div style={{ marginBottom: 8, fontSize: 14, color: '#aaa' }}>이 단어를 말하거나 입력하세요:</div>
           <div>{renderWordHints()}</div>
-          <button onClick={speakWord} className="speak-btn">🔊 Listen</button>
+          <button onClick={speakWord} className="speak-btn">🔊 듣기</button>
         </div>
 
         {/* Mode tabs */}
@@ -146,11 +148,11 @@ export const MonsterQuizOverlay: React.FC<Props> = ({
           <button
             className={`mode-tab ${mode === 'quiz' ? 'active' : ''}`}
             onClick={() => setMode('quiz')}
-          >🎤 Voice / Type</button>
+          >🎤 음성 / 입력</button>
           <button
             className={`mode-tab ${mode === 'attack' ? 'active' : ''}`}
             onClick={() => setMode('attack')}
-          >⚔️ Attack</button>
+          >⚔️ 공격</button>
         </div>
 
         {/* Quiz mode */}
@@ -162,7 +164,7 @@ export const MonsterQuizOverlay: React.FC<Props> = ({
                 onClick={startListening}
                 disabled={isListening}
               >
-                {isListening ? '🎙️ Listening...' : '🎤 Tap to Speak'}
+                {isListening ? '🎙️ 듣는 중...' : '🎤 눌러서 말하기'}
               </button>
             ) : null}
 
@@ -172,30 +174,30 @@ export const MonsterQuizOverlay: React.FC<Props> = ({
                 value={textInput}
                 onChange={(e) => setTextInput(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && handleTextSubmit()}
-                placeholder="Type the word..."
+                placeholder="단어를 입력하세요..."
                 className="quiz-text-input"
                 autoFocus={!isSupported}
               />
-              <button onClick={handleTextSubmit} className="submit-btn">Check</button>
+              <button onClick={handleTextSubmit} className="submit-btn">확인</button>
             </div>
           </div>
         )}
 
-        {/* Attack mode */}
+        {/* Attack mode - skip quiz by defeating monster */}
         {mode === 'attack' && (
           <div className="attack-section">
             <div style={{ fontSize: 14, color: '#aaa', marginBottom: 8 }}>
-              Weapon: ⚔️ {weaponDurability}% durability
+              무기: ⚔️ 내구도 {weaponDurability}%
             </div>
             <button
               onClick={handleAttack}
               className="attack-action-btn"
               disabled={weaponDurability <= 0}
             >
-              ⚔️ Attack Monster
+              ⚔️ 공격하여 처치
             </button>
             <div style={{ fontSize: 12, color: '#888', marginTop: 4 }}>
-              -{BALANCE.ATTACK_DURABILITY_COST}% durability | {Math.round(monsterData.hintDropRate * 100)}% hint chance
+              내구도 -{BALANCE.ATTACK_DURABILITY_COST}% | 보석 보상 없음
             </div>
           </div>
         )}
@@ -205,10 +207,10 @@ export const MonsterQuizOverlay: React.FC<Props> = ({
           <div className="quiz-feedback">{feedback}</div>
         )}
 
-        {/* Collected hints */}
-        {collectedHints.length > 0 && (
+        {/* Collected hints - shown only in quiz mode */}
+        {mode === 'quiz' && collectedHints.length > 0 && (
           <div style={{ textAlign: 'center', marginTop: 8, fontSize: 13, color: '#FFD700' }}>
-            Hints: {collectedHints.map(h => h.toUpperCase()).join(', ')}
+            힌트: {collectedHints.map(h => h.toUpperCase()).join(', ')}
           </div>
         )}
       </div>

@@ -100,7 +100,7 @@ export class GamePlayScene extends Phaser.Scene {
     this.scene.launch('UI');
 
     // Start label
-    const startLabel = this.add.text(100, 200, '▶ Start!', {
+    const startLabel = this.add.text(100, 200, '▶ 시작!', {
       fontSize: '28px',
       color: '#FFD700',
       backgroundColor: '#00000088',
@@ -217,15 +217,9 @@ export class GamePlayScene extends Phaser.Scene {
     }
   }
 
-  private handleAttackExecute = (data: { monsterId: number; hintDropped: boolean; hintLetter?: string }) => {
-    if (data.hintDropped && data.hintLetter) {
-      const monster = this.levelData.monsters.find(m => m.monsterData.id === data.monsterId);
-      if (monster) {
-        const hint = new HintLetter(this, monster.x, monster.y - 20, data.hintLetter);
-        this.activeHintLetters.push(hint);
-      }
-    }
-    // Overlay stays open for the quiz
+  private handleAttackExecute = (_data: { monsterId: number }) => {
+    // Attack now defeats monster directly (handled via QUIZ_ANSWERED event)
+    // No hint drops - kept for backward compatibility
   }
 
   private handleTreasureOpened = (data: { success: boolean }) => {

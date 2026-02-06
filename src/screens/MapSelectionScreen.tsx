@@ -55,9 +55,9 @@ const MapSelectionScreen: React.FC = () => {
             marginRight: 16,
           }}
         >
-          ← Back
+          ← 뒤로
         </button>
-        <h2 style={{ color: '#FFD700', margin: 0 }}>🗺️ Map Selection</h2>
+        <h2 style={{ color: '#FFD700', margin: 0 }}>🗺️ 스테이지 선택</h2>
       </div>
 
       {/* Unit path */}

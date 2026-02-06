@@ -18,7 +18,7 @@ export const StageCompleteOverlay: React.FC<Props> = ({ score, gems, jams, onBac
     <div className="overlay-backdrop">
       <div className="overlay-panel stage-complete-panel">
         <h2 style={{ color: '#FFD700', textAlign: 'center', margin: '0 0 12px' }}>
-          Stage Clear!
+          스테이지 클리어!
         </h2>
 
         {/* Stars */}
@@ -30,7 +30,7 @@ export const StageCompleteOverlay: React.FC<Props> = ({ score, gems, jams, onBac
 
         {/* Score */}
         <div style={{ textAlign: 'center', fontSize: 18, color: '#fff', marginBottom: 16 }}>
-          Score: {score}%
+          점수: {score}%
         </div>
 
         {/* Rewards */}
@@ -68,7 +68,7 @@ export const StageCompleteOverlay: React.FC<Props> = ({ score, gems, jams, onBac
               cursor: 'pointer',
             }}
           >
-            🗺️ Map
+            🗺️ 지도
           </button>
           <button
             onClick={onNextStage}
@@ -83,7 +83,7 @@ export const StageCompleteOverlay: React.FC<Props> = ({ score, gems, jams, onBac
               cursor: 'pointer',
             }}
           >
-            Next ▶
+            다음 ▶
           </button>
         </div>
       </div>

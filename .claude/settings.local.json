@@ -17,7 +17,16 @@
       "Bash(npx react-scripts build)",
       "Bash(npx react-scripts start)",
       "Bash(find:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(npx tsc:*)",
+      "Bash(SET BROWSER=none)",
+      "Bash(start /b npx react-scripts start)",
+      "Bash(BROWSER=none npx react-scripts start:*)"
     ]
   }
 }

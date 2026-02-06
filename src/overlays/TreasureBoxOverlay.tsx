@@ -53,10 +53,10 @@ export const TreasureBoxOverlay: React.FC<Props> = ({ word, hints, onSubmit, onC
   const checkAnswer = () => {
     const answer = letters.join('').toLowerCase();
     if (answer === word.toLowerCase()) {
-      setFeedback('✅ Correct! Treasure opened!');
+      setFeedback('✅ 정답! 보물상자 열림!');
       setTimeout(() => onSubmit(true), 1000);
     } else {
-      setFeedback('❌ Try again!');
+      setFeedback('❌ 다시 시도하세요!');
       setShake(true);
       setTimeout(() => setShake(false), 500);
     }
@@ -67,9 +67,9 @@ export const TreasureBoxOverlay: React.FC<Props> = ({ word, hints, onSubmit, onC
       <div className={`overlay-panel treasure-panel ${shake ? 'shake' : ''}`}>
         <div style={{ textAlign: 'center' }}>
           <span style={{ fontSize: '56px' }}>📦✨</span>
-          <h3 style={{ color: '#FFD700', margin: '8px 0' }}>Treasure Box!</h3>
-          <p style={{ color: '#aaa', fontSize: 14 }}>Spell the word to open the treasure</p>
-          <button onClick={speakWord} className="speak-btn">🔊 Listen to the word</button>
+          <h3 style={{ color: '#FFD700', margin: '8px 0' }}>보물상자!</h3>
+          <p style={{ color: '#aaa', fontSize: 14 }}>단어를 철자하여 보물을 열어보세요</p>
+          <button onClick={speakWord} className="speak-btn">🔊 단어 듣기</button>
         </div>
 
         {/* Letter boxes */}
@@ -108,7 +108,7 @@ export const TreasureBoxOverlay: React.FC<Props> = ({ word, hints, onSubmit, onC
         {/* Hints display */}
         {hints.length > 0 && (
           <div style={{ textAlign: 'center', fontSize: 13, color: '#FFD700', marginBottom: 8 }}>
-            Collected hints: {hints.map(h => h.toUpperCase()).join(', ')}
+            수집한 힌트: {hints.map(h => h.toUpperCase()).join(', ')}
           </div>
         )}
 
@@ -124,7 +124,7 @@ export const TreasureBoxOverlay: React.FC<Props> = ({ word, hints, onSubmit, onC
           className="submit-btn"
           style={{ width: '100%', marginTop: 12 }}
         >
-          Check ✓
+          확인 ✓
         </button>
       </div>
     </div>

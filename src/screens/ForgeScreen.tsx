@@ -15,9 +15,9 @@ const ForgeScreen: React.FC = () => {
   const handleRepair = (type: 'basic' | 'full' | 'enhanced') => {
     const success = repairWeapon(type);
     if (success) {
-      setFeedback('✅ Weapon repaired!');
+      setFeedback('✅ 무기 수리 완료!');
     } else {
-      setFeedback('❌ Not enough resources!');
+      setFeedback('❌ 재료가 부족합니다!');
     }
     setTimeout(() => setFeedback(null), 2000);
   };
@@ -25,22 +25,22 @@ const ForgeScreen: React.FC = () => {
   const repairOptions = [
     {
       type: 'basic' as const,
-      label: 'Basic Repair',
-      description: `Restore +${BALANCE.REPAIR_BASIC.restore}% durability`,
+      label: '기본 수리',
+      description: `내구도 +${BALANCE.REPAIR_BASIC.restore}% 회복`,
       cost: `🫙 ${BALANCE.REPAIR_BASIC.costJams}`,
       affordable: user.totalJams >= BALANCE.REPAIR_BASIC.costJams,
     },
     {
       type: 'full' as const,
-      label: 'Full Repair',
-      description: 'Restore to 100% durability',
+      label: '완전 수리',
+      description: '내구도 100% 회복',
       cost: `🫙 ${BALANCE.REPAIR_FULL.costJams}`,
       affordable: user.totalJams >= BALANCE.REPAIR_FULL.costJams,
     },
     {
       type: 'enhanced' as const,
-      label: 'Enhanced Repair',
-      description: `100% + Attack +${BALANCE.REPAIR_ENHANCED.bonusAttack}`,
+      label: '강화 수리',
+      description: `100% + 공격력 +${BALANCE.REPAIR_ENHANCED.bonusAttack}`,
       cost: `🫙 ${BALANCE.REPAIR_ENHANCED.costJams} + 💎 ${BALANCE.REPAIR_ENHANCED.costGems}`,
       affordable: user.totalJams >= BALANCE.REPAIR_ENHANCED.costJams && user.totalGems >= BALANCE.REPAIR_ENHANCED.costGems,
     },
@@ -51,8 +51,8 @@ const ForgeScreen: React.FC = () => {
   return (
     <div style={{ width: '100%', maxWidth: 420, padding: 24 }}>
       <div style={{ display: 'flex', alignItems: 'center', marginBottom: 24 }}>
-        <button onClick={() => navigate('/')} style={{ padding: '8px 16px', borderRadius: 8, background: '#333', color: '#fff', fontSize: 14, border: 'none', cursor: 'pointer', marginRight: 16 }}>← Back</button>
-        <h2 style={{ color: '#D69E2E', margin: 0 }}>⚒️ Forge</h2>
+        <button onClick={() => navigate('/')} style={{ padding: '8px 16px', borderRadius: 8, background: '#333', color: '#fff', fontSize: 14, border: 'none', cursor: 'pointer', marginRight: 16 }}>← 뒤로</button>
+        <h2 style={{ color: '#D69E2E', margin: 0 }}>⚒️ 대장간</h2>
       </div>
 
       {/* Resources */}
@@ -65,11 +65,11 @@ const ForgeScreen: React.FC = () => {
       <div style={{ background: '#1a1a3a', borderRadius: 16, padding: 20, marginBottom: 20, textAlign: 'center', border: '1px solid #333' }}>
         <span style={{ fontSize: 48 }}>⚔️</span>
         <h3 style={{ color: '#fff', margin: '8px 0' }}>{weapon.name}</h3>
-        <div style={{ fontSize: 14, color: '#aaa', marginBottom: 8 }}>Attack Power: {weapon.attackPower}</div>
+        <div style={{ fontSize: 14, color: '#aaa', marginBottom: 8 }}>공격력: {weapon.attackPower}</div>
 
         {/* Durability bar */}
         <div style={{ marginBottom: 4, fontSize: 14, color: durabilityColor }}>
-          Durability: {weapon.durability}%
+          내구도: {weapon.durability}%
         </div>
         <div style={{ width: '100%', height: 12, background: '#333', borderRadius: 6, overflow: 'hidden' }}>
           <div style={{ width: `${weapon.durability}%`, height: '100%', background: durabilityColor, borderRadius: 6, transition: 'all 0.3s' }} />

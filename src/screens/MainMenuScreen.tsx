@@ -20,10 +20,10 @@ const MainMenuScreen: React.FC = () => {
       {/* Title */}
       <div style={{ marginBottom: 32 }}>
         <div style={{ fontSize: 36, fontWeight: 'bold', color: '#FFD700' }}>
-          ✨ Phonics
+          ✨ 파닉스
         </div>
         <div style={{ fontSize: 32, fontWeight: 'bold', color: '#fff' }}>
-          Adventure
+          어드벤처
         </div>
       </div>
 
@@ -60,7 +60,7 @@ const MainMenuScreen: React.FC = () => {
             cursor: 'pointer',
           }}
         >
-          🎮 Game Start
+          🎮 게임 시작
         </button>
 
         <button
@@ -75,7 +75,7 @@ const MainMenuScreen: React.FC = () => {
             cursor: 'pointer',
           }}
         >
-          🎒 Inventory
+          🎒 인벤토리
         </button>
 
         <button
@@ -90,7 +90,7 @@ const MainMenuScreen: React.FC = () => {
             cursor: 'pointer',
           }}
         >
-          ⚒️ Forge
+          ⚒️ 대장간
         </button>
 
         <button
@@ -105,7 +105,7 @@ const MainMenuScreen: React.FC = () => {
             cursor: 'pointer',
           }}
         >
-          📊 Learning Report
+          📊 학습 리포트
         </button>
       </div>
     </div>
