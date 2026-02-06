@@ -39,6 +39,8 @@ export const PhaserGame: React.FC = () => {
   const [monsterData, setMonsterData] = useState<MonsterEncounterData | null>(null);
   const [treasureData, setTreasureData] = useState<TreasureEncounterData | null>(null);
   const [stageScore, setStageScore] = useState(0);
+  const [sessionGems, setSessionGems] = useState(0);
+  const [sessionJams, setSessionJams] = useState(0);
 
   const store = useGameStore();
   const stageIdNum = parseInt(stageId || '1', 10);
@@ -92,13 +94,14 @@ export const PhaserGame: React.FC = () => {
     };
 
     const handleStageComplete = () => {
-      // Calculate score
-      const sessionLogs = store.session.sessionQuizLogs;
+      // Use getState() to read the latest store state, avoiding stale closure
+      const currentState = useGameStore.getState();
+      const sessionLogs = currentState.session.sessionQuizLogs;
       const totalMonsters = (monstersData as MonsterData[]).filter(m => m.stageId === stageIdNum).length;
       const correctFirst = sessionLogs.filter(q => q.isCorrect && q.attempts === 1).length;
       const score = totalMonsters > 0 ? Math.round((correctFirst / totalMonsters) * 100) : 100;
       setStageScore(score);
-      store.completeStage(stageIdNum, score);
+      currentState.completeStage(stageIdNum, score);
       setOverlay('stage-complete');
     };
 
@@ -128,7 +131,8 @@ export const PhaserGame: React.FC = () => {
     const monster = (monstersData as MonsterData[]).find(m => m.id === monsterId);
     if (!monster) return;
 
-    store.recordQuiz({
+    const currentState = useGameStore.getState();
+    currentState.recordQuiz({
       wordId: monster.wordId,
       monsterId,
       quizType: 'voice',
@@ -142,39 +146,43 @@ export const PhaserGame: React.FC = () => {
       // Random gem reward
       const gemReward = BALANCE.STAGE_CLEAR_GEMS_MIN +
         Math.floor(Math.random() * (BALANCE.STAGE_CLEAR_GEMS_MAX - BALANCE.STAGE_CLEAR_GEMS_MIN + 1));
-      store.addGems(gemReward);
-      store.defeatMonster(monsterId);
+      currentState.addGems(gemReward);
+      currentState.defeatMonster(monsterId);
+      setSessionGems(prev => prev + gemReward);
 
+      const updatedState = useGameStore.getState();
       EventBridge.emit(EVENTS.QUIZ_ANSWERED, { monsterId, correct: true });
-      EventBridge.emit('hud:update', { gems: store.user.totalGems + gemReward, durability: store.weapon.durability });
+      EventBridge.emit('hud:update', { gems: updatedState.user.totalGems, durability: updatedState.weapon.durability });
       setOverlay('none');
     }
-  }, [store]);
+  }, []);
 
   const handleAttack = useCallback((monsterId: number) => {
     const monster = (monstersData as MonsterData[]).find(m => m.id === monsterId);
     if (!monster) return;
 
-    if (store.weapon.durability <= BALANCE.WEAPON_BROKEN_THRESHOLD) {
+    const currentState = useGameStore.getState();
+    if (currentState.weapon.durability <= BALANCE.WEAPON_BROKEN_THRESHOLD) {
       return;
     }
 
-    store.updateDurability(-BALANCE.ATTACK_DURABILITY_COST);
+    currentState.updateDurability(-BALANCE.ATTACK_DURABILITY_COST);
     const hintDropped = Math.random() < monster.hintDropRate;
     let hintLetter: string | undefined;
 
     if (hintDropped) {
       const allWords = wordsData as Word[];
       const word = allWords.find(w => w.id === monster.wordId)?.word || 'cat';
-      const availableLetters = word.split('').filter(l => !store.session.collectedHints.includes(l));
+      const availableLetters = word.split('').filter(l => !currentState.session.collectedHints.includes(l));
       if (availableLetters.length > 0) {
         hintLetter = availableLetters[Math.floor(Math.random() * availableLetters.length)];
       }
     }
 
+    const updatedState = useGameStore.getState();
     EventBridge.emit(EVENTS.ATTACK_EXECUTE, { monsterId, hintDropped: !!hintLetter, hintLetter });
-    EventBridge.emit('hud:update', { durability: store.weapon.durability - BALANCE.ATTACK_DURABILITY_COST });
-  }, [store]);
+    EventBridge.emit('hud:update', { durability: updatedState.weapon.durability });
+  }, []);
 
   const handleTreasureSubmit = useCallback((correct: boolean) => {
     if (correct) {
@@ -182,35 +190,41 @@ export const PhaserGame: React.FC = () => {
         Math.floor(Math.random() * (BALANCE.TREASURE_GEMS_MAX - BALANCE.TREASURE_GEMS_MIN + 1));
       const jamReward = BALANCE.TREASURE_JAMS_MIN +
         Math.floor(Math.random() * (BALANCE.TREASURE_JAMS_MAX - BALANCE.TREASURE_JAMS_MIN + 1));
-      store.addGems(gemReward);
-      store.addJams(jamReward);
 
-      store.recordQuiz({
+      const currentState = useGameStore.getState();
+      currentState.addGems(gemReward);
+      currentState.addJams(jamReward);
+
+      currentState.recordQuiz({
         wordId: 0,
         monsterId: 0,
         quizType: 'spelling',
         isCorrect: true,
         attempts: 1,
-        hintsUsed: store.session.collectedHints.length,
+        hintsUsed: currentState.session.collectedHints.length,
         timeSpentMs: 0,
       });
 
+      setSessionGems(prev => prev + gemReward);
+      setSessionJams(prev => prev + jamReward);
+
+      const updatedState = useGameStore.getState();
       EventBridge.emit(EVENTS.TREASURE_OPENED, { success: true });
       EventBridge.emit('hud:update', {
-        gems: store.user.totalGems + gemReward,
-        jams: store.user.totalJams + jamReward,
+        gems: updatedState.user.totalGems,
+        jams: updatedState.user.totalJams,
       });
       setOverlay('none');
     }
-  }, [store]);
+  }, []);
 
   const handleBackToMap = useCallback(() => {
-    store.clearSession();
+    useGameStore.getState().clearSession();
     navigate('/map');
-  }, [store, navigate]);
+  }, [navigate]);
 
   const handleNextStage = useCallback(() => {
-    store.clearSession();
+    useGameStore.getState().clearSession();
     const allStages = stagesData as Stage[];
     const currentStage = allStages.find(s => s.id === stageIdNum);
     if (currentStage) {
@@ -221,7 +235,7 @@ export const PhaserGame: React.FC = () => {
       }
     }
     navigate('/map');
-  }, [store, stageIdNum, unitId, navigate]);
+  }, [stageIdNum, unitId, navigate]);
 
   return (
     <div className="game-wrapper">
@@ -275,8 +289,8 @@ export const PhaserGame: React.FC = () => {
       {overlay === 'stage-complete' && (
         <StageCompleteOverlay
           score={stageScore}
-          gems={store.user.totalGems}
-          jams={store.user.totalJams}
+          gems={sessionGems}
+          jams={sessionJams}
           onBackToMap={handleBackToMap}
           onNextStage={handleNextStage}
         />
