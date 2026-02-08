@@ -105,7 +105,7 @@ const ForgeScreen: React.FC = () => {
   }).filter(c => c.def);
 
   return (
-    <div style={{ width: '100%', maxWidth: 420, padding: 24 }}>
+    <div style={{ width: '100%', maxWidth: 420, padding: 24, height: '100vh', overflowY: 'auto' }}>
       <div style={{ display: 'flex', alignItems: 'center', marginBottom: 24 }}>
         <button onClick={() => navigate('/')} style={{ padding: '8px 16px', borderRadius: 8, background: '#333', color: '#fff', fontSize: 14, border: 'none', cursor: 'pointer', marginRight: 16 }}>← 뒤로</button>
         <h2 style={{ color: '#D69E2E', margin: 0 }}>⚒️ 대장간</h2>

@@ -50,4 +50,19 @@ export const BALANCE = {
     ENHANCED_REPAIR_COST: 10,
     STARTER_BUNDLE_COST: 12,
   },
+
+  // Shop weapon prices (weaponId -> cost in gems)
+  SHOP_WEAPONS: {
+    2:  { costGems: 8,  costJams: 0 },   // 오크 방패검 (common, knight)
+    3:  { costGems: 8,  costJams: 0 },   // 사냥꾼의 활 (common, archer)
+    4:  { costGems: 15, costJams: 5 },   // 바이킹 도끼 (uncommon, viking)
+    5:  { costGems: 15, costJams: 10 },  // 마법사의 지팡이 (uncommon)
+    6:  { costGems: 18, costJams: 8 },   // 전투 망치 (uncommon, viking)
+    7:  { costGems: 30, costJams: 15 },  // 얼음 검 (rare, knight)
+    8:  { costGems: 30, costJams: 20 },  // 불꽃 활 (rare, archer)
+    9:  { costGems: 40, costJams: 25 },  // 번개 도끼 (rare, viking)
+    10: { costGems: 60, costJams: 35 },  // 크리스탈 지팡이 (epic)
+    11: { costGems: 80, costJams: 50 },  // 엑스칼리버 (epic, knight)
+    12: { costGems: 120, costJams: 80 }, // 드래곤 활 (legendary, archer)
+  } as Record<number, { costGems: number; costJams: number }>,
 };
