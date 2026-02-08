@@ -1,44 +1,5588 @@
 [
-  { "id": 1, "unitId": 1, "word": "cat", "difficulty": 1 },
-  { "id": 2, "unitId": 1, "word": "bed", "difficulty": 1 },
-  { "id": 3, "unitId": 1, "word": "pig", "difficulty": 1 },
-  { "id": 4, "unitId": 1, "word": "dog", "difficulty": 1 },
-  { "id": 5, "unitId": 1, "word": "cup", "difficulty": 1 },
-  { "id": 6, "unitId": 1, "word": "bat", "difficulty": 1 },
-  { "id": 7, "unitId": 1, "word": "red", "difficulty": 1 },
-  { "id": 8, "unitId": 1, "word": "sit", "difficulty": 1 },
-  { "id": 9, "unitId": 1, "word": "hot", "difficulty": 1 },
-  { "id": 10, "unitId": 1, "word": "bug", "difficulty": 1 },
-  { "id": 11, "unitId": 1, "word": "map", "difficulty": 2 },
-  { "id": 12, "unitId": 1, "word": "net", "difficulty": 2 },
-  { "id": 13, "unitId": 2, "word": "fan", "difficulty": 1 },
-  { "id": 14, "unitId": 2, "word": "hat", "difficulty": 1 },
-  { "id": 15, "unitId": 2, "word": "jam", "difficulty": 1 },
-  { "id": 16, "unitId": 2, "word": "fig", "difficulty": 1 },
-  { "id": 17, "unitId": 2, "word": "gem", "difficulty": 1 },
-  { "id": 18, "unitId": 2, "word": "hop", "difficulty": 1 },
-  { "id": 19, "unitId": 2, "word": "jog", "difficulty": 2 },
-  { "id": 20, "unitId": 3, "word": "kit", "difficulty": 1 },
-  { "id": 21, "unitId": 3, "word": "leg", "difficulty": 1 },
-  { "id": 22, "unitId": 3, "word": "man", "difficulty": 1 },
-  { "id": 23, "unitId": 3, "word": "nap", "difficulty": 1 },
-  { "id": 24, "unitId": 3, "word": "mop", "difficulty": 1 },
-  { "id": 25, "unitId": 3, "word": "log", "difficulty": 1 },
-  { "id": 26, "unitId": 3, "word": "nut", "difficulty": 2 },
-  { "id": 27, "unitId": 4, "word": "pen", "difficulty": 1 },
-  { "id": 28, "unitId": 4, "word": "sun", "difficulty": 1 },
-  { "id": 29, "unitId": 4, "word": "top", "difficulty": 1 },
-  { "id": 30, "unitId": 4, "word": "run", "difficulty": 1 },
-  { "id": 31, "unitId": 4, "word": "rat", "difficulty": 1 },
-  { "id": 32, "unitId": 4, "word": "pin", "difficulty": 1 },
-  { "id": 33, "unitId": 4, "word": "sub", "difficulty": 2 },
-  { "id": 34, "unitId": 5, "word": "van", "difficulty": 1 },
-  { "id": 35, "unitId": 5, "word": "wax", "difficulty": 1 },
-  { "id": 36, "unitId": 5, "word": "yam", "difficulty": 1 },
-  { "id": 37, "unitId": 5, "word": "zip", "difficulty": 1 },
-  { "id": 38, "unitId": 5, "word": "fox", "difficulty": 1 },
-  { "id": 39, "unitId": 5, "word": "box", "difficulty": 1 },
-  { "id": 40, "unitId": 5, "word": "win", "difficulty": 2 },
-  { "id": 41, "unitId": 5, "word": "vet", "difficulty": 2 },
-  { "id": 42, "unitId": 5, "word": "web", "difficulty": 2 }
+  {
+    "id": 1,
+    "unitId": 1,
+    "word": "bad",
+    "meaning": "나쁜",
+    "difficulty": 1
+  },
+  {
+    "id": 2,
+    "unitId": 1,
+    "word": "bat",
+    "meaning": "배트",
+    "difficulty": 1
+  },
+  {
+    "id": 3,
+    "unitId": 1,
+    "word": "cap",
+    "meaning": "모자",
+    "difficulty": 1
+  },
+  {
+    "id": 4,
+    "unitId": 1,
+    "word": "car",
+    "meaning": "자동차",
+    "difficulty": 1
+  },
+  {
+    "id": 5,
+    "unitId": 1,
+    "word": "cat",
+    "meaning": "고양이",
+    "difficulty": 1
+  },
+  {
+    "id": 6,
+    "unitId": 1,
+    "word": "dad",
+    "meaning": "아빠",
+    "difficulty": 1
+  },
+  {
+    "id": 7,
+    "unitId": 1,
+    "word": "day",
+    "meaning": "낮",
+    "difficulty": 1
+  },
+  {
+    "id": 8,
+    "unitId": 1,
+    "word": "fan",
+    "meaning": "(영화 등의)팬",
+    "difficulty": 1
+  },
+  {
+    "id": 9,
+    "unitId": 1,
+    "word": "far",
+    "meaning": "멀리",
+    "difficulty": 1
+  },
+  {
+    "id": 10,
+    "unitId": 1,
+    "word": "fat",
+    "meaning": "살찐",
+    "difficulty": 1
+  },
+  {
+    "id": 11,
+    "unitId": 1,
+    "word": "hat",
+    "meaning": "(테있는)모자 모자를 씌우다",
+    "difficulty": 1
+  },
+  {
+    "id": 12,
+    "unitId": 1,
+    "word": "mad",
+    "meaning": "미친",
+    "difficulty": 1
+  },
+  {
+    "id": 13,
+    "unitId": 1,
+    "word": "man",
+    "meaning": "남자",
+    "difficulty": 1
+  },
+  {
+    "id": 14,
+    "unitId": 1,
+    "word": "map",
+    "meaning": "지도",
+    "difficulty": 1
+  },
+  {
+    "id": 15,
+    "unitId": 1,
+    "word": "pay",
+    "meaning": "지불하다",
+    "difficulty": 1
+  },
+  {
+    "id": 16,
+    "unitId": 1,
+    "word": "sad",
+    "meaning": "슬픈",
+    "difficulty": 1
+  },
+  {
+    "id": 17,
+    "unitId": 1,
+    "word": "say",
+    "meaning": "말하다",
+    "difficulty": 1
+  },
+  {
+    "id": 18,
+    "unitId": 1,
+    "word": "war",
+    "meaning": "전쟁",
+    "difficulty": 1
+  },
+  {
+    "id": 19,
+    "unitId": 1,
+    "word": "way",
+    "meaning": "길",
+    "difficulty": 1
+  },
+  {
+    "id": 20,
+    "unitId": 2,
+    "word": "bed",
+    "meaning": "침대",
+    "difficulty": 1
+  },
+  {
+    "id": 21,
+    "unitId": 2,
+    "word": "get",
+    "meaning": "얻다",
+    "difficulty": 1
+  },
+  {
+    "id": 22,
+    "unitId": 2,
+    "word": "key",
+    "meaning": "열쇠",
+    "difficulty": 1
+  },
+  {
+    "id": 23,
+    "unitId": 2,
+    "word": "leg",
+    "meaning": "다리",
+    "difficulty": 1
+  },
+  {
+    "id": 24,
+    "unitId": 2,
+    "word": "new",
+    "meaning": "새로운",
+    "difficulty": 1
+  },
+  {
+    "id": 25,
+    "unitId": 2,
+    "word": "red",
+    "meaning": "붉은",
+    "difficulty": 1
+  },
+  {
+    "id": 26,
+    "unitId": 2,
+    "word": "wet",
+    "meaning": "축축한",
+    "difficulty": 1
+  },
+  {
+    "id": 27,
+    "unitId": 3,
+    "word": "big",
+    "meaning": "큰",
+    "difficulty": 1
+  },
+  {
+    "id": 28,
+    "unitId": 3,
+    "word": "fix",
+    "meaning": "고정시키다",
+    "difficulty": 1
+  },
+  {
+    "id": 29,
+    "unitId": 3,
+    "word": "hit",
+    "meaning": "명중하다",
+    "difficulty": 1
+  },
+  {
+    "id": 30,
+    "unitId": 3,
+    "word": "kid",
+    "meaning": "아이",
+    "difficulty": 1
+  },
+  {
+    "id": 31,
+    "unitId": 3,
+    "word": "lip",
+    "meaning": "입술",
+    "difficulty": 1
+  },
+  {
+    "id": 32,
+    "unitId": 3,
+    "word": "pig",
+    "meaning": "돼지",
+    "difficulty": 1
+  },
+  {
+    "id": 33,
+    "unitId": 3,
+    "word": "sit",
+    "meaning": "앉다",
+    "difficulty": 1
+  },
+  {
+    "id": 34,
+    "unitId": 3,
+    "word": "win",
+    "meaning": "이기다",
+    "difficulty": 1
+  },
+  {
+    "id": 35,
+    "unitId": 4,
+    "word": "boy",
+    "meaning": "소년",
+    "difficulty": 1
+  },
+  {
+    "id": 36,
+    "unitId": 4,
+    "word": "cow",
+    "meaning": "위협하다 암소",
+    "difficulty": 1
+  },
+  {
+    "id": 37,
+    "unitId": 4,
+    "word": "dog",
+    "meaning": "개",
+    "difficulty": 1
+  },
+  {
+    "id": 38,
+    "unitId": 4,
+    "word": "fog",
+    "meaning": "안개",
+    "difficulty": 1
+  },
+  {
+    "id": 39,
+    "unitId": 4,
+    "word": "for",
+    "meaning": "대신에",
+    "difficulty": 1
+  },
+  {
+    "id": 40,
+    "unitId": 4,
+    "word": "fox",
+    "meaning": "교활한 사람",
+    "difficulty": 1
+  },
+  {
+    "id": 41,
+    "unitId": 4,
+    "word": "god",
+    "meaning": "신",
+    "difficulty": 1
+  },
+  {
+    "id": 42,
+    "unitId": 4,
+    "word": "hot",
+    "meaning": "뜨거운",
+    "difficulty": 1
+  },
+  {
+    "id": 43,
+    "unitId": 4,
+    "word": "job",
+    "meaning": "일",
+    "difficulty": 1
+  },
+  {
+    "id": 44,
+    "unitId": 4,
+    "word": "joy",
+    "meaning": "즐거움",
+    "difficulty": 1
+  },
+  {
+    "id": 45,
+    "unitId": 4,
+    "word": "low",
+    "meaning": "낮은",
+    "difficulty": 1
+  },
+  {
+    "id": 46,
+    "unitId": 4,
+    "word": "son",
+    "meaning": "아들",
+    "difficulty": 1
+  },
+  {
+    "id": 47,
+    "unitId": 4,
+    "word": "top",
+    "meaning": "정상",
+    "difficulty": 1
+  },
+  {
+    "id": 48,
+    "unitId": 4,
+    "word": "toy",
+    "meaning": "장난감 장난하다",
+    "difficulty": 1
+  },
+  {
+    "id": 49,
+    "unitId": 5,
+    "word": "bug",
+    "meaning": "벌레",
+    "difficulty": 1
+  },
+  {
+    "id": 50,
+    "unitId": 5,
+    "word": "buy",
+    "meaning": "사다",
+    "difficulty": 1
+  },
+  {
+    "id": 51,
+    "unitId": 5,
+    "word": "cut",
+    "meaning": "베다",
+    "difficulty": 1
+  },
+  {
+    "id": 52,
+    "unitId": 5,
+    "word": "fun",
+    "meaning": "즐거운 생각",
+    "difficulty": 1
+  },
+  {
+    "id": 53,
+    "unitId": 5,
+    "word": "guy",
+    "meaning": "녀석",
+    "difficulty": 1
+  },
+  {
+    "id": 54,
+    "unitId": 5,
+    "word": "put",
+    "meaning": "놓다, 두다",
+    "difficulty": 1
+  },
+  {
+    "id": 55,
+    "unitId": 5,
+    "word": "run",
+    "meaning": "달리다",
+    "difficulty": 1
+  },
+  {
+    "id": 56,
+    "unitId": 5,
+    "word": "sun",
+    "meaning": "태양",
+    "difficulty": 1
+  },
+  {
+    "id": 57,
+    "unitId": 6,
+    "word": "cry",
+    "meaning": "소리치다",
+    "difficulty": 1
+  },
+  {
+    "id": 58,
+    "unitId": 6,
+    "word": "dry",
+    "meaning": "마른",
+    "difficulty": 1
+  },
+  {
+    "id": 59,
+    "unitId": 6,
+    "word": "fly",
+    "meaning": "날다",
+    "difficulty": 1
+  },
+  {
+    "id": 60,
+    "unitId": 6,
+    "word": "fry",
+    "meaning": "기름으로 튀기다",
+    "difficulty": 1
+  },
+  {
+    "id": 61,
+    "unitId": 6,
+    "word": "sky",
+    "meaning": "하늘",
+    "difficulty": 1
+  },
+  {
+    "id": 62,
+    "unitId": 6,
+    "word": "try",
+    "meaning": "시험해보다",
+    "difficulty": 1
+  },
+  {
+    "id": 63,
+    "unitId": 6,
+    "word": "blue",
+    "meaning": "푸른",
+    "difficulty": 2
+  },
+  {
+    "id": 64,
+    "unitId": 6,
+    "word": "clip",
+    "meaning": "가위로 자르다",
+    "difficulty": 2
+  },
+  {
+    "id": 65,
+    "unitId": 6,
+    "word": "club",
+    "meaning": "클럽",
+    "difficulty": 2
+  },
+  {
+    "id": 66,
+    "unitId": 6,
+    "word": "drop",
+    "meaning": "방울",
+    "difficulty": 2
+  },
+  {
+    "id": 67,
+    "unitId": 6,
+    "word": "flag",
+    "meaning": "기",
+    "difficulty": 2
+  },
+  {
+    "id": 68,
+    "unitId": 6,
+    "word": "frog",
+    "meaning": "개구리",
+    "difficulty": 2
+  },
+  {
+    "id": 69,
+    "unitId": 6,
+    "word": "glad",
+    "meaning": "기쁜",
+    "difficulty": 2
+  },
+  {
+    "id": 70,
+    "unitId": 6,
+    "word": "glue",
+    "meaning": "아교",
+    "difficulty": 2
+  },
+  {
+    "id": 71,
+    "unitId": 6,
+    "word": "grey",
+    "meaning": "회색의",
+    "difficulty": 2
+  },
+  {
+    "id": 72,
+    "unitId": 6,
+    "word": "plan",
+    "meaning": "계획",
+    "difficulty": 2
+  },
+  {
+    "id": 73,
+    "unitId": 6,
+    "word": "skin",
+    "meaning": "피부",
+    "difficulty": 2
+  },
+  {
+    "id": 74,
+    "unitId": 6,
+    "word": "stop",
+    "meaning": "멈추다",
+    "difficulty": 2
+  },
+  {
+    "id": 75,
+    "unitId": 6,
+    "word": "swim",
+    "meaning": "헤엄치다",
+    "difficulty": 2
+  },
+  {
+    "id": 76,
+    "unitId": 6,
+    "word": "trip",
+    "meaning": "여행",
+    "difficulty": 2
+  },
+  {
+    "id": 77,
+    "unitId": 6,
+    "word": "true",
+    "meaning": "진실",
+    "difficulty": 2
+  },
+  {
+    "id": 78,
+    "unitId": 6,
+    "word": "black",
+    "meaning": "검은",
+    "difficulty": 3
+  },
+  {
+    "id": 79,
+    "unitId": 6,
+    "word": "block",
+    "meaning": "덩어리",
+    "difficulty": 3
+  },
+  {
+    "id": 80,
+    "unitId": 6,
+    "word": "brand",
+    "meaning": "상표",
+    "difficulty": 3
+  },
+  {
+    "id": 81,
+    "unitId": 6,
+    "word": "bring",
+    "meaning": "가져오다",
+    "difficulty": 3
+  },
+  {
+    "id": 82,
+    "unitId": 6,
+    "word": "build",
+    "meaning": "짓다",
+    "difficulty": 3
+  },
+  {
+    "id": 83,
+    "unitId": 6,
+    "word": "class",
+    "meaning": "계급",
+    "difficulty": 3
+  },
+  {
+    "id": 84,
+    "unitId": 6,
+    "word": "climb",
+    "meaning": "기어 오르다",
+    "difficulty": 3
+  },
+  {
+    "id": 85,
+    "unitId": 6,
+    "word": "clock",
+    "meaning": "시계",
+    "difficulty": 3
+  },
+  {
+    "id": 86,
+    "unitId": 6,
+    "word": "cross",
+    "meaning": "십자형",
+    "difficulty": 3
+  },
+  {
+    "id": 87,
+    "unitId": 6,
+    "word": "cycle",
+    "meaning": "순환",
+    "difficulty": 3
+  },
+  {
+    "id": 88,
+    "unitId": 6,
+    "word": "drink",
+    "meaning": "마시다",
+    "difficulty": 3
+  },
+  {
+    "id": 89,
+    "unitId": 6,
+    "word": "field",
+    "meaning": "들",
+    "difficulty": 3
+  },
+  {
+    "id": 90,
+    "unitId": 6,
+    "word": "fight",
+    "meaning": "싸움",
+    "difficulty": 3
+  },
+  {
+    "id": 91,
+    "unitId": 6,
+    "word": "front",
+    "meaning": "정면",
+    "difficulty": 3
+  },
+  {
+    "id": 92,
+    "unitId": 6,
+    "word": "fruit",
+    "meaning": "과일",
+    "difficulty": 3
+  },
+  {
+    "id": 93,
+    "unitId": 6,
+    "word": "glass",
+    "meaning": "유리",
+    "difficulty": 3
+  },
+  {
+    "id": 94,
+    "unitId": 6,
+    "word": "grass",
+    "meaning": "풀밭",
+    "difficulty": 3
+  },
+  {
+    "id": 95,
+    "unitId": 6,
+    "word": "guess",
+    "meaning": "추측(짐작)하다",
+    "difficulty": 3
+  },
+  {
+    "id": 96,
+    "unitId": 6,
+    "word": "light",
+    "meaning": "빛",
+    "difficulty": 3
+  },
+  {
+    "id": 97,
+    "unitId": 6,
+    "word": "movie",
+    "meaning": "영화",
+    "difficulty": 3
+  },
+  {
+    "id": 98,
+    "unitId": 6,
+    "word": "night",
+    "meaning": "밤",
+    "difficulty": 3
+  },
+  {
+    "id": 99,
+    "unitId": 6,
+    "word": "pants",
+    "meaning": "바지",
+    "difficulty": 3
+  },
+  {
+    "id": 100,
+    "unitId": 6,
+    "word": "print",
+    "meaning": "인쇄하다, 프린트하다",
+    "difficulty": 3
+  },
+  {
+    "id": 101,
+    "unitId": 6,
+    "word": "quiet",
+    "meaning": "조용한",
+    "difficulty": 3
+  },
+  {
+    "id": 102,
+    "unitId": 6,
+    "word": "right",
+    "meaning": "올바른",
+    "difficulty": 3
+  },
+  {
+    "id": 103,
+    "unitId": 6,
+    "word": "small",
+    "meaning": "작은 작은 부분 적게",
+    "difficulty": 3
+  },
+  {
+    "id": 104,
+    "unitId": 6,
+    "word": "smell",
+    "meaning": "냄새",
+    "difficulty": 3
+  },
+  {
+    "id": 105,
+    "unitId": 6,
+    "word": "stand",
+    "meaning": "서다",
+    "difficulty": 3
+  },
+  {
+    "id": 106,
+    "unitId": 6,
+    "word": "bright",
+    "meaning": "밝은",
+    "difficulty": 4
+  },
+  {
+    "id": 107,
+    "unitId": 6,
+    "word": "friend",
+    "meaning": "친구",
+    "difficulty": 4
+  },
+  {
+    "id": 108,
+    "unitId": 6,
+    "word": "stress",
+    "meaning": "압박",
+    "difficulty": 4
+  },
+  {
+    "id": 109,
+    "unitId": 6,
+    "word": "strong",
+    "meaning": "강한",
+    "difficulty": 4
+  },
+  {
+    "id": 110,
+    "unitId": 6,
+    "word": "weight",
+    "meaning": "무게",
+    "difficulty": 4
+  },
+  {
+    "id": 111,
+    "unitId": 7,
+    "word": "act",
+    "meaning": "vi행동하다",
+    "difficulty": 1
+  },
+  {
+    "id": 112,
+    "unitId": 7,
+    "word": "add",
+    "meaning": "추가하다",
+    "difficulty": 1
+  },
+  {
+    "id": 113,
+    "unitId": 7,
+    "word": "age",
+    "meaning": "연령",
+    "difficulty": 1
+  },
+  {
+    "id": 114,
+    "unitId": 7,
+    "word": "ant",
+    "meaning": "개미",
+    "difficulty": 1
+  },
+  {
+    "id": 115,
+    "unitId": 7,
+    "word": "ask",
+    "meaning": "묻다",
+    "difficulty": 1
+  },
+  {
+    "id": 116,
+    "unitId": 7,
+    "word": "die",
+    "meaning": "죽다",
+    "difficulty": 1
+  },
+  {
+    "id": 117,
+    "unitId": 7,
+    "word": "egg",
+    "meaning": "알",
+    "difficulty": 1
+  },
+  {
+    "id": 118,
+    "unitId": 7,
+    "word": "end",
+    "meaning": "끝",
+    "difficulty": 1
+  },
+  {
+    "id": 119,
+    "unitId": 7,
+    "word": "eye",
+    "meaning": "눈",
+    "difficulty": 1
+  },
+  {
+    "id": 120,
+    "unitId": 7,
+    "word": "go",
+    "meaning": "가다",
+    "difficulty": 1
+  },
+  {
+    "id": 121,
+    "unitId": 7,
+    "word": "ice",
+    "meaning": "얼음",
+    "difficulty": 1
+  },
+  {
+    "id": 122,
+    "unitId": 7,
+    "word": "lie",
+    "meaning": "눕다",
+    "difficulty": 1
+  },
+  {
+    "id": 123,
+    "unitId": 7,
+    "word": "old",
+    "meaning": "늙은",
+    "difficulty": 1
+  },
+  {
+    "id": 124,
+    "unitId": 7,
+    "word": "use",
+    "meaning": "쓰다",
+    "difficulty": 1
+  },
+  {
+    "id": 125,
+    "unitId": 7,
+    "word": "aunt",
+    "meaning": "아주머니",
+    "difficulty": 2
+  },
+  {
+    "id": 126,
+    "unitId": 7,
+    "word": "back",
+    "meaning": "등",
+    "difficulty": 2
+  },
+  {
+    "id": 127,
+    "unitId": 7,
+    "word": "ball",
+    "meaning": "공",
+    "difficulty": 2
+  },
+  {
+    "id": 128,
+    "unitId": 7,
+    "word": "band",
+    "meaning": "그룹",
+    "difficulty": 2
+  },
+  {
+    "id": 129,
+    "unitId": 7,
+    "word": "bank",
+    "meaning": "둑",
+    "difficulty": 2
+  },
+  {
+    "id": 130,
+    "unitId": 7,
+    "word": "bell",
+    "meaning": "종",
+    "difficulty": 2
+  },
+  {
+    "id": 131,
+    "unitId": 7,
+    "word": "bill",
+    "meaning": "계산서",
+    "difficulty": 2
+  },
+  {
+    "id": 132,
+    "unitId": 7,
+    "word": "bomb",
+    "meaning": "폭탄 폭격하다",
+    "difficulty": 2
+  },
+  {
+    "id": 133,
+    "unitId": 7,
+    "word": "boss",
+    "meaning": "두목",
+    "difficulty": 2
+  },
+  {
+    "id": 134,
+    "unitId": 7,
+    "word": "call",
+    "meaning": "부르다",
+    "difficulty": 2
+  },
+  {
+    "id": 135,
+    "unitId": 7,
+    "word": "calm",
+    "meaning": "평온한",
+    "difficulty": 2
+  },
+  {
+    "id": 136,
+    "unitId": 7,
+    "word": "cold",
+    "meaning": "추운",
+    "difficulty": 2
+  },
+  {
+    "id": 137,
+    "unitId": 7,
+    "word": "cost",
+    "meaning": "가격",
+    "difficulty": 2
+  },
+  {
+    "id": 138,
+    "unitId": 7,
+    "word": "desk",
+    "meaning": "책상",
+    "difficulty": 2
+  },
+  {
+    "id": 139,
+    "unitId": 7,
+    "word": "doll",
+    "meaning": "인형",
+    "difficulty": 2
+  },
+  {
+    "id": 140,
+    "unitId": 7,
+    "word": "duck",
+    "meaning": "머리를 물 속에 쑥 쳐박다",
+    "difficulty": 2
+  },
+  {
+    "id": 141,
+    "unitId": 7,
+    "word": "fact",
+    "meaning": "사실",
+    "difficulty": 2
+  },
+  {
+    "id": 142,
+    "unitId": 7,
+    "word": "fall",
+    "meaning": "떨어지다",
+    "difficulty": 2
+  },
+  {
+    "id": 143,
+    "unitId": 7,
+    "word": "fast",
+    "meaning": "빠른",
+    "difficulty": 2
+  },
+  {
+    "id": 144,
+    "unitId": 7,
+    "word": "fill",
+    "meaning": "가득 채우다",
+    "difficulty": 2
+  },
+  {
+    "id": 145,
+    "unitId": 7,
+    "word": "find",
+    "meaning": "발견하다",
+    "difficulty": 2
+  },
+  {
+    "id": 146,
+    "unitId": 7,
+    "word": "full",
+    "meaning": "가득찬",
+    "difficulty": 2
+  },
+  {
+    "id": 147,
+    "unitId": 7,
+    "word": "gift",
+    "meaning": "선물",
+    "difficulty": 2
+  },
+  {
+    "id": 148,
+    "unitId": 7,
+    "word": "gold",
+    "meaning": "금",
+    "difficulty": 2
+  },
+  {
+    "id": 149,
+    "unitId": 7,
+    "word": "hand",
+    "meaning": "손",
+    "difficulty": 2
+  },
+  {
+    "id": 150,
+    "unitId": 7,
+    "word": "hang",
+    "meaning": "걸다",
+    "difficulty": 2
+  },
+  {
+    "id": 151,
+    "unitId": 7,
+    "word": "help",
+    "meaning": "돕다",
+    "difficulty": 2
+  },
+  {
+    "id": 152,
+    "unitId": 7,
+    "word": "high",
+    "meaning": "높은",
+    "difficulty": 2
+  },
+  {
+    "id": 153,
+    "unitId": 7,
+    "word": "hill",
+    "meaning": "언덕, 낮은 산 인도 고지",
+    "difficulty": 2
+  },
+  {
+    "id": 154,
+    "unitId": 7,
+    "word": "hold",
+    "meaning": "손에 갖고 있다",
+    "difficulty": 2
+  },
+  {
+    "id": 155,
+    "unitId": 7,
+    "word": "hunt",
+    "meaning": "사냥하다",
+    "difficulty": 2
+  },
+  {
+    "id": 156,
+    "unitId": 7,
+    "word": "kick",
+    "meaning": "걷어차다",
+    "difficulty": 2
+  },
+  {
+    "id": 157,
+    "unitId": 7,
+    "word": "kill",
+    "meaning": "죽이다",
+    "difficulty": 2
+  },
+  {
+    "id": 158,
+    "unitId": 7,
+    "word": "kind",
+    "meaning": "친절한",
+    "difficulty": 2
+  },
+  {
+    "id": 159,
+    "unitId": 7,
+    "word": "king",
+    "meaning": "왕",
+    "difficulty": 2
+  },
+  {
+    "id": 160,
+    "unitId": 7,
+    "word": "land",
+    "meaning": "뭍",
+    "difficulty": 2
+  },
+  {
+    "id": 161,
+    "unitId": 7,
+    "word": "last",
+    "meaning": "계속하다",
+    "difficulty": 2
+  },
+  {
+    "id": 162,
+    "unitId": 7,
+    "word": "left",
+    "meaning": "왼쪽의",
+    "difficulty": 2
+  },
+  {
+    "id": 163,
+    "unitId": 7,
+    "word": "lion",
+    "meaning": "사자",
+    "difficulty": 2
+  },
+  {
+    "id": 164,
+    "unitId": 7,
+    "word": "long",
+    "meaning": "(길이,시간 등)긴",
+    "difficulty": 2
+  },
+  {
+    "id": 165,
+    "unitId": 7,
+    "word": "luck",
+    "meaning": "운",
+    "difficulty": 2
+  },
+  {
+    "id": 166,
+    "unitId": 7,
+    "word": "milk",
+    "meaning": "젖",
+    "difficulty": 2
+  },
+  {
+    "id": 167,
+    "unitId": 7,
+    "word": "mind",
+    "meaning": "마음",
+    "difficulty": 2
+  },
+  {
+    "id": 168,
+    "unitId": 7,
+    "word": "miss",
+    "meaning": "미혼 여성 실수하다",
+    "difficulty": 2
+  },
+  {
+    "id": 169,
+    "unitId": 7,
+    "word": "neck",
+    "meaning": "목",
+    "difficulty": 2
+  },
+  {
+    "id": 170,
+    "unitId": 7,
+    "word": "next",
+    "meaning": "다음의",
+    "difficulty": 2
+  },
+  {
+    "id": 171,
+    "unitId": 7,
+    "word": "pass",
+    "meaning": "지나가다",
+    "difficulty": 2
+  },
+  {
+    "id": 172,
+    "unitId": 7,
+    "word": "pick",
+    "meaning": "따다",
+    "difficulty": 2
+  },
+  {
+    "id": 173,
+    "unitId": 7,
+    "word": "pink",
+    "meaning": "연분홍색",
+    "difficulty": 2
+  },
+  {
+    "id": 174,
+    "unitId": 7,
+    "word": "ring",
+    "meaning": "고리",
+    "difficulty": 2
+  },
+  {
+    "id": 175,
+    "unitId": 7,
+    "word": "rock",
+    "meaning": "바위",
+    "difficulty": 2
+  },
+  {
+    "id": 176,
+    "unitId": 7,
+    "word": "salt",
+    "meaning": "소금",
+    "difficulty": 2
+  },
+  {
+    "id": 177,
+    "unitId": 7,
+    "word": "sand",
+    "meaning": "모래사장",
+    "difficulty": 2
+  },
+  {
+    "id": 178,
+    "unitId": 7,
+    "word": "sell",
+    "meaning": "팔다",
+    "difficulty": 2
+  },
+  {
+    "id": 179,
+    "unitId": 7,
+    "word": "send",
+    "meaning": "보내다",
+    "difficulty": 2
+  },
+  {
+    "id": 180,
+    "unitId": 7,
+    "word": "sick",
+    "meaning": "병난",
+    "difficulty": 2
+  },
+  {
+    "id": 181,
+    "unitId": 7,
+    "word": "sing",
+    "meaning": "노래하다",
+    "difficulty": 2
+  },
+  {
+    "id": 182,
+    "unitId": 7,
+    "word": "sock",
+    "meaning": "짧은 양말",
+    "difficulty": 2
+  },
+  {
+    "id": 183,
+    "unitId": 7,
+    "word": "soft",
+    "meaning": "부드러운",
+    "difficulty": 2
+  },
+  {
+    "id": 184,
+    "unitId": 7,
+    "word": "song",
+    "meaning": "노래",
+    "difficulty": 2
+  },
+  {
+    "id": 185,
+    "unitId": 7,
+    "word": "talk",
+    "meaning": "말하다",
+    "difficulty": 2
+  },
+  {
+    "id": 186,
+    "unitId": 7,
+    "word": "tall",
+    "meaning": "키큰",
+    "difficulty": 2
+  },
+  {
+    "id": 187,
+    "unitId": 7,
+    "word": "tell",
+    "meaning": "말하다",
+    "difficulty": 2
+  },
+  {
+    "id": 188,
+    "unitId": 7,
+    "word": "test",
+    "meaning": "시험",
+    "difficulty": 2
+  },
+  {
+    "id": 189,
+    "unitId": 7,
+    "word": "type",
+    "meaning": "형",
+    "difficulty": 2
+  },
+  {
+    "id": 190,
+    "unitId": 7,
+    "word": "walk",
+    "meaning": "걷다",
+    "difficulty": 2
+  },
+  {
+    "id": 191,
+    "unitId": 7,
+    "word": "wall",
+    "meaning": "벽",
+    "difficulty": 2
+  },
+  {
+    "id": 192,
+    "unitId": 7,
+    "word": "want",
+    "meaning": "결핍",
+    "difficulty": 2
+  },
+  {
+    "id": 193,
+    "unitId": 7,
+    "word": "well",
+    "meaning": "잘",
+    "difficulty": 2
+  },
+  {
+    "id": 194,
+    "unitId": 7,
+    "word": "west",
+    "meaning": "서쪽",
+    "difficulty": 2
+  },
+  {
+    "id": 195,
+    "unitId": 7,
+    "word": "will",
+    "meaning": "의지",
+    "difficulty": 2
+  },
+  {
+    "id": 196,
+    "unitId": 7,
+    "word": "wind",
+    "meaning": "바람",
+    "difficulty": 2
+  },
+  {
+    "id": 197,
+    "unitId": 7,
+    "word": "ghost",
+    "meaning": "유령",
+    "difficulty": 3
+  },
+  {
+    "id": 198,
+    "unitId": 7,
+    "word": "giant",
+    "meaning": "거인",
+    "difficulty": 3
+  },
+  {
+    "id": 199,
+    "unitId": 7,
+    "word": "quick",
+    "meaning": "빠른",
+    "difficulty": 3
+  },
+  {
+    "id": 200,
+    "unitId": 7,
+    "word": "wrong",
+    "meaning": "나쁜",
+    "difficulty": 3
+  },
+  {
+    "id": 201,
+    "unitId": 8,
+    "word": "shy",
+    "meaning": "수줍은",
+    "difficulty": 1
+  },
+  {
+    "id": 202,
+    "unitId": 8,
+    "word": "bath",
+    "meaning": "목욕",
+    "difficulty": 2
+  },
+  {
+    "id": 203,
+    "unitId": 8,
+    "word": "cash",
+    "meaning": "현금 현금으로 바꾸다 현금의",
+    "difficulty": 2
+  },
+  {
+    "id": 204,
+    "unitId": 8,
+    "word": "dish",
+    "meaning": "접시",
+    "difficulty": 2
+  },
+  {
+    "id": 205,
+    "unitId": 8,
+    "word": "fish",
+    "meaning": "물고기",
+    "difficulty": 2
+  },
+  {
+    "id": 206,
+    "unitId": 8,
+    "word": "push",
+    "meaning": "밀다, 밀치다, 밀어서 움직 이다, 밀어 내다",
+    "difficulty": 2
+  },
+  {
+    "id": 207,
+    "unitId": 8,
+    "word": "rich",
+    "meaning": "부자인",
+    "difficulty": 2
+  },
+  {
+    "id": 208,
+    "unitId": 8,
+    "word": "ship",
+    "meaning": "배",
+    "difficulty": 2
+  },
+  {
+    "id": 209,
+    "unitId": 8,
+    "word": "shoe",
+    "meaning": "구두",
+    "difficulty": 2
+  },
+  {
+    "id": 210,
+    "unitId": 8,
+    "word": "shop",
+    "meaning": "상점",
+    "difficulty": 2
+  },
+  {
+    "id": 211,
+    "unitId": 8,
+    "word": "show",
+    "meaning": "보이다",
+    "difficulty": 2
+  },
+  {
+    "id": 212,
+    "unitId": 8,
+    "word": "wash",
+    "meaning": "씻다",
+    "difficulty": 2
+  },
+  {
+    "id": 213,
+    "unitId": 8,
+    "word": "wish",
+    "meaning": "바라다",
+    "difficulty": 2
+  },
+  {
+    "id": 214,
+    "unitId": 8,
+    "word": "beach",
+    "meaning": "해안",
+    "difficulty": 3
+  },
+  {
+    "id": 215,
+    "unitId": 8,
+    "word": "birth",
+    "meaning": "출생",
+    "difficulty": 3
+  },
+  {
+    "id": 216,
+    "unitId": 8,
+    "word": "brush",
+    "meaning": "솔",
+    "difficulty": 3
+  },
+  {
+    "id": 217,
+    "unitId": 8,
+    "word": "catch",
+    "meaning": "붙잡다",
+    "difficulty": 3
+  },
+  {
+    "id": 218,
+    "unitId": 8,
+    "word": "chain",
+    "meaning": "사슬",
+    "difficulty": 3
+  },
+  {
+    "id": 219,
+    "unitId": 8,
+    "word": "chair",
+    "meaning": "의장",
+    "difficulty": 3
+  },
+  {
+    "id": 220,
+    "unitId": 8,
+    "word": "cheap",
+    "meaning": "값싼",
+    "difficulty": 3
+  },
+  {
+    "id": 221,
+    "unitId": 8,
+    "word": "check",
+    "meaning": "방해",
+    "difficulty": 3
+  },
+  {
+    "id": 222,
+    "unitId": 8,
+    "word": "child",
+    "meaning": "아이",
+    "difficulty": 3
+  },
+  {
+    "id": 223,
+    "unitId": 8,
+    "word": "cloth",
+    "meaning": "천",
+    "difficulty": 3
+  },
+  {
+    "id": 224,
+    "unitId": 8,
+    "word": "death",
+    "meaning": "죽음",
+    "difficulty": 3
+  },
+  {
+    "id": 225,
+    "unitId": 8,
+    "word": "earth",
+    "meaning": "지구",
+    "difficulty": 3
+  },
+  {
+    "id": 226,
+    "unitId": 8,
+    "word": "fresh",
+    "meaning": "새로운",
+    "difficulty": 3
+  },
+  {
+    "id": 227,
+    "unitId": 8,
+    "word": "lunch",
+    "meaning": "점심",
+    "difficulty": 3
+  },
+  {
+    "id": 228,
+    "unitId": 8,
+    "word": "month",
+    "meaning": "월",
+    "difficulty": 3
+  },
+  {
+    "id": 229,
+    "unitId": 8,
+    "word": "mouth",
+    "meaning": "입",
+    "difficulty": 3
+  },
+  {
+    "id": 230,
+    "unitId": 8,
+    "word": "north",
+    "meaning": "북, 북 쪽, 북부",
+    "difficulty": 3
+  },
+  {
+    "id": 231,
+    "unitId": 8,
+    "word": "shock",
+    "meaning": "격돌",
+    "difficulty": 3
+  },
+  {
+    "id": 232,
+    "unitId": 8,
+    "word": "short",
+    "meaning": "짧은",
+    "difficulty": 3
+  },
+  {
+    "id": 233,
+    "unitId": 8,
+    "word": "south",
+    "meaning": "남쪽 남쪽의 남으로",
+    "difficulty": 3
+  },
+  {
+    "id": 234,
+    "unitId": 8,
+    "word": "teach",
+    "meaning": "가르치다",
+    "difficulty": 3
+  },
+  {
+    "id": 235,
+    "unitId": 8,
+    "word": "thank",
+    "meaning": "감사하다 감사",
+    "difficulty": 3
+  },
+  {
+    "id": 236,
+    "unitId": 8,
+    "word": "thing",
+    "meaning": "물건",
+    "difficulty": 3
+  },
+  {
+    "id": 237,
+    "unitId": 8,
+    "word": "think",
+    "meaning": "생각하다",
+    "difficulty": 3
+  },
+  {
+    "id": 238,
+    "unitId": 8,
+    "word": "tooth",
+    "meaning": "이",
+    "difficulty": 3
+  },
+  {
+    "id": 239,
+    "unitId": 8,
+    "word": "touch",
+    "meaning": "닿다",
+    "difficulty": 3
+  },
+  {
+    "id": 240,
+    "unitId": 8,
+    "word": "watch",
+    "meaning": "손목시계",
+    "difficulty": 3
+  },
+  {
+    "id": 241,
+    "unitId": 8,
+    "word": "white",
+    "meaning": "흰",
+    "difficulty": 3
+  },
+  {
+    "id": 242,
+    "unitId": 8,
+    "word": "branch",
+    "meaning": "가지",
+    "difficulty": 4
+  },
+  {
+    "id": 243,
+    "unitId": 8,
+    "word": "chance",
+    "meaning": "우연",
+    "difficulty": 4
+  },
+  {
+    "id": 244,
+    "unitId": 8,
+    "word": "change",
+    "meaning": "변화",
+    "difficulty": 4
+  },
+  {
+    "id": 245,
+    "unitId": 8,
+    "word": "choose",
+    "meaning": "고르다",
+    "difficulty": 4
+  },
+  {
+    "id": 246,
+    "unitId": 8,
+    "word": "church",
+    "meaning": "교회",
+    "difficulty": 4
+  },
+  {
+    "id": 247,
+    "unitId": 8,
+    "word": "school",
+    "meaning": "학교",
+    "difficulty": 4
+  },
+  {
+    "id": 248,
+    "unitId": 8,
+    "word": "thirst",
+    "meaning": "갈증",
+    "difficulty": 4
+  },
+  {
+    "id": 249,
+    "unitId": 9,
+    "word": "bake",
+    "meaning": "굽다",
+    "difficulty": 2
+  },
+  {
+    "id": 250,
+    "unitId": 9,
+    "word": "base",
+    "meaning": "기초",
+    "difficulty": 2
+  },
+  {
+    "id": 251,
+    "unitId": 9,
+    "word": "bite",
+    "meaning": "물다",
+    "difficulty": 2
+  },
+  {
+    "id": 252,
+    "unitId": 9,
+    "word": "cage",
+    "meaning": "새장",
+    "difficulty": 2
+  },
+  {
+    "id": 253,
+    "unitId": 9,
+    "word": "care",
+    "meaning": "걱정",
+    "difficulty": 2
+  },
+  {
+    "id": 254,
+    "unitId": 9,
+    "word": "case",
+    "meaning": "경우",
+    "difficulty": 2
+  },
+  {
+    "id": 255,
+    "unitId": 9,
+    "word": "date",
+    "meaning": "날짜",
+    "difficulty": 2
+  },
+  {
+    "id": 256,
+    "unitId": 9,
+    "word": "face",
+    "meaning": "얼굴",
+    "difficulty": 2
+  },
+  {
+    "id": 257,
+    "unitId": 9,
+    "word": "file",
+    "meaning": "종이끼우개",
+    "difficulty": 2
+  },
+  {
+    "id": 258,
+    "unitId": 9,
+    "word": "fine",
+    "meaning": "훌륭한",
+    "difficulty": 2
+  },
+  {
+    "id": 259,
+    "unitId": 9,
+    "word": "fire",
+    "meaning": "불",
+    "difficulty": 2
+  },
+  {
+    "id": 260,
+    "unitId": 9,
+    "word": "gate",
+    "meaning": "문",
+    "difficulty": 2
+  },
+  {
+    "id": 261,
+    "unitId": 9,
+    "word": "give",
+    "meaning": "주다",
+    "difficulty": 2
+  },
+  {
+    "id": 262,
+    "unitId": 9,
+    "word": "hate",
+    "meaning": "미워하다",
+    "difficulty": 2
+  },
+  {
+    "id": 263,
+    "unitId": 9,
+    "word": "lake",
+    "meaning": "호수",
+    "difficulty": 2
+  },
+  {
+    "id": 264,
+    "unitId": 9,
+    "word": "late",
+    "meaning": "늦은",
+    "difficulty": 2
+  },
+  {
+    "id": 265,
+    "unitId": 9,
+    "word": "like",
+    "meaning": "좋아하다",
+    "difficulty": 2
+  },
+  {
+    "id": 266,
+    "unitId": 9,
+    "word": "line",
+    "meaning": "선",
+    "difficulty": 2
+  },
+  {
+    "id": 267,
+    "unitId": 9,
+    "word": "live",
+    "meaning": "살다",
+    "difficulty": 2
+  },
+  {
+    "id": 268,
+    "unitId": 9,
+    "word": "make",
+    "meaning": "만들다",
+    "difficulty": 2
+  },
+  {
+    "id": 269,
+    "unitId": 9,
+    "word": "name",
+    "meaning": "이름",
+    "difficulty": 2
+  },
+  {
+    "id": 270,
+    "unitId": 9,
+    "word": "nice",
+    "meaning": "니스(프랑스 남부의 항구도시)",
+    "difficulty": 2
+  },
+  {
+    "id": 271,
+    "unitId": 9,
+    "word": "race",
+    "meaning": "인종",
+    "difficulty": 2
+  },
+  {
+    "id": 272,
+    "unitId": 9,
+    "word": "safe",
+    "meaning": "안전한",
+    "difficulty": 2
+  },
+  {
+    "id": 273,
+    "unitId": 9,
+    "word": "sale",
+    "meaning": "판매",
+    "difficulty": 2
+  },
+  {
+    "id": 274,
+    "unitId": 9,
+    "word": "same",
+    "meaning": "같은",
+    "difficulty": 2
+  },
+  {
+    "id": 275,
+    "unitId": 9,
+    "word": "save",
+    "meaning": "위험에서 구하다",
+    "difficulty": 2
+  },
+  {
+    "id": 276,
+    "unitId": 9,
+    "word": "side",
+    "meaning": "쪽",
+    "difficulty": 2
+  },
+  {
+    "id": 277,
+    "unitId": 9,
+    "word": "size",
+    "meaning": "크기",
+    "difficulty": 2
+  },
+  {
+    "id": 278,
+    "unitId": 9,
+    "word": "take",
+    "meaning": "잡다",
+    "difficulty": 2
+  },
+  {
+    "id": 279,
+    "unitId": 9,
+    "word": "tape",
+    "meaning": "테이프",
+    "difficulty": 2
+  },
+  {
+    "id": 280,
+    "unitId": 9,
+    "word": "time",
+    "meaning": "때",
+    "difficulty": 2
+  },
+  {
+    "id": 281,
+    "unitId": 9,
+    "word": "wake",
+    "meaning": "잠깨다",
+    "difficulty": 2
+  },
+  {
+    "id": 282,
+    "unitId": 9,
+    "word": "wife",
+    "meaning": "아내",
+    "difficulty": 2
+  },
+  {
+    "id": 283,
+    "unitId": 9,
+    "word": "apple",
+    "meaning": "사과",
+    "difficulty": 3
+  },
+  {
+    "id": 284,
+    "unitId": 9,
+    "word": "brake",
+    "meaning": "브레이크",
+    "difficulty": 3
+  },
+  {
+    "id": 285,
+    "unitId": 9,
+    "word": "brave",
+    "meaning": "용감한",
+    "difficulty": 3
+  },
+  {
+    "id": 286,
+    "unitId": 9,
+    "word": "dance",
+    "meaning": "댄스",
+    "difficulty": 3
+  },
+  {
+    "id": 287,
+    "unitId": 9,
+    "word": "drive",
+    "meaning": "운전하다",
+    "difficulty": 3
+  },
+  {
+    "id": 288,
+    "unitId": 9,
+    "word": "grape",
+    "meaning": "포도",
+    "difficulty": 3
+  },
+  {
+    "id": 289,
+    "unitId": 9,
+    "word": "guide",
+    "meaning": "이끌다",
+    "difficulty": 3
+  },
+  {
+    "id": 290,
+    "unitId": 9,
+    "word": "knife",
+    "meaning": "나이프",
+    "difficulty": 3
+  },
+  {
+    "id": 291,
+    "unitId": 9,
+    "word": "large",
+    "meaning": "큰",
+    "difficulty": 3
+  },
+  {
+    "id": 292,
+    "unitId": 9,
+    "word": "peace",
+    "meaning": "평화",
+    "difficulty": 3
+  },
+  {
+    "id": 293,
+    "unitId": 9,
+    "word": "place",
+    "meaning": "장소",
+    "difficulty": 3
+  },
+  {
+    "id": 294,
+    "unitId": 9,
+    "word": "prize",
+    "meaning": "상, 포상, 우등상, 선행상",
+    "difficulty": 3
+  },
+  {
+    "id": 295,
+    "unitId": 9,
+    "word": "smile",
+    "meaning": "미소짓다 미소",
+    "difficulty": 3
+  },
+  {
+    "id": 296,
+    "unitId": 9,
+    "word": "space",
+    "meaning": "공간",
+    "difficulty": 3
+  },
+  {
+    "id": 297,
+    "unitId": 9,
+    "word": "table",
+    "meaning": "테이블",
+    "difficulty": 3
+  },
+  {
+    "id": 298,
+    "unitId": 9,
+    "word": "taste",
+    "meaning": "맛",
+    "difficulty": 3
+  },
+  {
+    "id": 299,
+    "unitId": 9,
+    "word": "twice",
+    "meaning": "두 번",
+    "difficulty": 3
+  },
+  {
+    "id": 300,
+    "unitId": 9,
+    "word": "voice",
+    "meaning": "목소리, 음성, 음성",
+    "difficulty": 3
+  },
+  {
+    "id": 301,
+    "unitId": 9,
+    "word": "write",
+    "meaning": "쓰다",
+    "difficulty": 3
+  },
+  {
+    "id": 302,
+    "unitId": 9,
+    "word": "battle",
+    "meaning": "전투",
+    "difficulty": 4
+  },
+  {
+    "id": 303,
+    "unitId": 9,
+    "word": "bridge",
+    "meaning": "다리",
+    "difficulty": 4
+  },
+  {
+    "id": 304,
+    "unitId": 9,
+    "word": "castle",
+    "meaning": "성",
+    "difficulty": 4
+  },
+  {
+    "id": 305,
+    "unitId": 9,
+    "word": "circle",
+    "meaning": "원",
+    "difficulty": 4
+  },
+  {
+    "id": 306,
+    "unitId": 9,
+    "word": "little",
+    "meaning": "작은",
+    "difficulty": 4
+  },
+  {
+    "id": 307,
+    "unitId": 9,
+    "word": "middle",
+    "meaning": "한복판의",
+    "difficulty": 4
+  },
+  {
+    "id": 308,
+    "unitId": 9,
+    "word": "please",
+    "meaning": "기쁘게 하다",
+    "difficulty": 4
+  },
+  {
+    "id": 309,
+    "unitId": 9,
+    "word": "prince",
+    "meaning": "왕자, 태자, 세자, 대군",
+    "difficulty": 4
+  },
+  {
+    "id": 310,
+    "unitId": 9,
+    "word": "triangle",
+    "meaning": "각형",
+    "difficulty": 5
+  },
+  {
+    "id": 311,
+    "unitId": 10,
+    "word": "bone",
+    "meaning": "뼈",
+    "difficulty": 2
+  },
+  {
+    "id": 312,
+    "unitId": 10,
+    "word": "come",
+    "meaning": "오다",
+    "difficulty": 2
+  },
+  {
+    "id": 313,
+    "unitId": 10,
+    "word": "cute",
+    "meaning": "귀여운",
+    "difficulty": 2
+  },
+  {
+    "id": 314,
+    "unitId": 10,
+    "word": "home",
+    "meaning": "가정",
+    "difficulty": 2
+  },
+  {
+    "id": 315,
+    "unitId": 10,
+    "word": "hope",
+    "meaning": "희망",
+    "difficulty": 2
+  },
+  {
+    "id": 316,
+    "unitId": 10,
+    "word": "love",
+    "meaning": "사랑",
+    "difficulty": 2
+  },
+  {
+    "id": 317,
+    "unitId": 10,
+    "word": "move",
+    "meaning": "움직이다",
+    "difficulty": 2
+  },
+  {
+    "id": 318,
+    "unitId": 10,
+    "word": "nose",
+    "meaning": "코",
+    "difficulty": 2
+  },
+  {
+    "id": 319,
+    "unitId": 10,
+    "word": "note",
+    "meaning": "기록",
+    "difficulty": 2
+  },
+  {
+    "id": 320,
+    "unitId": 10,
+    "word": "close",
+    "meaning": "닫다",
+    "difficulty": 3
+  },
+  {
+    "id": 321,
+    "unitId": 10,
+    "word": "glove",
+    "meaning": "장갑",
+    "difficulty": 3
+  },
+  {
+    "id": 322,
+    "unitId": 10,
+    "word": "horse",
+    "meaning": "말",
+    "difficulty": 3
+  },
+  {
+    "id": 323,
+    "unitId": 10,
+    "word": "house",
+    "meaning": "집",
+    "difficulty": 3
+  },
+  {
+    "id": 324,
+    "unitId": 10,
+    "word": "mouse",
+    "meaning": "새앙쥐",
+    "difficulty": 3
+  },
+  {
+    "id": 325,
+    "unitId": 10,
+    "word": "nurse",
+    "meaning": "유모",
+    "difficulty": 3
+  },
+  {
+    "id": 326,
+    "unitId": 10,
+    "word": "score",
+    "meaning": "득점",
+    "difficulty": 3
+  },
+  {
+    "id": 327,
+    "unitId": 10,
+    "word": "stone",
+    "meaning": "돌",
+    "difficulty": 3
+  },
+  {
+    "id": 328,
+    "unitId": 10,
+    "word": "store",
+    "meaning": "가게",
+    "difficulty": 3
+  },
+  {
+    "id": 329,
+    "unitId": 10,
+    "word": "uncle",
+    "meaning": "아저씨",
+    "difficulty": 3
+  },
+  {
+    "id": 330,
+    "unitId": 10,
+    "word": "bottle",
+    "meaning": "병",
+    "difficulty": 4
+  },
+  {
+    "id": 331,
+    "unitId": 10,
+    "word": "bubble",
+    "meaning": "거품 거품이 일다",
+    "difficulty": 4
+  },
+  {
+    "id": 332,
+    "unitId": 10,
+    "word": "couple",
+    "meaning": "한 쌍",
+    "difficulty": 4
+  },
+  {
+    "id": 333,
+    "unitId": 10,
+    "word": "double",
+    "meaning": "2배의",
+    "difficulty": 4
+  },
+  {
+    "id": 334,
+    "unitId": 10,
+    "word": "goodbye",
+    "meaning": "안녕히 가세요",
+    "difficulty": 4
+  },
+  {
+    "id": 335,
+    "unitId": 10,
+    "word": "people",
+    "meaning": "사람들",
+    "difficulty": 4
+  },
+  {
+    "id": 336,
+    "unitId": 10,
+    "word": "puzzle",
+    "meaning": "당황, 혼란 괴롭히는 사람,  어려운 문제",
+    "difficulty": 4
+  },
+  {
+    "id": 337,
+    "unitId": 10,
+    "word": "science",
+    "meaning": "과학",
+    "difficulty": 4
+  },
+  {
+    "id": 338,
+    "unitId": 11,
+    "word": "air",
+    "meaning": "공기",
+    "difficulty": 1
+  },
+  {
+    "id": 339,
+    "unitId": 11,
+    "word": "fail",
+    "meaning": "실패하다",
+    "difficulty": 2
+  },
+  {
+    "id": 340,
+    "unitId": 11,
+    "word": "hair",
+    "meaning": "털",
+    "difficulty": 2
+  },
+  {
+    "id": 341,
+    "unitId": 11,
+    "word": "mail",
+    "meaning": "우편물",
+    "difficulty": 2
+  },
+  {
+    "id": 342,
+    "unitId": 11,
+    "word": "play",
+    "meaning": "놀다",
+    "difficulty": 2
+  },
+  {
+    "id": 343,
+    "unitId": 11,
+    "word": "rain",
+    "meaning": "비",
+    "difficulty": 2
+  },
+  {
+    "id": 344,
+    "unitId": 11,
+    "word": "stay",
+    "meaning": "머무르다",
+    "difficulty": 2
+  },
+  {
+    "id": 345,
+    "unitId": 11,
+    "word": "tail",
+    "meaning": "꼬리",
+    "difficulty": 2
+  },
+  {
+    "id": 346,
+    "unitId": 11,
+    "word": "wait",
+    "meaning": "기다리다",
+    "difficulty": 2
+  },
+  {
+    "id": 347,
+    "unitId": 11,
+    "word": "brain",
+    "meaning": "뇌",
+    "difficulty": 3
+  },
+  {
+    "id": 348,
+    "unitId": 11,
+    "word": "paint",
+    "meaning": "도료",
+    "difficulty": 3
+  },
+  {
+    "id": 349,
+    "unitId": 11,
+    "word": "train",
+    "meaning": "기차",
+    "difficulty": 3
+  },
+  {
+    "id": 350,
+    "unitId": 12,
+    "word": "bee",
+    "meaning": "꿀벌",
+    "difficulty": 1
+  },
+  {
+    "id": 351,
+    "unitId": 12,
+    "word": "ear",
+    "meaning": "귀",
+    "difficulty": 1
+  },
+  {
+    "id": 352,
+    "unitId": 12,
+    "word": "eat",
+    "meaning": "먹다",
+    "difficulty": 1
+  },
+  {
+    "id": 353,
+    "unitId": 12,
+    "word": "sea",
+    "meaning": "바다",
+    "difficulty": 1
+  },
+  {
+    "id": 354,
+    "unitId": 12,
+    "word": "see",
+    "meaning": "보다",
+    "difficulty": 1
+  },
+  {
+    "id": 355,
+    "unitId": 12,
+    "word": "bean",
+    "meaning": "콩",
+    "difficulty": 2
+  },
+  {
+    "id": 356,
+    "unitId": 12,
+    "word": "bear",
+    "meaning": "나르다",
+    "difficulty": 2
+  },
+  {
+    "id": 357,
+    "unitId": 12,
+    "word": "beef",
+    "meaning": "쇠고기",
+    "difficulty": 2
+  },
+  {
+    "id": 358,
+    "unitId": 12,
+    "word": "dead",
+    "meaning": "죽은",
+    "difficulty": 2
+  },
+  {
+    "id": 359,
+    "unitId": 12,
+    "word": "deep",
+    "meaning": "깊은",
+    "difficulty": 2
+  },
+  {
+    "id": 360,
+    "unitId": 12,
+    "word": "east",
+    "meaning": "동쪽 동쪽의 동쪽으로",
+    "difficulty": 2
+  },
+  {
+    "id": 361,
+    "unitId": 12,
+    "word": "feel",
+    "meaning": "만져보다",
+    "difficulty": 2
+  },
+  {
+    "id": 362,
+    "unitId": 12,
+    "word": "free",
+    "meaning": "자유로운",
+    "difficulty": 2
+  },
+  {
+    "id": 363,
+    "unitId": 12,
+    "word": "head",
+    "meaning": "머리",
+    "difficulty": 2
+  },
+  {
+    "id": 364,
+    "unitId": 12,
+    "word": "heat",
+    "meaning": "열",
+    "difficulty": 2
+  },
+  {
+    "id": 365,
+    "unitId": 12,
+    "word": "keep",
+    "meaning": "계속하다",
+    "difficulty": 2
+  },
+  {
+    "id": 366,
+    "unitId": 12,
+    "word": "leaf",
+    "meaning": "잎",
+    "difficulty": 2
+  },
+  {
+    "id": 367,
+    "unitId": 12,
+    "word": "meat",
+    "meaning": "(식용짐승의)고기",
+    "difficulty": 2
+  },
+  {
+    "id": 368,
+    "unitId": 12,
+    "word": "meet",
+    "meaning": "-을 만나다",
+    "difficulty": 2
+  },
+  {
+    "id": 369,
+    "unitId": 12,
+    "word": "near",
+    "meaning": "가까이 -의 가까이에 가까운 접근하다",
+    "difficulty": 2
+  },
+  {
+    "id": 370,
+    "unitId": 12,
+    "word": "need",
+    "meaning": "필요",
+    "difficulty": 2
+  },
+  {
+    "id": 371,
+    "unitId": 12,
+    "word": "pear",
+    "meaning": "서양배",
+    "difficulty": 2
+  },
+  {
+    "id": 372,
+    "unitId": 12,
+    "word": "read",
+    "meaning": "읽다",
+    "difficulty": 2
+  },
+  {
+    "id": 373,
+    "unitId": 12,
+    "word": "teen",
+    "meaning": "슬픔",
+    "difficulty": 2
+  },
+  {
+    "id": 374,
+    "unitId": 12,
+    "word": "tree",
+    "meaning": "나무",
+    "difficulty": 2
+  },
+  {
+    "id": 375,
+    "unitId": 12,
+    "word": "wear",
+    "meaning": "입다",
+    "difficulty": 2
+  },
+  {
+    "id": 376,
+    "unitId": 12,
+    "word": "week",
+    "meaning": "주",
+    "difficulty": 2
+  },
+  {
+    "id": 377,
+    "unitId": 12,
+    "word": "year",
+    "meaning": "연",
+    "difficulty": 2
+  },
+  {
+    "id": 378,
+    "unitId": 12,
+    "word": "agree",
+    "meaning": "동의하다",
+    "difficulty": 3
+  },
+  {
+    "id": 379,
+    "unitId": 12,
+    "word": "bread",
+    "meaning": "빵",
+    "difficulty": 3
+  },
+  {
+    "id": 380,
+    "unitId": 12,
+    "word": "break",
+    "meaning": "부수다",
+    "difficulty": 3
+  },
+  {
+    "id": 381,
+    "unitId": 12,
+    "word": "clean",
+    "meaning": "청결한",
+    "difficulty": 3
+  },
+  {
+    "id": 382,
+    "unitId": 12,
+    "word": "clear",
+    "meaning": "맑은",
+    "difficulty": 3
+  },
+  {
+    "id": 383,
+    "unitId": 12,
+    "word": "dream",
+    "meaning": "꿈",
+    "difficulty": 3
+  },
+  {
+    "id": 384,
+    "unitId": 12,
+    "word": "great",
+    "meaning": "커다란",
+    "difficulty": 3
+  },
+  {
+    "id": 385,
+    "unitId": 12,
+    "word": "green",
+    "meaning": "초록색",
+    "difficulty": 3
+  },
+  {
+    "id": 386,
+    "unitId": 12,
+    "word": "heart",
+    "meaning": "심장",
+    "difficulty": 3
+  },
+  {
+    "id": 387,
+    "unitId": 12,
+    "word": "jeans",
+    "meaning": "청바지",
+    "difficulty": 3
+  },
+  {
+    "id": 388,
+    "unitId": 12,
+    "word": "learn",
+    "meaning": "배우다",
+    "difficulty": 3
+  },
+  {
+    "id": 389,
+    "unitId": 12,
+    "word": "queen",
+    "meaning": "여왕",
+    "difficulty": 3
+  },
+  {
+    "id": 390,
+    "unitId": 12,
+    "word": "sleep",
+    "meaning": "잠자다",
+    "difficulty": 3
+  },
+  {
+    "id": 391,
+    "unitId": 12,
+    "word": "speak",
+    "meaning": "이야기하다",
+    "difficulty": 3
+  },
+  {
+    "id": 392,
+    "unitId": 12,
+    "word": "speed",
+    "meaning": "속도",
+    "difficulty": 3
+  },
+  {
+    "id": 393,
+    "unitId": 12,
+    "word": "street",
+    "meaning": "거리",
+    "difficulty": 4
+  },
+  {
+    "id": 394,
+    "unitId": 13,
+    "word": "boat",
+    "meaning": "배",
+    "difficulty": 2
+  },
+  {
+    "id": 395,
+    "unitId": 13,
+    "word": "goal",
+    "meaning": "결승점",
+    "difficulty": 2
+  },
+  {
+    "id": 396,
+    "unitId": 13,
+    "word": "road",
+    "meaning": "길",
+    "difficulty": 2
+  },
+  {
+    "id": 397,
+    "unitId": 13,
+    "word": "board",
+    "meaning": "널빤지",
+    "difficulty": 3
+  },
+  {
+    "id": 398,
+    "unitId": 14,
+    "word": "oil",
+    "meaning": "기름",
+    "difficulty": 1
+  },
+  {
+    "id": 399,
+    "unitId": 14,
+    "word": "zoo",
+    "meaning": "동물원",
+    "difficulty": 1
+  },
+  {
+    "id": 400,
+    "unitId": 14,
+    "word": "book",
+    "meaning": "책",
+    "difficulty": 2
+  },
+  {
+    "id": 401,
+    "unitId": 14,
+    "word": "boot",
+    "meaning": "목이 긴 구두",
+    "difficulty": 2
+  },
+  {
+    "id": 402,
+    "unitId": 14,
+    "word": "bowl",
+    "meaning": "사발",
+    "difficulty": 2
+  },
+  {
+    "id": 403,
+    "unitId": 14,
+    "word": "coin",
+    "meaning": "화폐",
+    "difficulty": 2
+  },
+  {
+    "id": 404,
+    "unitId": 14,
+    "word": "cook",
+    "meaning": "요리하다 요리사",
+    "difficulty": 2
+  },
+  {
+    "id": 405,
+    "unitId": 14,
+    "word": "cool",
+    "meaning": "서늘한",
+    "difficulty": 2
+  },
+  {
+    "id": 406,
+    "unitId": 14,
+    "word": "door",
+    "meaning": "문",
+    "difficulty": 2
+  },
+  {
+    "id": 407,
+    "unitId": 14,
+    "word": "down",
+    "meaning": "아래로",
+    "difficulty": 2
+  },
+  {
+    "id": 408,
+    "unitId": 14,
+    "word": "draw",
+    "meaning": "당기다",
+    "difficulty": 2
+  },
+  {
+    "id": 409,
+    "unitId": 14,
+    "word": "food",
+    "meaning": "음식",
+    "difficulty": 2
+  },
+  {
+    "id": 410,
+    "unitId": 14,
+    "word": "fool",
+    "meaning": "바보",
+    "difficulty": 2
+  },
+  {
+    "id": 411,
+    "unitId": 14,
+    "word": "foot",
+    "meaning": "발",
+    "difficulty": 2
+  },
+  {
+    "id": 412,
+    "unitId": 14,
+    "word": "good",
+    "meaning": "좋은",
+    "difficulty": 2
+  },
+  {
+    "id": 413,
+    "unitId": 14,
+    "word": "grow",
+    "meaning": "성장하다",
+    "difficulty": 2
+  },
+  {
+    "id": 414,
+    "unitId": 14,
+    "word": "hour",
+    "meaning": "시간",
+    "difficulty": 2
+  },
+  {
+    "id": 415,
+    "unitId": 14,
+    "word": "join",
+    "meaning": "결합하다",
+    "difficulty": 2
+  },
+  {
+    "id": 416,
+    "unitId": 14,
+    "word": "know",
+    "meaning": "알다",
+    "difficulty": 2
+  },
+  {
+    "id": 417,
+    "unitId": 14,
+    "word": "look",
+    "meaning": "보다",
+    "difficulty": 2
+  },
+  {
+    "id": 418,
+    "unitId": 14,
+    "word": "moon",
+    "meaning": "달",
+    "difficulty": 2
+  },
+  {
+    "id": 419,
+    "unitId": 14,
+    "word": "noon",
+    "meaning": "정오",
+    "difficulty": 2
+  },
+  {
+    "id": 420,
+    "unitId": 14,
+    "word": "poor",
+    "meaning": "가난한 부족한, 불충분한, 빈약한",
+    "difficulty": 2
+  },
+  {
+    "id": 421,
+    "unitId": 14,
+    "word": "roof",
+    "meaning": "지붕",
+    "difficulty": 2
+  },
+  {
+    "id": 422,
+    "unitId": 14,
+    "word": "room",
+    "meaning": "방",
+    "difficulty": 2
+  },
+  {
+    "id": 423,
+    "unitId": 14,
+    "word": "slow",
+    "meaning": "느린",
+    "difficulty": 2
+  },
+  {
+    "id": 424,
+    "unitId": 14,
+    "word": "snow",
+    "meaning": "눈 눈이 내리다",
+    "difficulty": 2
+  },
+  {
+    "id": 425,
+    "unitId": 14,
+    "word": "sour",
+    "meaning": "시큼한 시어지다 시큼한 것",
+    "difficulty": 2
+  },
+  {
+    "id": 426,
+    "unitId": 14,
+    "word": "tour",
+    "meaning": "일주",
+    "difficulty": 2
+  },
+  {
+    "id": 427,
+    "unitId": 14,
+    "word": "town",
+    "meaning": "읍",
+    "difficulty": 2
+  },
+  {
+    "id": 428,
+    "unitId": 14,
+    "word": "wood",
+    "meaning": "숲",
+    "difficulty": 2
+  },
+  {
+    "id": 429,
+    "unitId": 14,
+    "word": "blood",
+    "meaning": "피",
+    "difficulty": 3
+  },
+  {
+    "id": 430,
+    "unitId": 14,
+    "word": "brown",
+    "meaning": "갈색의 갈색",
+    "difficulty": 3
+  },
+  {
+    "id": 431,
+    "unitId": 14,
+    "word": "cloud",
+    "meaning": "구름",
+    "difficulty": 3
+  },
+  {
+    "id": 432,
+    "unitId": 14,
+    "word": "crowd",
+    "meaning": "군중",
+    "difficulty": 3
+  },
+  {
+    "id": 433,
+    "unitId": 14,
+    "word": "crown",
+    "meaning": "왕관",
+    "difficulty": 3
+  },
+  {
+    "id": 434,
+    "unitId": 14,
+    "word": "floor",
+    "meaning": "마룻바닥",
+    "difficulty": 3
+  },
+  {
+    "id": 435,
+    "unitId": 14,
+    "word": "group",
+    "meaning": "집단",
+    "difficulty": 3
+  },
+  {
+    "id": 436,
+    "unitId": 14,
+    "word": "point",
+    "meaning": "점",
+    "difficulty": 3
+  },
+  {
+    "id": 437,
+    "unitId": 14,
+    "word": "sound",
+    "meaning": "소리",
+    "difficulty": 3
+  },
+  {
+    "id": 438,
+    "unitId": 14,
+    "word": "spoon",
+    "meaning": "숟가락",
+    "difficulty": 3
+  },
+  {
+    "id": 439,
+    "unitId": 14,
+    "word": "young",
+    "meaning": "젊은",
+    "difficulty": 3
+  },
+  {
+    "id": 440,
+    "unitId": 14,
+    "word": "cookie",
+    "meaning": "쿠키",
+    "difficulty": 4
+  },
+  {
+    "id": 441,
+    "unitId": 14,
+    "word": "ground",
+    "meaning": "땅",
+    "difficulty": 4
+  },
+  {
+    "id": 442,
+    "unitId": 15,
+    "word": "arm",
+    "meaning": "팔",
+    "difficulty": 1
+  },
+  {
+    "id": 443,
+    "unitId": 15,
+    "word": "art",
+    "meaning": "예술",
+    "difficulty": 1
+  },
+  {
+    "id": 444,
+    "unitId": 15,
+    "word": "cart",
+    "meaning": "(2륜)짐마차",
+    "difficulty": 2
+  },
+  {
+    "id": 445,
+    "unitId": 15,
+    "word": "dark",
+    "meaning": "어두운",
+    "difficulty": 2
+  },
+  {
+    "id": 446,
+    "unitId": 15,
+    "word": "farm",
+    "meaning": "농장",
+    "difficulty": 2
+  },
+  {
+    "id": 447,
+    "unitId": 15,
+    "word": "hard",
+    "meaning": "단단한",
+    "difficulty": 2
+  },
+  {
+    "id": 448,
+    "unitId": 15,
+    "word": "park",
+    "meaning": "공원",
+    "difficulty": 2
+  },
+  {
+    "id": 449,
+    "unitId": 15,
+    "word": "part",
+    "meaning": "부분",
+    "difficulty": 2
+  },
+  {
+    "id": 450,
+    "unitId": 15,
+    "word": "warm",
+    "meaning": "따뜻한",
+    "difficulty": 2
+  },
+  {
+    "id": 451,
+    "unitId": 15,
+    "word": "smart",
+    "meaning": "재치있는",
+    "difficulty": 3
+  },
+  {
+    "id": 452,
+    "unitId": 15,
+    "word": "start",
+    "meaning": "시작하다",
+    "difficulty": 3
+  },
+  {
+    "id": 453,
+    "unitId": 16,
+    "word": "bird",
+    "meaning": "새",
+    "difficulty": 2
+  },
+  {
+    "id": 454,
+    "unitId": 16,
+    "word": "burn",
+    "meaning": "시내",
+    "difficulty": 2
+  },
+  {
+    "id": 455,
+    "unitId": 16,
+    "word": "girl",
+    "meaning": "소녀",
+    "difficulty": 2
+  },
+  {
+    "id": 456,
+    "unitId": 16,
+    "word": "turn",
+    "meaning": "돌리다",
+    "difficulty": 2
+  },
+  {
+    "id": 457,
+    "unitId": 16,
+    "word": "clerk",
+    "meaning": "서기",
+    "difficulty": 3
+  },
+  {
+    "id": 458,
+    "unitId": 16,
+    "word": "skirt",
+    "meaning": "스커어트",
+    "difficulty": 3
+  },
+  {
+    "id": 459,
+    "unitId": 17,
+    "word": "form",
+    "meaning": "모양",
+    "difficulty": 2
+  },
+  {
+    "id": 460,
+    "unitId": 17,
+    "word": "word",
+    "meaning": "낱말",
+    "difficulty": 2
+  },
+  {
+    "id": 461,
+    "unitId": 17,
+    "word": "work",
+    "meaning": "일",
+    "difficulty": 2
+  },
+  {
+    "id": 462,
+    "unitId": 17,
+    "word": "world",
+    "meaning": "세계",
+    "difficulty": 3
+  },
+  {
+    "id": 463,
+    "unitId": 18,
+    "word": "baby",
+    "meaning": "갓난아이, 막내   관심사, 골치아픈 일,",
+    "difficulty": 2
+  },
+  {
+    "id": 464,
+    "unitId": 18,
+    "word": "body",
+    "meaning": "신체",
+    "difficulty": 2
+  },
+  {
+    "id": 465,
+    "unitId": 18,
+    "word": "busy",
+    "meaning": "바쁜",
+    "difficulty": 2
+  },
+  {
+    "id": 466,
+    "unitId": 18,
+    "word": "city",
+    "meaning": "도시",
+    "difficulty": 2
+  },
+  {
+    "id": 467,
+    "unitId": 18,
+    "word": "copy",
+    "meaning": "사본",
+    "difficulty": 2
+  },
+  {
+    "id": 468,
+    "unitId": 18,
+    "word": "easy",
+    "meaning": "쉬운",
+    "difficulty": 2
+  },
+  {
+    "id": 469,
+    "unitId": 18,
+    "word": "lady",
+    "meaning": "귀부인",
+    "difficulty": 2
+  },
+  {
+    "id": 470,
+    "unitId": 18,
+    "word": "lazy",
+    "meaning": "게으른",
+    "difficulty": 2
+  },
+  {
+    "id": 471,
+    "unitId": 18,
+    "word": "ugly",
+    "meaning": "추한",
+    "difficulty": 2
+  },
+  {
+    "id": 472,
+    "unitId": 18,
+    "word": "candy",
+    "meaning": "사탕과자",
+    "difficulty": 3
+  },
+  {
+    "id": 473,
+    "unitId": 18,
+    "word": "carry",
+    "meaning": "나르다",
+    "difficulty": 3
+  },
+  {
+    "id": 474,
+    "unitId": 18,
+    "word": "crazy",
+    "meaning": "미친",
+    "difficulty": 3
+  },
+  {
+    "id": 475,
+    "unitId": 18,
+    "word": "diary",
+    "meaning": "일기",
+    "difficulty": 3
+  },
+  {
+    "id": 476,
+    "unitId": 18,
+    "word": "dirty",
+    "meaning": "더러운",
+    "difficulty": 3
+  },
+  {
+    "id": 477,
+    "unitId": 18,
+    "word": "early",
+    "meaning": "이른",
+    "difficulty": 3
+  },
+  {
+    "id": 478,
+    "unitId": 18,
+    "word": "happy",
+    "meaning": "행운의",
+    "difficulty": 3
+  },
+  {
+    "id": 479,
+    "unitId": 18,
+    "word": "heavy",
+    "meaning": "무거운",
+    "difficulty": 3
+  },
+  {
+    "id": 480,
+    "unitId": 18,
+    "word": "hobby",
+    "meaning": "취미",
+    "difficulty": 3
+  },
+  {
+    "id": 481,
+    "unitId": 18,
+    "word": "hurry",
+    "meaning": "서두르다",
+    "difficulty": 3
+  },
+  {
+    "id": 482,
+    "unitId": 18,
+    "word": "marry",
+    "meaning": "결혼하다",
+    "difficulty": 3
+  },
+  {
+    "id": 483,
+    "unitId": 18,
+    "word": "puppy",
+    "meaning": "강아지",
+    "difficulty": 3
+  },
+  {
+    "id": 484,
+    "unitId": 18,
+    "word": "ready",
+    "meaning": "준비가 된",
+    "difficulty": 3
+  },
+  {
+    "id": 485,
+    "unitId": 18,
+    "word": "sorry",
+    "meaning": "가엾은",
+    "difficulty": 3
+  },
+  {
+    "id": 486,
+    "unitId": 18,
+    "word": "story",
+    "meaning": "층",
+    "difficulty": 3
+  },
+  {
+    "id": 487,
+    "unitId": 18,
+    "word": "study",
+    "meaning": "학문",
+    "difficulty": 3
+  },
+  {
+    "id": 488,
+    "unitId": 18,
+    "word": "worry",
+    "meaning": "근심하다",
+    "difficulty": 3
+  },
+  {
+    "id": 489,
+    "unitId": 18,
+    "word": "beauty",
+    "meaning": "아름다움",
+    "difficulty": 4
+  },
+  {
+    "id": 490,
+    "unitId": 18,
+    "word": "country",
+    "meaning": "나라",
+    "difficulty": 4
+  },
+  {
+    "id": 491,
+    "unitId": 18,
+    "word": "hungry",
+    "meaning": "배고픈",
+    "difficulty": 4
+  },
+  {
+    "id": 492,
+    "unitId": 18,
+    "word": "pretty",
+    "meaning": "예쁜, 귀여운, 참 한, 조촐한",
+    "difficulty": 4
+  },
+  {
+    "id": 493,
+    "unitId": 19,
+    "word": "ago",
+    "meaning": "이전에",
+    "difficulty": 1
+  },
+  {
+    "id": 494,
+    "unitId": 19,
+    "word": "area",
+    "meaning": "면적",
+    "difficulty": 2
+  },
+  {
+    "id": 495,
+    "unitId": 19,
+    "word": "away",
+    "meaning": "떨어져서",
+    "difficulty": 2
+  },
+  {
+    "id": 496,
+    "unitId": 19,
+    "word": "exam",
+    "meaning": "시험",
+    "difficulty": 2
+  },
+  {
+    "id": 497,
+    "unitId": 19,
+    "word": "exit",
+    "meaning": "출구",
+    "difficulty": 2
+  },
+  {
+    "id": 498,
+    "unitId": 19,
+    "word": "hero",
+    "meaning": "영웅",
+    "difficulty": 2
+  },
+  {
+    "id": 499,
+    "unitId": 19,
+    "word": "idea",
+    "meaning": "관념",
+    "difficulty": 2
+  },
+  {
+    "id": 500,
+    "unitId": 19,
+    "word": "open",
+    "meaning": "열다",
+    "difficulty": 2
+  },
+  {
+    "id": 501,
+    "unitId": 19,
+    "word": "above",
+    "meaning": "-보다 위에",
+    "difficulty": 3
+  },
+  {
+    "id": 502,
+    "unitId": 19,
+    "word": "adult",
+    "meaning": "성인",
+    "difficulty": 3
+  },
+  {
+    "id": 503,
+    "unitId": 19,
+    "word": "ahead",
+    "meaning": "전방에",
+    "difficulty": 3
+  },
+  {
+    "id": 504,
+    "unitId": 19,
+    "word": "alone",
+    "meaning": "다만 홀로(혼자서)",
+    "difficulty": 3
+  },
+  {
+    "id": 505,
+    "unitId": 19,
+    "word": "along",
+    "meaning": "-을 따라",
+    "difficulty": 3
+  },
+  {
+    "id": 506,
+    "unitId": 19,
+    "word": "aloud",
+    "meaning": "큰 소리로",
+    "difficulty": 3
+  },
+  {
+    "id": 507,
+    "unitId": 19,
+    "word": "angel",
+    "meaning": "천사",
+    "difficulty": 3
+  },
+  {
+    "id": 508,
+    "unitId": 19,
+    "word": "anger",
+    "meaning": "성",
+    "difficulty": 3
+  },
+  {
+    "id": 509,
+    "unitId": 19,
+    "word": "basic",
+    "meaning": "기본의",
+    "difficulty": 3
+  },
+  {
+    "id": 510,
+    "unitId": 19,
+    "word": "begin",
+    "meaning": "시작하다",
+    "difficulty": 3
+  },
+  {
+    "id": 511,
+    "unitId": 19,
+    "word": "below",
+    "meaning": "아래에",
+    "difficulty": 3
+  },
+  {
+    "id": 512,
+    "unitId": 19,
+    "word": "color",
+    "meaning": "착색하다",
+    "difficulty": 3
+  },
+  {
+    "id": 513,
+    "unitId": 19,
+    "word": "cover",
+    "meaning": "덮다",
+    "difficulty": 3
+  },
+  {
+    "id": 514,
+    "unitId": 19,
+    "word": "enjoy",
+    "meaning": "즐기다",
+    "difficulty": 3
+  },
+  {
+    "id": 515,
+    "unitId": 19,
+    "word": "enter",
+    "meaning": "들어가다",
+    "difficulty": 3
+  },
+  {
+    "id": 516,
+    "unitId": 19,
+    "word": "error",
+    "meaning": "잘못",
+    "difficulty": 3
+  },
+  {
+    "id": 517,
+    "unitId": 19,
+    "word": "fever",
+    "meaning": "열",
+    "difficulty": 3
+  },
+  {
+    "id": 518,
+    "unitId": 19,
+    "word": "focus",
+    "meaning": "초점",
+    "difficulty": 3
+  },
+  {
+    "id": 519,
+    "unitId": 19,
+    "word": "habit",
+    "meaning": "습관",
+    "difficulty": 3
+  },
+  {
+    "id": 520,
+    "unitId": 19,
+    "word": "hello",
+    "meaning": "여보",
+    "difficulty": 3
+  },
+  {
+    "id": 521,
+    "unitId": 19,
+    "word": "honey",
+    "meaning": "벌꿀",
+    "difficulty": 3
+  },
+  {
+    "id": 522,
+    "unitId": 19,
+    "word": "human",
+    "meaning": "인간의",
+    "difficulty": 3
+  },
+  {
+    "id": 523,
+    "unitId": 19,
+    "word": "humor",
+    "meaning": "유우머",
+    "difficulty": 3
+  },
+  {
+    "id": 524,
+    "unitId": 19,
+    "word": "money",
+    "meaning": "금전",
+    "difficulty": 3
+  },
+  {
+    "id": 525,
+    "unitId": 19,
+    "word": "music",
+    "meaning": "음악",
+    "difficulty": 3
+  },
+  {
+    "id": 526,
+    "unitId": 19,
+    "word": "ocean",
+    "meaning": "대양",
+    "difficulty": 3
+  },
+  {
+    "id": 527,
+    "unitId": 19,
+    "word": "paper",
+    "meaning": "종이",
+    "difficulty": 3
+  },
+  {
+    "id": 528,
+    "unitId": 19,
+    "word": "power",
+    "meaning": "힘",
+    "difficulty": 3
+  },
+  {
+    "id": 529,
+    "unitId": 19,
+    "word": "river",
+    "meaning": "강",
+    "difficulty": 3
+  },
+  {
+    "id": 530,
+    "unitId": 19,
+    "word": "sugar",
+    "meaning": "설탕",
+    "difficulty": 3
+  },
+  {
+    "id": 531,
+    "unitId": 19,
+    "word": "tiger",
+    "meaning": "호랑이",
+    "difficulty": 3
+  },
+  {
+    "id": 532,
+    "unitId": 19,
+    "word": "today",
+    "meaning": "오늘은",
+    "difficulty": 3
+  },
+  {
+    "id": 533,
+    "unitId": 19,
+    "word": "tower",
+    "meaning": "탑",
+    "difficulty": 3
+  },
+  {
+    "id": 534,
+    "unitId": 19,
+    "word": "under",
+    "meaning": "-아래에",
+    "difficulty": 3
+  },
+  {
+    "id": 535,
+    "unitId": 19,
+    "word": "visit",
+    "meaning": "방문하다, …의 손님으로 묵다",
+    "difficulty": 3
+  },
+  {
+    "id": 536,
+    "unitId": 19,
+    "word": "water",
+    "meaning": "물",
+    "difficulty": 3
+  },
+  {
+    "id": 537,
+    "unitId": 19,
+    "word": "woman",
+    "meaning": "부인",
+    "difficulty": 3
+  },
+  {
+    "id": 538,
+    "unitId": 19,
+    "word": "zebra",
+    "meaning": "얼룩말",
+    "difficulty": 3
+  },
+  {
+    "id": 539,
+    "unitId": 19,
+    "word": "accent",
+    "meaning": "액센트",
+    "difficulty": 4
+  },
+  {
+    "id": 540,
+    "unitId": 19,
+    "word": "across",
+    "meaning": "가로질러",
+    "difficulty": 4
+  },
+  {
+    "id": 541,
+    "unitId": 19,
+    "word": "address",
+    "meaning": "말을 걸다",
+    "difficulty": 4
+  },
+  {
+    "id": 542,
+    "unitId": 19,
+    "word": "advise",
+    "meaning": "충고하다",
+    "difficulty": 4
+  },
+  {
+    "id": 543,
+    "unitId": 19,
+    "word": "afraid",
+    "meaning": "두려워하여",
+    "difficulty": 4
+  },
+  {
+    "id": 544,
+    "unitId": 19,
+    "word": "against",
+    "meaning": "…에 반대하여",
+    "difficulty": 4
+  },
+  {
+    "id": 545,
+    "unitId": 19,
+    "word": "airline",
+    "meaning": "정기항공",
+    "difficulty": 4
+  },
+  {
+    "id": 546,
+    "unitId": 19,
+    "word": "airport",
+    "meaning": "공항",
+    "difficulty": 4
+  },
+  {
+    "id": 547,
+    "unitId": 19,
+    "word": "almost",
+    "meaning": "거의",
+    "difficulty": 4
+  },
+  {
+    "id": 548,
+    "unitId": 19,
+    "word": "alright",
+    "meaning": "더할나위없이",
+    "difficulty": 4
+  },
+  {
+    "id": 549,
+    "unitId": 19,
+    "word": "answer",
+    "meaning": "대답",
+    "difficulty": 4
+  },
+  {
+    "id": 550,
+    "unitId": 19,
+    "word": "around",
+    "meaning": "사방에",
+    "difficulty": 4
+  },
+  {
+    "id": 551,
+    "unitId": 19,
+    "word": "arrive",
+    "meaning": "도착하다",
+    "difficulty": 4
+  },
+  {
+    "id": 552,
+    "unitId": 19,
+    "word": "balloon",
+    "meaning": "기구",
+    "difficulty": 4
+  },
+  {
+    "id": 553,
+    "unitId": 19,
+    "word": "basket",
+    "meaning": "바구니",
+    "difficulty": 4
+  },
+  {
+    "id": 554,
+    "unitId": 19,
+    "word": "because",
+    "meaning": "왜냐하면",
+    "difficulty": 4
+  },
+  {
+    "id": 555,
+    "unitId": 19,
+    "word": "become",
+    "meaning": "-이 되다",
+    "difficulty": 4
+  },
+  {
+    "id": 556,
+    "unitId": 19,
+    "word": "bedroom",
+    "meaning": "침실 성적인",
+    "difficulty": 4
+  },
+  {
+    "id": 557,
+    "unitId": 19,
+    "word": "before",
+    "meaning": "앞에",
+    "difficulty": 4
+  },
+  {
+    "id": 558,
+    "unitId": 19,
+    "word": "behind",
+    "meaning": "뒤에",
+    "difficulty": 4
+  },
+  {
+    "id": 559,
+    "unitId": 19,
+    "word": "believe",
+    "meaning": "믿다",
+    "difficulty": 4
+  },
+  {
+    "id": 560,
+    "unitId": 19,
+    "word": "beside",
+    "meaning": "-의 곁에",
+    "difficulty": 4
+  },
+  {
+    "id": 561,
+    "unitId": 19,
+    "word": "between",
+    "meaning": "-의 사이에 사이에",
+    "difficulty": 4
+  },
+  {
+    "id": 562,
+    "unitId": 19,
+    "word": "bicycle",
+    "meaning": "자전거 자전거를 타다",
+    "difficulty": 4
+  },
+  {
+    "id": 563,
+    "unitId": 19,
+    "word": "borrow",
+    "meaning": "빌다",
+    "difficulty": 4
+  },
+  {
+    "id": 564,
+    "unitId": 19,
+    "word": "bottom",
+    "meaning": "밑바닥",
+    "difficulty": 4
+  },
+  {
+    "id": 565,
+    "unitId": 19,
+    "word": "brother",
+    "meaning": "형제",
+    "difficulty": 4
+  },
+  {
+    "id": 566,
+    "unitId": 19,
+    "word": "button",
+    "meaning": "단추 단추를 채우다 단추로 채워지다",
+    "difficulty": 4
+  },
+  {
+    "id": 567,
+    "unitId": 19,
+    "word": "captain",
+    "meaning": "우두머리(chief)",
+    "difficulty": 4
+  },
+  {
+    "id": 568,
+    "unitId": 19,
+    "word": "carrot",
+    "meaning": "당근",
+    "difficulty": 4
+  },
+  {
+    "id": 569,
+    "unitId": 19,
+    "word": "certain",
+    "meaning": "확신하는",
+    "difficulty": 4
+  },
+  {
+    "id": 570,
+    "unitId": 19,
+    "word": "clever",
+    "meaning": "영리한",
+    "difficulty": 4
+  },
+  {
+    "id": 571,
+    "unitId": 19,
+    "word": "collect",
+    "meaning": "모으다",
+    "difficulty": 4
+  },
+  {
+    "id": 572,
+    "unitId": 19,
+    "word": "college",
+    "meaning": "단과대학",
+    "difficulty": 4
+  },
+  {
+    "id": 573,
+    "unitId": 19,
+    "word": "concert",
+    "meaning": "연주회",
+    "difficulty": 4
+  },
+  {
+    "id": 574,
+    "unitId": 19,
+    "word": "contest",
+    "meaning": "겨루다",
+    "difficulty": 4
+  },
+  {
+    "id": 575,
+    "unitId": 19,
+    "word": "control",
+    "meaning": "억제하다",
+    "difficulty": 4
+  },
+  {
+    "id": 576,
+    "unitId": 19,
+    "word": "corner",
+    "meaning": "모퉁이",
+    "difficulty": 4
+  },
+  {
+    "id": 577,
+    "unitId": 19,
+    "word": "cotton",
+    "meaning": "목화",
+    "difficulty": 4
+  },
+  {
+    "id": 578,
+    "unitId": 19,
+    "word": "cousin",
+    "meaning": "사촌",
+    "difficulty": 4
+  },
+  {
+    "id": 579,
+    "unitId": 19,
+    "word": "culture",
+    "meaning": "문화",
+    "difficulty": 4
+  },
+  {
+    "id": 580,
+    "unitId": 19,
+    "word": "curious",
+    "meaning": "이상스러운",
+    "difficulty": 4
+  },
+  {
+    "id": 581,
+    "unitId": 19,
+    "word": "curtain",
+    "meaning": "커어튼",
+    "difficulty": 4
+  },
+  {
+    "id": 582,
+    "unitId": 19,
+    "word": "danger",
+    "meaning": "위험",
+    "difficulty": 4
+  },
+  {
+    "id": 583,
+    "unitId": 19,
+    "word": "decide",
+    "meaning": "결정하다",
+    "difficulty": 4
+  },
+  {
+    "id": 584,
+    "unitId": 19,
+    "word": "dentist",
+    "meaning": "치과의사",
+    "difficulty": 4
+  },
+  {
+    "id": 585,
+    "unitId": 19,
+    "word": "design",
+    "meaning": "디자인",
+    "difficulty": 4
+  },
+  {
+    "id": 586,
+    "unitId": 19,
+    "word": "dinner",
+    "meaning": "정찬",
+    "difficulty": 4
+  },
+  {
+    "id": 587,
+    "unitId": 19,
+    "word": "discuss",
+    "meaning": "토론하다",
+    "difficulty": 4
+  },
+  {
+    "id": 588,
+    "unitId": 19,
+    "word": "divide",
+    "meaning": "나누다",
+    "difficulty": 4
+  },
+  {
+    "id": 589,
+    "unitId": 19,
+    "word": "doctor",
+    "meaning": "박사",
+    "difficulty": 4
+  },
+  {
+    "id": 590,
+    "unitId": 19,
+    "word": "dolphin",
+    "meaning": "돌고래",
+    "difficulty": 4
+  },
+  {
+    "id": 591,
+    "unitId": 19,
+    "word": "during",
+    "meaning": "-동안에",
+    "difficulty": 4
+  },
+  {
+    "id": 592,
+    "unitId": 19,
+    "word": "engine",
+    "meaning": "엔진",
+    "difficulty": 4
+  },
+  {
+    "id": 593,
+    "unitId": 19,
+    "word": "example",
+    "meaning": "보기",
+    "difficulty": 4
+  },
+  {
+    "id": 594,
+    "unitId": 19,
+    "word": "famous",
+    "meaning": "유명한",
+    "difficulty": 4
+  },
+  {
+    "id": 595,
+    "unitId": 19,
+    "word": "father",
+    "meaning": "아버지",
+    "difficulty": 4
+  },
+  {
+    "id": 596,
+    "unitId": 19,
+    "word": "finger",
+    "meaning": "손가락 손가락을 대다",
+    "difficulty": 4
+  },
+  {
+    "id": 597,
+    "unitId": 19,
+    "word": "finish",
+    "meaning": "끝내다",
+    "difficulty": 4
+  },
+  {
+    "id": 598,
+    "unitId": 19,
+    "word": "flower",
+    "meaning": "꽃",
+    "difficulty": 4
+  },
+  {
+    "id": 599,
+    "unitId": 19,
+    "word": "forest",
+    "meaning": "숲",
+    "difficulty": 4
+  },
+  {
+    "id": 600,
+    "unitId": 19,
+    "word": "forget",
+    "meaning": "잊다",
+    "difficulty": 4
+  },
+  {
+    "id": 601,
+    "unitId": 19,
+    "word": "future",
+    "meaning": "미래",
+    "difficulty": 4
+  },
+  {
+    "id": 602,
+    "unitId": 19,
+    "word": "garden",
+    "meaning": "뜰",
+    "difficulty": 4
+  },
+  {
+    "id": 603,
+    "unitId": 19,
+    "word": "gesture",
+    "meaning": "몸짓",
+    "difficulty": 4
+  },
+  {
+    "id": 604,
+    "unitId": 19,
+    "word": "giraffe",
+    "meaning": "기린",
+    "difficulty": 4
+  },
+  {
+    "id": 605,
+    "unitId": 19,
+    "word": "heaven",
+    "meaning": "하늘",
+    "difficulty": 4
+  },
+  {
+    "id": 606,
+    "unitId": 19,
+    "word": "honest",
+    "meaning": "정직한",
+    "difficulty": 4
+  },
+  {
+    "id": 607,
+    "unitId": 19,
+    "word": "hundred",
+    "meaning": "100 100의",
+    "difficulty": 4
+  },
+  {
+    "id": 608,
+    "unitId": 19,
+    "word": "husband",
+    "meaning": "남편 절약하다",
+    "difficulty": 4
+  },
+  {
+    "id": 609,
+    "unitId": 19,
+    "word": "inside",
+    "meaning": "안쪽",
+    "difficulty": 4
+  },
+  {
+    "id": 610,
+    "unitId": 19,
+    "word": "invite",
+    "meaning": "초대하다",
+    "difficulty": 4
+  },
+  {
+    "id": 611,
+    "unitId": 19,
+    "word": "kitchen",
+    "meaning": "부엌",
+    "difficulty": 4
+  },
+  {
+    "id": 612,
+    "unitId": 19,
+    "word": "lesson",
+    "meaning": "학과",
+    "difficulty": 4
+  },
+  {
+    "id": 613,
+    "unitId": 19,
+    "word": "letter",
+    "meaning": "편지",
+    "difficulty": 4
+  },
+  {
+    "id": 614,
+    "unitId": 19,
+    "word": "listen",
+    "meaning": "경청하다",
+    "difficulty": 4
+  },
+  {
+    "id": 615,
+    "unitId": 19,
+    "word": "mirror",
+    "meaning": "거울",
+    "difficulty": 4
+  },
+  {
+    "id": 616,
+    "unitId": 19,
+    "word": "monkey",
+    "meaning": "원숭이",
+    "difficulty": 4
+  },
+  {
+    "id": 617,
+    "unitId": 19,
+    "word": "morning",
+    "meaning": "아침",
+    "difficulty": 4
+  },
+  {
+    "id": 618,
+    "unitId": 19,
+    "word": "mother",
+    "meaning": "어머니",
+    "difficulty": 4
+  },
+  {
+    "id": 619,
+    "unitId": 19,
+    "word": "museum",
+    "meaning": "박물관",
+    "difficulty": 4
+  },
+  {
+    "id": 620,
+    "unitId": 19,
+    "word": "nation",
+    "meaning": "국가",
+    "difficulty": 4
+  },
+  {
+    "id": 621,
+    "unitId": 19,
+    "word": "nature",
+    "meaning": "자연",
+    "difficulty": 4
+  },
+  {
+    "id": 622,
+    "unitId": 19,
+    "word": "nothing",
+    "meaning": "아무것도 …없다",
+    "difficulty": 4
+  },
+  {
+    "id": 623,
+    "unitId": 19,
+    "word": "number",
+    "meaning": "수",
+    "difficulty": 4
+  },
+  {
+    "id": 624,
+    "unitId": 19,
+    "word": "office",
+    "meaning": "임무",
+    "difficulty": 4
+  },
+  {
+    "id": 625,
+    "unitId": 19,
+    "word": "palace",
+    "meaning": "궁전",
+    "difficulty": 4
+  },
+  {
+    "id": 626,
+    "unitId": 19,
+    "word": "parent",
+    "meaning": "어버이",
+    "difficulty": 4
+  },
+  {
+    "id": 627,
+    "unitId": 19,
+    "word": "pencil",
+    "meaning": "연필 연필로 쓰다",
+    "difficulty": 4
+  },
+  {
+    "id": 628,
+    "unitId": 19,
+    "word": "picnic",
+    "meaning": "소풍",
+    "difficulty": 4
+  },
+  {
+    "id": 629,
+    "unitId": 19,
+    "word": "picture",
+    "meaning": "그림",
+    "difficulty": 4
+  },
+  {
+    "id": 630,
+    "unitId": 19,
+    "word": "pocket",
+    "meaning": "포켓",
+    "difficulty": 4
+  },
+  {
+    "id": 631,
+    "unitId": 19,
+    "word": "police",
+    "meaning": "경찰 경비하다",
+    "difficulty": 4
+  },
+  {
+    "id": 632,
+    "unitId": 19,
+    "word": "present",
+    "meaning": "있는, 존재하는",
+    "difficulty": 4
+  },
+  {
+    "id": 633,
+    "unitId": 19,
+    "word": "problem",
+    "meaning": "문제",
+    "difficulty": 4
+  },
+  {
+    "id": 634,
+    "unitId": 19,
+    "word": "rabbit",
+    "meaning": "집토끼",
+    "difficulty": 4
+  },
+  {
+    "id": 635,
+    "unitId": 19,
+    "word": "rainbow",
+    "meaning": "무지개",
+    "difficulty": 4
+  },
+  {
+    "id": 636,
+    "unitId": 19,
+    "word": "return",
+    "meaning": "돌아가다",
+    "difficulty": 4
+  },
+  {
+    "id": 637,
+    "unitId": 19,
+    "word": "season",
+    "meaning": "계절",
+    "difficulty": 4
+  },
+  {
+    "id": 638,
+    "unitId": 19,
+    "word": "sister",
+    "meaning": "여자형제",
+    "difficulty": 4
+  },
+  {
+    "id": 639,
+    "unitId": 19,
+    "word": "soccer",
+    "meaning": "축구",
+    "difficulty": 4
+  },
+  {
+    "id": 640,
+    "unitId": 19,
+    "word": "student",
+    "meaning": "학생",
+    "difficulty": 4
+  },
+  {
+    "id": 641,
+    "unitId": 19,
+    "word": "subway",
+    "meaning": "지하도",
+    "difficulty": 4
+  },
+  {
+    "id": 642,
+    "unitId": 19,
+    "word": "supper",
+    "meaning": "저녁식사",
+    "difficulty": 4
+  },
+  {
+    "id": 643,
+    "unitId": 19,
+    "word": "tonight",
+    "meaning": "오늘밤에 오늘밤",
+    "difficulty": 4
+  },
+  {
+    "id": 644,
+    "unitId": 19,
+    "word": "travel",
+    "meaning": "여행하다",
+    "difficulty": 4
+  },
+  {
+    "id": 645,
+    "unitId": 19,
+    "word": "weather",
+    "meaning": "날씨",
+    "difficulty": 4
+  },
+  {
+    "id": 646,
+    "unitId": 19,
+    "word": "wedding",
+    "meaning": "혼례",
+    "difficulty": 4
+  },
+  {
+    "id": 647,
+    "unitId": 19,
+    "word": "weekend",
+    "meaning": "주말 주말의 주말을 지내다",
+    "difficulty": 4
+  },
+  {
+    "id": 648,
+    "unitId": 19,
+    "word": "welcome",
+    "meaning": "환영 환영받는",
+    "difficulty": 4
+  },
+  {
+    "id": 649,
+    "unitId": 19,
+    "word": "window",
+    "meaning": "창",
+    "difficulty": 4
+  },
+  {
+    "id": 650,
+    "unitId": 19,
+    "word": "yellow",
+    "meaning": "황색의 황색",
+    "difficulty": 4
+  },
+  {
+    "id": 651,
+    "unitId": 19,
+    "word": "airplane",
+    "meaning": "비행기",
+    "difficulty": 5
+  },
+  {
+    "id": 652,
+    "unitId": 19,
+    "word": "background",
+    "meaning": "배경",
+    "difficulty": 5
+  },
+  {
+    "id": 653,
+    "unitId": 19,
+    "word": "bathroom",
+    "meaning": "욕실",
+    "difficulty": 5
+  },
+  {
+    "id": 654,
+    "unitId": 19,
+    "word": "birthday",
+    "meaning": "생일",
+    "difficulty": 5
+  },
+  {
+    "id": 655,
+    "unitId": 19,
+    "word": "breakfast",
+    "meaning": "아침밥",
+    "difficulty": 5
+  },
+  {
+    "id": 656,
+    "unitId": 19,
+    "word": "classroom",
+    "meaning": "교실",
+    "difficulty": 5
+  },
+  {
+    "id": 657,
+    "unitId": 19,
+    "word": "daughter",
+    "meaning": "딸",
+    "difficulty": 5
+  },
+  {
+    "id": 658,
+    "unitId": 19,
+    "word": "dialogue",
+    "meaning": "대화",
+    "difficulty": 5
+  },
+  {
+    "id": 659,
+    "unitId": 19,
+    "word": "football",
+    "meaning": "축구",
+    "difficulty": 5
+  },
+  {
+    "id": 660,
+    "unitId": 19,
+    "word": "handsome",
+    "meaning": "얼굴(자태)이 잘생긴",
+    "difficulty": 5
+  },
+  {
+    "id": 661,
+    "unitId": 19,
+    "word": "headache",
+    "meaning": "두통",
+    "difficulty": 5
+  },
+  {
+    "id": 662,
+    "unitId": 19,
+    "word": "mountain",
+    "meaning": "산",
+    "difficulty": 5
+  },
+  {
+    "id": 663,
+    "unitId": 19,
+    "word": "question",
+    "meaning": "물음, 질문, 질의",
+    "difficulty": 5
+  },
+  {
+    "id": 664,
+    "unitId": 19,
+    "word": "restroom",
+    "meaning": "화장실",
+    "difficulty": 5
+  },
+  {
+    "id": 665,
+    "unitId": 19,
+    "word": "scissors",
+    "meaning": "가위",
+    "difficulty": 5
+  },
+  {
+    "id": 666,
+    "unitId": 19,
+    "word": "textbook",
+    "meaning": "교과서",
+    "difficulty": 5
+  },
+  {
+    "id": 667,
+    "unitId": 20,
+    "word": "animal",
+    "meaning": "동물",
+    "difficulty": 4
+  },
+  {
+    "id": 668,
+    "unitId": 20,
+    "word": "another",
+    "meaning": "또 하나",
+    "difficulty": 4
+  },
+  {
+    "id": 669,
+    "unitId": 20,
+    "word": "battery",
+    "meaning": "전지",
+    "difficulty": 4
+  },
+  {
+    "id": 670,
+    "unitId": 20,
+    "word": "cinema",
+    "meaning": "영화관",
+    "difficulty": 4
+  },
+  {
+    "id": 671,
+    "unitId": 20,
+    "word": "comedy",
+    "meaning": "희극",
+    "difficulty": 4
+  },
+  {
+    "id": 672,
+    "unitId": 20,
+    "word": "company",
+    "meaning": "교제",
+    "difficulty": 4
+  },
+  {
+    "id": 673,
+    "unitId": 20,
+    "word": "eraser",
+    "meaning": "지우는 사람",
+    "difficulty": 4
+  },
+  {
+    "id": 674,
+    "unitId": 20,
+    "word": "evening",
+    "meaning": "저녁",
+    "difficulty": 4
+  },
+  {
+    "id": 675,
+    "unitId": 20,
+    "word": "factory",
+    "meaning": "공장",
+    "difficulty": 4
+  },
+  {
+    "id": 676,
+    "unitId": 20,
+    "word": "family",
+    "meaning": "가족",
+    "difficulty": 4
+  },
+  {
+    "id": 677,
+    "unitId": 20,
+    "word": "forever",
+    "meaning": "영원히",
+    "difficulty": 4
+  },
+  {
+    "id": 678,
+    "unitId": 20,
+    "word": "history",
+    "meaning": "역사",
+    "difficulty": 4
+  },
+  {
+    "id": 679,
+    "unitId": 20,
+    "word": "holiday",
+    "meaning": "휴일",
+    "difficulty": 4
+  },
+  {
+    "id": 680,
+    "unitId": 20,
+    "word": "however",
+    "meaning": "아무리",
+    "difficulty": 4
+  },
+  {
+    "id": 681,
+    "unitId": 20,
+    "word": "library",
+    "meaning": "도서관",
+    "difficulty": 4
+  },
+  {
+    "id": 682,
+    "unitId": 20,
+    "word": "memory",
+    "meaning": "기억",
+    "difficulty": 4
+  },
+  {
+    "id": 683,
+    "unitId": 20,
+    "word": "potato",
+    "meaning": "감자",
+    "difficulty": 4
+  },
+  {
+    "id": 684,
+    "unitId": 20,
+    "word": "accident",
+    "meaning": "뜻밖의 사건",
+    "difficulty": 5
+  },
+  {
+    "id": 685,
+    "unitId": 20,
+    "word": "adventure",
+    "meaning": "모험 모험하다",
+    "difficulty": 5
+  },
+  {
+    "id": 686,
+    "unitId": 20,
+    "word": "afternoon",
+    "meaning": "오후",
+    "difficulty": 5
+  },
+  {
+    "id": 687,
+    "unitId": 20,
+    "word": "baseball",
+    "meaning": "야구",
+    "difficulty": 5
+  },
+  {
+    "id": 688,
+    "unitId": 20,
+    "word": "basketball",
+    "meaning": "농구",
+    "difficulty": 5
+  },
+  {
+    "id": 689,
+    "unitId": 20,
+    "word": "business",
+    "meaning": "직업",
+    "difficulty": 5
+  },
+  {
+    "id": 690,
+    "unitId": 20,
+    "word": "calendar",
+    "meaning": "달력",
+    "difficulty": 5
+  },
+  {
+    "id": 691,
+    "unitId": 20,
+    "word": "condition",
+    "meaning": "조건",
+    "difficulty": 5
+  },
+  {
+    "id": 692,
+    "unitId": 20,
+    "word": "countryside",
+    "meaning": "시골",
+    "difficulty": 5
+  },
+  {
+    "id": 693,
+    "unitId": 20,
+    "word": "customer",
+    "meaning": "고객",
+    "difficulty": 5
+  },
+  {
+    "id": 694,
+    "unitId": 20,
+    "word": "delicious",
+    "meaning": "맛있는",
+    "difficulty": 5
+  },
+  {
+    "id": 695,
+    "unitId": 20,
+    "word": "different",
+    "meaning": "다른",
+    "difficulty": 5
+  },
+  {
+    "id": 696,
+    "unitId": 20,
+    "word": "difficult",
+    "meaning": "곤란한",
+    "difficulty": 5
+  },
+  {
+    "id": 697,
+    "unitId": 20,
+    "word": "elephant",
+    "meaning": "코끼리",
+    "difficulty": 5
+  },
+  {
+    "id": 698,
+    "unitId": 20,
+    "word": "engineer",
+    "meaning": "기사",
+    "difficulty": 5
+  },
+  {
+    "id": 699,
+    "unitId": 20,
+    "word": "exercise",
+    "meaning": "운동",
+    "difficulty": 5
+  },
+  {
+    "id": 700,
+    "unitId": 20,
+    "word": "fantastic",
+    "meaning": "환상적인",
+    "difficulty": 5
+  },
+  {
+    "id": 701,
+    "unitId": 20,
+    "word": "favorite",
+    "meaning": "마음에 드는 좋아하는 물건",
+    "difficulty": 5
+  },
+  {
+    "id": 702,
+    "unitId": 20,
+    "word": "gentleman",
+    "meaning": "신사",
+    "difficulty": 5
+  },
+  {
+    "id": 703,
+    "unitId": 20,
+    "word": "grandfather",
+    "meaning": "할아버지",
+    "difficulty": 5
+  },
+  {
+    "id": 704,
+    "unitId": 20,
+    "word": "homework",
+    "meaning": "숙제",
+    "difficulty": 5
+  },
+  {
+    "id": 705,
+    "unitId": 20,
+    "word": "hospital",
+    "meaning": "병원",
+    "difficulty": 5
+  },
+  {
+    "id": 706,
+    "unitId": 20,
+    "word": "important",
+    "meaning": "중요한",
+    "difficulty": 5
+  },
+  {
+    "id": 707,
+    "unitId": 20,
+    "word": "introduce",
+    "meaning": "안으로 들이다",
+    "difficulty": 5
+  },
+  {
+    "id": 708,
+    "unitId": 20,
+    "word": "livingroom",
+    "meaning": "거실",
+    "difficulty": 5
+  },
+  {
+    "id": 709,
+    "unitId": 20,
+    "word": "newspaper",
+    "meaning": "신문",
+    "difficulty": 5
+  },
+  {
+    "id": 710,
+    "unitId": 20,
+    "word": "remember",
+    "meaning": "기억하고 있다",
+    "difficulty": 5
+  },
+  {
+    "id": 711,
+    "unitId": 20,
+    "word": "restaurant",
+    "meaning": "요리점",
+    "difficulty": 5
+  },
+  {
+    "id": 712,
+    "unitId": 20,
+    "word": "strawberry",
+    "meaning": "딸기",
+    "difficulty": 5
+  },
+  {
+    "id": 713,
+    "unitId": 20,
+    "word": "telephone",
+    "meaning": "전화",
+    "difficulty": 5
+  },
+  {
+    "id": 714,
+    "unitId": 20,
+    "word": "together",
+    "meaning": "같이",
+    "difficulty": 5
+  },
+  {
+    "id": 715,
+    "unitId": 20,
+    "word": "tomorrow",
+    "meaning": "내일(은)",
+    "difficulty": 5
+  },
+  {
+    "id": 716,
+    "unitId": 20,
+    "word": "umbrella",
+    "meaning": "우산",
+    "difficulty": 5
+  },
+  {
+    "id": 717,
+    "unitId": 20,
+    "word": "understand",
+    "meaning": "이해하다",
+    "difficulty": 5
+  },
+  {
+    "id": 718,
+    "unitId": 20,
+    "word": "vegetable",
+    "meaning": "식물  야채, 푸성귀, 남새, 채소",
+    "difficulty": 5
+  },
+  {
+    "id": 719,
+    "unitId": 20,
+    "word": "yesterday",
+    "meaning": "어제",
+    "difficulty": 5
+  },
+  {
+    "id": 720,
+    "unitId": 21,
+    "word": "academy",
+    "meaning": "학술원",
+    "difficulty": 4
+  },
+  {
+    "id": 721,
+    "unitId": 21,
+    "word": "congratulate",
+    "meaning": "축하하다",
+    "difficulty": 5
+  },
+  {
+    "id": 722,
+    "unitId": 21,
+    "word": "elementary",
+    "meaning": "기본의",
+    "difficulty": 5
+  },
+  {
+    "id": 723,
+    "unitId": 21,
+    "word": "helicopter",
+    "meaning": "헬리콥터",
+    "difficulty": 5
+  },
+  {
+    "id": 724,
+    "unitId": 21,
+    "word": "mathematics",
+    "meaning": "수학",
+    "difficulty": 5
+  },
+  {
+    "id": 725,
+    "unitId": 21,
+    "word": "watermelon",
+    "meaning": "수박",
+    "difficulty": 5
+  },
+  {
+    "id": 726,
+    "unitId": 22,
+    "word": "a",
+    "meaning": "하나의",
+    "difficulty": 1
+  },
+  {
+    "id": 727,
+    "unitId": 22,
+    "word": "and",
+    "meaning": "및",
+    "difficulty": 1
+  },
+  {
+    "id": 728,
+    "unitId": 22,
+    "word": "as",
+    "meaning": "-와 같은 정도로",
+    "difficulty": 1
+  },
+  {
+    "id": 729,
+    "unitId": 22,
+    "word": "at",
+    "meaning": "-에서",
+    "difficulty": 1
+  },
+  {
+    "id": 730,
+    "unitId": 22,
+    "word": "be",
+    "meaning": "-이다",
+    "difficulty": 1
+  },
+  {
+    "id": 731,
+    "unitId": 22,
+    "word": "by",
+    "meaning": "곁에",
+    "difficulty": 1
+  },
+  {
+    "id": 732,
+    "unitId": 22,
+    "word": "do",
+    "meaning": "하다",
+    "difficulty": 1
+  },
+  {
+    "id": 733,
+    "unitId": 22,
+    "word": "he",
+    "meaning": "(3인칭단수 남성)그",
+    "difficulty": 1
+  },
+  {
+    "id": 734,
+    "unitId": 22,
+    "word": "i",
+    "meaning": "나는, 내가",
+    "difficulty": 1
+  },
+  {
+    "id": 735,
+    "unitId": 22,
+    "word": "if",
+    "meaning": "만일 -이라면",
+    "difficulty": 1
+  },
+  {
+    "id": 736,
+    "unitId": 22,
+    "word": "in",
+    "meaning": "-속에",
+    "difficulty": 1
+  },
+  {
+    "id": 737,
+    "unitId": 22,
+    "word": "it",
+    "meaning": "그것은",
+    "difficulty": 1
+  },
+  {
+    "id": 738,
+    "unitId": 22,
+    "word": "no",
+    "meaning": "무의",
+    "difficulty": 1
+  },
+  {
+    "id": 739,
+    "unitId": 22,
+    "word": "of",
+    "meaning": "출신의",
+    "difficulty": 1
+  },
+  {
+    "id": 740,
+    "unitId": 22,
+    "word": "on",
+    "meaning": "위에",
+    "difficulty": 1
+  },
+  {
+    "id": 741,
+    "unitId": 22,
+    "word": "or",
+    "meaning": "혹은",
+    "difficulty": 1
+  },
+  {
+    "id": 742,
+    "unitId": 22,
+    "word": "she",
+    "meaning": "그녀는",
+    "difficulty": 1
+  },
+  {
+    "id": 743,
+    "unitId": 22,
+    "word": "so",
+    "meaning": "그와 같이",
+    "difficulty": 1
+  },
+  {
+    "id": 744,
+    "unitId": 22,
+    "word": "the",
+    "meaning": "art.저",
+    "difficulty": 1
+  },
+  {
+    "id": 745,
+    "unitId": 22,
+    "word": "to",
+    "meaning": "-로",
+    "difficulty": 1
+  },
+  {
+    "id": 746,
+    "unitId": 22,
+    "word": "up",
+    "meaning": "위로",
+    "difficulty": 1
+  },
+  {
+    "id": 747,
+    "unitId": 22,
+    "word": "we",
+    "meaning": "우리가",
+    "difficulty": 1
+  },
+  {
+    "id": 748,
+    "unitId": 23,
+    "word": "all",
+    "meaning": "모든",
+    "difficulty": 1
+  },
+  {
+    "id": 749,
+    "unitId": 23,
+    "word": "but",
+    "meaning": "그러나 다만 (-을)제외하고",
+    "difficulty": 1
+  },
+  {
+    "id": 750,
+    "unitId": 23,
+    "word": "can",
+    "meaning": "au-할 수 있다",
+    "difficulty": 1
+  },
+  {
+    "id": 751,
+    "unitId": 23,
+    "word": "how",
+    "meaning": "어떻게",
+    "difficulty": 1
+  },
+  {
+    "id": 752,
+    "unitId": 23,
+    "word": "not",
+    "meaning": "아니다",
+    "difficulty": 1
+  },
+  {
+    "id": 753,
+    "unitId": 23,
+    "word": "who",
+    "meaning": "누구",
+    "difficulty": 1
+  },
+  {
+    "id": 754,
+    "unitId": 23,
+    "word": "yes",
+    "meaning": "예",
+    "difficulty": 1
+  },
+  {
+    "id": 755,
+    "unitId": 23,
+    "word": "you",
+    "meaning": "당신",
+    "difficulty": 1
+  },
+  {
+    "id": 756,
+    "unitId": 23,
+    "word": "from",
+    "meaning": "(분리,이탈,출발점,기점)-로 부터",
+    "difficulty": 2
+  },
+  {
+    "id": 757,
+    "unitId": 23,
+    "word": "have",
+    "meaning": "가지(고 있)다",
+    "difficulty": 2
+  },
+  {
+    "id": 758,
+    "unitId": 23,
+    "word": "that",
+    "meaning": "저",
+    "difficulty": 2
+  },
+  {
+    "id": 759,
+    "unitId": 23,
+    "word": "they",
+    "meaning": "그들",
+    "difficulty": 2
+  },
+  {
+    "id": 760,
+    "unitId": 23,
+    "word": "this",
+    "meaning": "이",
+    "difficulty": 2
+  },
+  {
+    "id": 761,
+    "unitId": 23,
+    "word": "what",
+    "meaning": "무엇 무슨",
+    "difficulty": 2
+  },
+  {
+    "id": 762,
+    "unitId": 23,
+    "word": "when",
+    "meaning": "언제",
+    "difficulty": 2
+  },
+  {
+    "id": 763,
+    "unitId": 23,
+    "word": "with",
+    "meaning": "함께",
+    "difficulty": 2
+  },
+  {
+    "id": 764,
+    "unitId": 24,
+    "word": "any",
+    "meaning": "어떤",
+    "difficulty": 1
+  },
+  {
+    "id": 765,
+    "unitId": 24,
+    "word": "may",
+    "meaning": "5월  청춘, 인생의 봄  산사나무, 아가위나무",
+    "difficulty": 1
+  },
+  {
+    "id": 766,
+    "unitId": 24,
+    "word": "now",
+    "meaning": "지금",
+    "difficulty": 1
+  },
+  {
+    "id": 767,
+    "unitId": 24,
+    "word": "off",
+    "meaning": "떨어져",
+    "difficulty": 1
+  },
+  {
+    "id": 768,
+    "unitId": 24,
+    "word": "one",
+    "meaning": "하나(의)",
+    "difficulty": 1
+  },
+  {
+    "id": 769,
+    "unitId": 24,
+    "word": "out",
+    "meaning": "밖으로",
+    "difficulty": 1
+  },
+  {
+    "id": 770,
+    "unitId": 24,
+    "word": "too",
+    "meaning": "(-도)또한",
+    "difficulty": 1
+  },
+  {
+    "id": 771,
+    "unitId": 24,
+    "word": "why",
+    "meaning": "왜",
+    "difficulty": 1
+  },
+  {
+    "id": 772,
+    "unitId": 24,
+    "word": "also",
+    "meaning": "-도 또한",
+    "difficulty": 2
+  },
+  {
+    "id": 773,
+    "unitId": 24,
+    "word": "both",
+    "meaning": "쌍방의",
+    "difficulty": 2
+  },
+  {
+    "id": 774,
+    "unitId": 24,
+    "word": "here",
+    "meaning": "여기에",
+    "difficulty": 2
+  },
+  {
+    "id": 775,
+    "unitId": 24,
+    "word": "into",
+    "meaning": "-안으로",
+    "difficulty": 2
+  },
+  {
+    "id": 776,
+    "unitId": 24,
+    "word": "just",
+    "meaning": "올바른",
+    "difficulty": 2
+  },
+  {
+    "id": 777,
+    "unitId": 24,
+    "word": "many",
+    "meaning": "많은",
+    "difficulty": 2
+  },
+  {
+    "id": 778,
+    "unitId": 24,
+    "word": "much",
+    "meaning": "많은",
+    "difficulty": 2
+  },
+  {
+    "id": 779,
+    "unitId": 24,
+    "word": "must",
+    "meaning": "-해야 한다",
+    "difficulty": 2
+  },
+  {
+    "id": 780,
+    "unitId": 24,
+    "word": "only",
+    "meaning": "유일한",
+    "difficulty": 2
+  },
+  {
+    "id": 781,
+    "unitId": 24,
+    "word": "over",
+    "meaning": "위쪽",
+    "difficulty": 2
+  },
+  {
+    "id": 782,
+    "unitId": 24,
+    "word": "some",
+    "meaning": "얼만가의",
+    "difficulty": 2
+  },
+  {
+    "id": 783,
+    "unitId": 24,
+    "word": "than",
+    "meaning": "-보다도",
+    "difficulty": 2
+  },
+  {
+    "id": 784,
+    "unitId": 24,
+    "word": "very",
+    "meaning": "매우",
+    "difficulty": 2
+  },
+  {
+    "id": 785,
+    "unitId": 24,
+    "word": "about",
+    "meaning": "-에 대하여",
+    "difficulty": 3
+  },
+  {
+    "id": 786,
+    "unitId": 24,
+    "word": "after",
+    "meaning": "후에",
+    "difficulty": 3
+  },
+  {
+    "id": 787,
+    "unitId": 24,
+    "word": "again",
+    "meaning": "다시",
+    "difficulty": 3
+  },
+  {
+    "id": 788,
+    "unitId": 24,
+    "word": "could",
+    "meaning": "aucan의 과거",
+    "difficulty": 3
+  },
+  {
+    "id": 789,
+    "unitId": 24,
+    "word": "every",
+    "meaning": "모든",
+    "difficulty": 3
+  },
+  {
+    "id": 790,
+    "unitId": 24,
+    "word": "might",
+    "meaning": "힘",
+    "difficulty": 3
+  },
+  {
+    "id": 791,
+    "unitId": 24,
+    "word": "never",
+    "meaning": "결코 -아니다",
+    "difficulty": 3
+  },
+  {
+    "id": 792,
+    "unitId": 24,
+    "word": "often",
+    "meaning": "자주",
+    "difficulty": 3
+  },
+  {
+    "id": 793,
+    "unitId": 24,
+    "word": "there",
+    "meaning": "거기에",
+    "difficulty": 3
+  },
+  {
+    "id": 794,
+    "unitId": 24,
+    "word": "where",
+    "meaning": "어디에 (-하는)곳에 pr.어디 (문제의)장소",
+    "difficulty": 3
+  },
+  {
+    "id": 795,
+    "unitId": 24,
+    "word": "already",
+    "meaning": "이미",
+    "difficulty": 4
+  },
+  {
+    "id": 796,
+    "unitId": 24,
+    "word": "always",
+    "meaning": "늘",
+    "difficulty": 4
+  },
+  {
+    "id": 797,
+    "unitId": 24,
+    "word": "enough",
+    "meaning": "충분한",
+    "difficulty": 4
+  },
+  {
+    "id": 798,
+    "unitId": 24,
+    "word": "should",
+    "meaning": "aushall의 과거",
+    "difficulty": 4
+  }
 ]

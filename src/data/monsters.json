@@ -1,54 +1,7184 @@
 [
-  { "id": 1, "stageId": 1, "wordId": 1, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 500 },
-  { "id": 2, "stageId": 1, "wordId": 2, "type": "goblin", "hp": 100, "hintDropRate": 0.5, "positionX": 1000 },
-  { "id": 3, "stageId": 1, "wordId": 3, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 1500 },
-
-  { "id": 4, "stageId": 2, "wordId": 4, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 500 },
-  { "id": 5, "stageId": 2, "wordId": 5, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 1000 },
-  { "id": 6, "stageId": 2, "wordId": 6, "type": "dragon", "hp": 150, "hintDropRate": 0.4, "positionX": 1500 },
-  { "id": 7, "stageId": 2, "wordId": 7, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 2000 },
-
-  { "id": 8, "stageId": 3, "wordId": 8, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 500 },
-  { "id": 9, "stageId": 3, "wordId": 9, "type": "dragon", "hp": 150, "hintDropRate": 0.4, "positionX": 1000 },
-  { "id": 10, "stageId": 3, "wordId": 10, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 1500 },
-  { "id": 11, "stageId": 3, "wordId": 11, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 2000 },
-  { "id": 12, "stageId": 3, "wordId": 12, "type": "dragon", "hp": 150, "hintDropRate": 0.4, "positionX": 2500 },
-
-  { "id": 13, "stageId": 4, "wordId": 13, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 500 },
-  { "id": 14, "stageId": 4, "wordId": 14, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 1000 },
-  { "id": 15, "stageId": 4, "wordId": 15, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 1500 },
-
-  { "id": 16, "stageId": 5, "wordId": 16, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 500 },
-  { "id": 17, "stageId": 5, "wordId": 17, "type": "dragon", "hp": 150, "hintDropRate": 0.4, "positionX": 1000 },
-  { "id": 18, "stageId": 5, "wordId": 18, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 1500 },
-  { "id": 19, "stageId": 5, "wordId": 19, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 2000 },
-
-  { "id": 20, "stageId": 6, "wordId": 20, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 500 },
-  { "id": 21, "stageId": 6, "wordId": 21, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 1000 },
-  { "id": 22, "stageId": 6, "wordId": 22, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 1500 },
-
-  { "id": 23, "stageId": 7, "wordId": 23, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 500 },
-  { "id": 24, "stageId": 7, "wordId": 24, "type": "dragon", "hp": 150, "hintDropRate": 0.4, "positionX": 1000 },
-  { "id": 25, "stageId": 7, "wordId": 25, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 1500 },
-  { "id": 26, "stageId": 7, "wordId": 26, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 2000 },
-
-  { "id": 27, "stageId": 8, "wordId": 27, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 500 },
-  { "id": 28, "stageId": 8, "wordId": 28, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 1000 },
-  { "id": 29, "stageId": 8, "wordId": 29, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 1500 },
-
-  { "id": 30, "stageId": 9, "wordId": 30, "type": "dragon", "hp": 150, "hintDropRate": 0.4, "positionX": 500 },
-  { "id": 31, "stageId": 9, "wordId": 31, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 1000 },
-  { "id": 32, "stageId": 9, "wordId": 32, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 1500 },
-  { "id": 33, "stageId": 9, "wordId": 33, "type": "dragon", "hp": 150, "hintDropRate": 0.4, "positionX": 2000 },
-
-  { "id": 34, "stageId": 10, "wordId": 34, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 500 },
-  { "id": 35, "stageId": 10, "wordId": 35, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 1000 },
-  { "id": 36, "stageId": 10, "wordId": 36, "type": "dragon", "hp": 150, "hintDropRate": 0.4, "positionX": 1500 },
-  { "id": 37, "stageId": 10, "wordId": 37, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 2000 },
-
-  { "id": 38, "stageId": 11, "wordId": 38, "type": "dragon", "hp": 150, "hintDropRate": 0.4, "positionX": 500 },
-  { "id": 39, "stageId": 11, "wordId": 39, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 1000 },
-  { "id": 40, "stageId": 11, "wordId": 40, "type": "slime", "hp": 100, "hintDropRate": 0.6, "positionX": 1500 },
-  { "id": 41, "stageId": 11, "wordId": 41, "type": "dragon", "hp": 150, "hintDropRate": 0.4, "positionX": 2000 },
-  { "id": 42, "stageId": 11, "wordId": 42, "type": "goblin", "hp": 120, "hintDropRate": 0.5, "positionX": 2500 }
+  {
+    "id": 1,
+    "stageId": 1,
+    "wordId": 1,
+    "type": "monster_01",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 2,
+    "stageId": 1,
+    "wordId": 2,
+    "type": "monster_02",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 3,
+    "stageId": 1,
+    "wordId": 3,
+    "type": "monster_03",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 4,
+    "stageId": 2,
+    "wordId": 4,
+    "type": "monster_04",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 5,
+    "stageId": 2,
+    "wordId": 5,
+    "type": "monster_05",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 6,
+    "stageId": 2,
+    "wordId": 6,
+    "type": "monster_06",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 7,
+    "stageId": 3,
+    "wordId": 7,
+    "type": "monster_07",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 8,
+    "stageId": 3,
+    "wordId": 8,
+    "type": "monster_08",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 9,
+    "stageId": 3,
+    "wordId": 9,
+    "type": "monster_09",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 10,
+    "stageId": 4,
+    "wordId": 10,
+    "type": "monster_10",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 11,
+    "stageId": 4,
+    "wordId": 11,
+    "type": "monster_11",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 12,
+    "stageId": 4,
+    "wordId": 12,
+    "type": "monster_12",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 13,
+    "stageId": 5,
+    "wordId": 13,
+    "type": "monster_13",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 14,
+    "stageId": 5,
+    "wordId": 14,
+    "type": "monster_14",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 15,
+    "stageId": 5,
+    "wordId": 15,
+    "type": "monster_15",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 16,
+    "stageId": 6,
+    "wordId": 16,
+    "type": "monster_16",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 17,
+    "stageId": 6,
+    "wordId": 17,
+    "type": "monster_17",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 18,
+    "stageId": 6,
+    "wordId": 18,
+    "type": "monster_18",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 19,
+    "stageId": 7,
+    "wordId": 19,
+    "type": "monster_19",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 20,
+    "stageId": 8,
+    "wordId": 20,
+    "type": "monster_20",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 21,
+    "stageId": 8,
+    "wordId": 21,
+    "type": "monster_21",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 22,
+    "stageId": 8,
+    "wordId": 22,
+    "type": "monster_22",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 23,
+    "stageId": 9,
+    "wordId": 23,
+    "type": "monster_23",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 24,
+    "stageId": 9,
+    "wordId": 24,
+    "type": "monster_24",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 25,
+    "stageId": 9,
+    "wordId": 25,
+    "type": "monster_25",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 26,
+    "stageId": 10,
+    "wordId": 26,
+    "type": "monster_26",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 27,
+    "stageId": 11,
+    "wordId": 27,
+    "type": "monster_27",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 28,
+    "stageId": 11,
+    "wordId": 28,
+    "type": "monster_28",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 29,
+    "stageId": 11,
+    "wordId": 29,
+    "type": "monster_29",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 30,
+    "stageId": 12,
+    "wordId": 30,
+    "type": "monster_30",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 31,
+    "stageId": 12,
+    "wordId": 31,
+    "type": "monster_31",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 32,
+    "stageId": 12,
+    "wordId": 32,
+    "type": "monster_32",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 33,
+    "stageId": 13,
+    "wordId": 33,
+    "type": "monster_33",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 34,
+    "stageId": 13,
+    "wordId": 34,
+    "type": "monster_34",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 35,
+    "stageId": 14,
+    "wordId": 35,
+    "type": "monster_35",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 36,
+    "stageId": 14,
+    "wordId": 36,
+    "type": "monster_36",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 37,
+    "stageId": 14,
+    "wordId": 37,
+    "type": "monster_37",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 38,
+    "stageId": 15,
+    "wordId": 38,
+    "type": "monster_38",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 39,
+    "stageId": 15,
+    "wordId": 39,
+    "type": "monster_39",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 40,
+    "stageId": 15,
+    "wordId": 40,
+    "type": "monster_40",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 41,
+    "stageId": 16,
+    "wordId": 41,
+    "type": "monster_41",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 42,
+    "stageId": 16,
+    "wordId": 42,
+    "type": "monster_42",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 43,
+    "stageId": 16,
+    "wordId": 43,
+    "type": "monster_43",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 44,
+    "stageId": 17,
+    "wordId": 44,
+    "type": "monster_44",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 45,
+    "stageId": 17,
+    "wordId": 45,
+    "type": "monster_45",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 46,
+    "stageId": 17,
+    "wordId": 46,
+    "type": "monster_46",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 47,
+    "stageId": 18,
+    "wordId": 47,
+    "type": "monster_47",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 48,
+    "stageId": 18,
+    "wordId": 48,
+    "type": "monster_48",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 49,
+    "stageId": 19,
+    "wordId": 49,
+    "type": "monster_49",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 50,
+    "stageId": 19,
+    "wordId": 50,
+    "type": "monster_50",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 51,
+    "stageId": 19,
+    "wordId": 51,
+    "type": "monster_51",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 52,
+    "stageId": 20,
+    "wordId": 52,
+    "type": "monster_52",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 53,
+    "stageId": 20,
+    "wordId": 53,
+    "type": "monster_53",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 54,
+    "stageId": 20,
+    "wordId": 54,
+    "type": "monster_54",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 55,
+    "stageId": 21,
+    "wordId": 55,
+    "type": "monster_55",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 56,
+    "stageId": 21,
+    "wordId": 56,
+    "type": "monster_56",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 57,
+    "stageId": 22,
+    "wordId": 57,
+    "type": "monster_57",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 58,
+    "stageId": 22,
+    "wordId": 58,
+    "type": "monster_58",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 59,
+    "stageId": 22,
+    "wordId": 59,
+    "type": "monster_59",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 60,
+    "stageId": 22,
+    "wordId": 60,
+    "type": "monster_60",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 2000
+  },
+  {
+    "id": 61,
+    "stageId": 23,
+    "wordId": 61,
+    "type": "monster_61",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 62,
+    "stageId": 23,
+    "wordId": 62,
+    "type": "monster_62",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 63,
+    "stageId": 23,
+    "wordId": 63,
+    "type": "monster_63",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 64,
+    "stageId": 23,
+    "wordId": 64,
+    "type": "monster_64",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 65,
+    "stageId": 24,
+    "wordId": 65,
+    "type": "monster_65",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 66,
+    "stageId": 24,
+    "wordId": 66,
+    "type": "monster_66",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 67,
+    "stageId": 24,
+    "wordId": 67,
+    "type": "monster_67",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 68,
+    "stageId": 24,
+    "wordId": 68,
+    "type": "monster_68",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 69,
+    "stageId": 25,
+    "wordId": 69,
+    "type": "monster_69",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 70,
+    "stageId": 25,
+    "wordId": 70,
+    "type": "monster_70",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 71,
+    "stageId": 25,
+    "wordId": 71,
+    "type": "monster_71",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 72,
+    "stageId": 25,
+    "wordId": 72,
+    "type": "monster_72",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 73,
+    "stageId": 26,
+    "wordId": 73,
+    "type": "monster_73",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 74,
+    "stageId": 26,
+    "wordId": 74,
+    "type": "monster_74",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 75,
+    "stageId": 26,
+    "wordId": 75,
+    "type": "monster_75",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 76,
+    "stageId": 26,
+    "wordId": 76,
+    "type": "monster_76",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 77,
+    "stageId": 27,
+    "wordId": 77,
+    "type": "monster_77",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 78,
+    "stageId": 27,
+    "wordId": 78,
+    "type": "monster_78",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 79,
+    "stageId": 27,
+    "wordId": 79,
+    "type": "monster_79",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 80,
+    "stageId": 27,
+    "wordId": 80,
+    "type": "monster_80",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 81,
+    "stageId": 28,
+    "wordId": 81,
+    "type": "monster_01",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 82,
+    "stageId": 28,
+    "wordId": 82,
+    "type": "monster_02",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 83,
+    "stageId": 28,
+    "wordId": 83,
+    "type": "monster_03",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 84,
+    "stageId": 28,
+    "wordId": 84,
+    "type": "monster_04",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 85,
+    "stageId": 29,
+    "wordId": 85,
+    "type": "monster_05",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 86,
+    "stageId": 29,
+    "wordId": 86,
+    "type": "monster_06",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 87,
+    "stageId": 29,
+    "wordId": 87,
+    "type": "monster_07",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 88,
+    "stageId": 29,
+    "wordId": 88,
+    "type": "monster_08",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 89,
+    "stageId": 30,
+    "wordId": 89,
+    "type": "monster_09",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 90,
+    "stageId": 30,
+    "wordId": 90,
+    "type": "monster_10",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 91,
+    "stageId": 30,
+    "wordId": 91,
+    "type": "monster_11",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 92,
+    "stageId": 30,
+    "wordId": 92,
+    "type": "monster_12",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 93,
+    "stageId": 31,
+    "wordId": 93,
+    "type": "monster_13",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 94,
+    "stageId": 31,
+    "wordId": 94,
+    "type": "monster_14",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 95,
+    "stageId": 31,
+    "wordId": 95,
+    "type": "monster_15",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 96,
+    "stageId": 31,
+    "wordId": 96,
+    "type": "monster_16",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 97,
+    "stageId": 32,
+    "wordId": 97,
+    "type": "monster_17",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 98,
+    "stageId": 32,
+    "wordId": 98,
+    "type": "monster_18",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 99,
+    "stageId": 32,
+    "wordId": 99,
+    "type": "monster_19",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 100,
+    "stageId": 32,
+    "wordId": 100,
+    "type": "monster_20",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 101,
+    "stageId": 33,
+    "wordId": 101,
+    "type": "monster_21",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 102,
+    "stageId": 33,
+    "wordId": 102,
+    "type": "monster_22",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 103,
+    "stageId": 33,
+    "wordId": 103,
+    "type": "monster_23",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 104,
+    "stageId": 33,
+    "wordId": 104,
+    "type": "monster_24",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 105,
+    "stageId": 34,
+    "wordId": 105,
+    "type": "monster_25",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 106,
+    "stageId": 34,
+    "wordId": 106,
+    "type": "monster_26",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 107,
+    "stageId": 34,
+    "wordId": 107,
+    "type": "monster_27",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 108,
+    "stageId": 34,
+    "wordId": 108,
+    "type": "monster_28",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 109,
+    "stageId": 35,
+    "wordId": 109,
+    "type": "monster_29",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 110,
+    "stageId": 35,
+    "wordId": 110,
+    "type": "monster_30",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 111,
+    "stageId": 36,
+    "wordId": 111,
+    "type": "monster_31",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 112,
+    "stageId": 36,
+    "wordId": 112,
+    "type": "monster_32",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 113,
+    "stageId": 36,
+    "wordId": 113,
+    "type": "monster_33",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 114,
+    "stageId": 36,
+    "wordId": 114,
+    "type": "monster_34",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 2000
+  },
+  {
+    "id": 115,
+    "stageId": 37,
+    "wordId": 115,
+    "type": "monster_35",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 116,
+    "stageId": 37,
+    "wordId": 116,
+    "type": "monster_36",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 117,
+    "stageId": 37,
+    "wordId": 117,
+    "type": "monster_37",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 118,
+    "stageId": 37,
+    "wordId": 118,
+    "type": "monster_38",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 2000
+  },
+  {
+    "id": 119,
+    "stageId": 38,
+    "wordId": 119,
+    "type": "monster_39",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 120,
+    "stageId": 38,
+    "wordId": 120,
+    "type": "monster_40",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 121,
+    "stageId": 38,
+    "wordId": 121,
+    "type": "monster_41",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 122,
+    "stageId": 38,
+    "wordId": 122,
+    "type": "monster_42",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 2000
+  },
+  {
+    "id": 123,
+    "stageId": 39,
+    "wordId": 123,
+    "type": "monster_43",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 124,
+    "stageId": 39,
+    "wordId": 124,
+    "type": "monster_44",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 125,
+    "stageId": 39,
+    "wordId": 125,
+    "type": "monster_45",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 126,
+    "stageId": 39,
+    "wordId": 126,
+    "type": "monster_46",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 127,
+    "stageId": 40,
+    "wordId": 127,
+    "type": "monster_47",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 128,
+    "stageId": 40,
+    "wordId": 128,
+    "type": "monster_48",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 129,
+    "stageId": 40,
+    "wordId": 129,
+    "type": "monster_49",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 130,
+    "stageId": 40,
+    "wordId": 130,
+    "type": "monster_50",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 131,
+    "stageId": 41,
+    "wordId": 131,
+    "type": "monster_51",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 132,
+    "stageId": 41,
+    "wordId": 132,
+    "type": "monster_52",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 133,
+    "stageId": 41,
+    "wordId": 133,
+    "type": "monster_53",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 134,
+    "stageId": 41,
+    "wordId": 134,
+    "type": "monster_54",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 135,
+    "stageId": 42,
+    "wordId": 135,
+    "type": "monster_55",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 136,
+    "stageId": 42,
+    "wordId": 136,
+    "type": "monster_56",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 137,
+    "stageId": 42,
+    "wordId": 137,
+    "type": "monster_57",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 138,
+    "stageId": 42,
+    "wordId": 138,
+    "type": "monster_58",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 139,
+    "stageId": 43,
+    "wordId": 139,
+    "type": "monster_59",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 140,
+    "stageId": 43,
+    "wordId": 140,
+    "type": "monster_60",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 141,
+    "stageId": 43,
+    "wordId": 141,
+    "type": "monster_61",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 142,
+    "stageId": 43,
+    "wordId": 142,
+    "type": "monster_62",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 143,
+    "stageId": 44,
+    "wordId": 143,
+    "type": "monster_63",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 144,
+    "stageId": 44,
+    "wordId": 144,
+    "type": "monster_64",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 145,
+    "stageId": 44,
+    "wordId": 145,
+    "type": "monster_65",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 146,
+    "stageId": 44,
+    "wordId": 146,
+    "type": "monster_66",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 147,
+    "stageId": 45,
+    "wordId": 147,
+    "type": "monster_67",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 148,
+    "stageId": 45,
+    "wordId": 148,
+    "type": "monster_68",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 149,
+    "stageId": 45,
+    "wordId": 149,
+    "type": "monster_69",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 150,
+    "stageId": 45,
+    "wordId": 150,
+    "type": "monster_70",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 151,
+    "stageId": 46,
+    "wordId": 151,
+    "type": "monster_71",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 152,
+    "stageId": 46,
+    "wordId": 152,
+    "type": "monster_72",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 153,
+    "stageId": 46,
+    "wordId": 153,
+    "type": "monster_73",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 154,
+    "stageId": 46,
+    "wordId": 154,
+    "type": "monster_74",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 155,
+    "stageId": 47,
+    "wordId": 155,
+    "type": "monster_75",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 156,
+    "stageId": 47,
+    "wordId": 156,
+    "type": "monster_76",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 157,
+    "stageId": 47,
+    "wordId": 157,
+    "type": "monster_77",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 158,
+    "stageId": 47,
+    "wordId": 158,
+    "type": "monster_78",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 159,
+    "stageId": 48,
+    "wordId": 159,
+    "type": "monster_79",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 160,
+    "stageId": 48,
+    "wordId": 160,
+    "type": "monster_80",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 161,
+    "stageId": 48,
+    "wordId": 161,
+    "type": "monster_01",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 162,
+    "stageId": 48,
+    "wordId": 162,
+    "type": "monster_02",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 163,
+    "stageId": 49,
+    "wordId": 163,
+    "type": "monster_03",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 164,
+    "stageId": 49,
+    "wordId": 164,
+    "type": "monster_04",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 165,
+    "stageId": 49,
+    "wordId": 165,
+    "type": "monster_05",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 166,
+    "stageId": 49,
+    "wordId": 166,
+    "type": "monster_06",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 167,
+    "stageId": 50,
+    "wordId": 167,
+    "type": "monster_07",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 168,
+    "stageId": 50,
+    "wordId": 168,
+    "type": "monster_08",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 169,
+    "stageId": 50,
+    "wordId": 169,
+    "type": "monster_09",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 170,
+    "stageId": 50,
+    "wordId": 170,
+    "type": "monster_10",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 171,
+    "stageId": 51,
+    "wordId": 171,
+    "type": "monster_11",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 172,
+    "stageId": 51,
+    "wordId": 172,
+    "type": "monster_12",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 173,
+    "stageId": 51,
+    "wordId": 173,
+    "type": "monster_13",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 174,
+    "stageId": 51,
+    "wordId": 174,
+    "type": "monster_14",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 175,
+    "stageId": 52,
+    "wordId": 175,
+    "type": "monster_15",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 176,
+    "stageId": 52,
+    "wordId": 176,
+    "type": "monster_16",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 177,
+    "stageId": 52,
+    "wordId": 177,
+    "type": "monster_17",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 178,
+    "stageId": 52,
+    "wordId": 178,
+    "type": "monster_18",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 179,
+    "stageId": 53,
+    "wordId": 179,
+    "type": "monster_19",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 180,
+    "stageId": 53,
+    "wordId": 180,
+    "type": "monster_20",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 181,
+    "stageId": 53,
+    "wordId": 181,
+    "type": "monster_21",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 182,
+    "stageId": 53,
+    "wordId": 182,
+    "type": "monster_22",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 183,
+    "stageId": 54,
+    "wordId": 183,
+    "type": "monster_23",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 184,
+    "stageId": 54,
+    "wordId": 184,
+    "type": "monster_24",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 185,
+    "stageId": 54,
+    "wordId": 185,
+    "type": "monster_25",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 186,
+    "stageId": 54,
+    "wordId": 186,
+    "type": "monster_26",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 187,
+    "stageId": 55,
+    "wordId": 187,
+    "type": "monster_27",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 188,
+    "stageId": 55,
+    "wordId": 188,
+    "type": "monster_28",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 189,
+    "stageId": 55,
+    "wordId": 189,
+    "type": "monster_29",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 190,
+    "stageId": 55,
+    "wordId": 190,
+    "type": "monster_30",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 191,
+    "stageId": 56,
+    "wordId": 191,
+    "type": "monster_31",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 192,
+    "stageId": 56,
+    "wordId": 192,
+    "type": "monster_32",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 193,
+    "stageId": 56,
+    "wordId": 193,
+    "type": "monster_33",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 194,
+    "stageId": 56,
+    "wordId": 194,
+    "type": "monster_34",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 195,
+    "stageId": 57,
+    "wordId": 195,
+    "type": "monster_35",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 196,
+    "stageId": 57,
+    "wordId": 196,
+    "type": "monster_36",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 197,
+    "stageId": 57,
+    "wordId": 197,
+    "type": "monster_37",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 198,
+    "stageId": 57,
+    "wordId": 198,
+    "type": "monster_38",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 199,
+    "stageId": 58,
+    "wordId": 199,
+    "type": "monster_39",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 200,
+    "stageId": 58,
+    "wordId": 200,
+    "type": "monster_40",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 201,
+    "stageId": 59,
+    "wordId": 201,
+    "type": "monster_41",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 202,
+    "stageId": 59,
+    "wordId": 202,
+    "type": "monster_42",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 203,
+    "stageId": 59,
+    "wordId": 203,
+    "type": "monster_43",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 204,
+    "stageId": 59,
+    "wordId": 204,
+    "type": "monster_44",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 205,
+    "stageId": 60,
+    "wordId": 205,
+    "type": "monster_45",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 206,
+    "stageId": 60,
+    "wordId": 206,
+    "type": "monster_46",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 207,
+    "stageId": 60,
+    "wordId": 207,
+    "type": "monster_47",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 208,
+    "stageId": 60,
+    "wordId": 208,
+    "type": "monster_48",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 209,
+    "stageId": 61,
+    "wordId": 209,
+    "type": "monster_49",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 210,
+    "stageId": 61,
+    "wordId": 210,
+    "type": "monster_50",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 211,
+    "stageId": 61,
+    "wordId": 211,
+    "type": "monster_51",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 212,
+    "stageId": 61,
+    "wordId": 212,
+    "type": "monster_52",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 213,
+    "stageId": 62,
+    "wordId": 213,
+    "type": "monster_53",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 214,
+    "stageId": 62,
+    "wordId": 214,
+    "type": "monster_54",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 215,
+    "stageId": 62,
+    "wordId": 215,
+    "type": "monster_55",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 216,
+    "stageId": 62,
+    "wordId": 216,
+    "type": "monster_56",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 217,
+    "stageId": 63,
+    "wordId": 217,
+    "type": "monster_57",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 218,
+    "stageId": 63,
+    "wordId": 218,
+    "type": "monster_58",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 219,
+    "stageId": 63,
+    "wordId": 219,
+    "type": "monster_59",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 220,
+    "stageId": 63,
+    "wordId": 220,
+    "type": "monster_60",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 221,
+    "stageId": 64,
+    "wordId": 221,
+    "type": "monster_61",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 222,
+    "stageId": 64,
+    "wordId": 222,
+    "type": "monster_62",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 223,
+    "stageId": 64,
+    "wordId": 223,
+    "type": "monster_63",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 224,
+    "stageId": 64,
+    "wordId": 224,
+    "type": "monster_64",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 225,
+    "stageId": 65,
+    "wordId": 225,
+    "type": "monster_65",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 226,
+    "stageId": 65,
+    "wordId": 226,
+    "type": "monster_66",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 227,
+    "stageId": 65,
+    "wordId": 227,
+    "type": "monster_67",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 228,
+    "stageId": 65,
+    "wordId": 228,
+    "type": "monster_68",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 229,
+    "stageId": 66,
+    "wordId": 229,
+    "type": "monster_69",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 230,
+    "stageId": 66,
+    "wordId": 230,
+    "type": "monster_70",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 231,
+    "stageId": 66,
+    "wordId": 231,
+    "type": "monster_71",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 232,
+    "stageId": 66,
+    "wordId": 232,
+    "type": "monster_72",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 233,
+    "stageId": 67,
+    "wordId": 233,
+    "type": "monster_73",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 234,
+    "stageId": 67,
+    "wordId": 234,
+    "type": "monster_74",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 235,
+    "stageId": 67,
+    "wordId": 235,
+    "type": "monster_75",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 236,
+    "stageId": 67,
+    "wordId": 236,
+    "type": "monster_76",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 237,
+    "stageId": 68,
+    "wordId": 237,
+    "type": "monster_77",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 238,
+    "stageId": 68,
+    "wordId": 238,
+    "type": "monster_78",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 239,
+    "stageId": 68,
+    "wordId": 239,
+    "type": "monster_79",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 240,
+    "stageId": 68,
+    "wordId": 240,
+    "type": "monster_80",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 241,
+    "stageId": 69,
+    "wordId": 241,
+    "type": "monster_01",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 242,
+    "stageId": 69,
+    "wordId": 242,
+    "type": "monster_02",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 243,
+    "stageId": 69,
+    "wordId": 243,
+    "type": "monster_03",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 244,
+    "stageId": 69,
+    "wordId": 244,
+    "type": "monster_04",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 245,
+    "stageId": 70,
+    "wordId": 245,
+    "type": "monster_05",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 246,
+    "stageId": 70,
+    "wordId": 246,
+    "type": "monster_06",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 247,
+    "stageId": 70,
+    "wordId": 247,
+    "type": "monster_07",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 248,
+    "stageId": 70,
+    "wordId": 248,
+    "type": "monster_08",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 249,
+    "stageId": 71,
+    "wordId": 249,
+    "type": "monster_09",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 250,
+    "stageId": 71,
+    "wordId": 250,
+    "type": "monster_10",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 251,
+    "stageId": 71,
+    "wordId": 251,
+    "type": "monster_11",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 252,
+    "stageId": 71,
+    "wordId": 252,
+    "type": "monster_12",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 253,
+    "stageId": 72,
+    "wordId": 253,
+    "type": "monster_13",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 254,
+    "stageId": 72,
+    "wordId": 254,
+    "type": "monster_14",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 255,
+    "stageId": 72,
+    "wordId": 255,
+    "type": "monster_15",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 256,
+    "stageId": 72,
+    "wordId": 256,
+    "type": "monster_16",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 257,
+    "stageId": 73,
+    "wordId": 257,
+    "type": "monster_17",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 258,
+    "stageId": 73,
+    "wordId": 258,
+    "type": "monster_18",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 259,
+    "stageId": 73,
+    "wordId": 259,
+    "type": "monster_19",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 260,
+    "stageId": 73,
+    "wordId": 260,
+    "type": "monster_20",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 261,
+    "stageId": 74,
+    "wordId": 261,
+    "type": "monster_21",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 262,
+    "stageId": 74,
+    "wordId": 262,
+    "type": "monster_22",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 263,
+    "stageId": 74,
+    "wordId": 263,
+    "type": "monster_23",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 264,
+    "stageId": 74,
+    "wordId": 264,
+    "type": "monster_24",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 265,
+    "stageId": 75,
+    "wordId": 265,
+    "type": "monster_25",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 266,
+    "stageId": 75,
+    "wordId": 266,
+    "type": "monster_26",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 267,
+    "stageId": 75,
+    "wordId": 267,
+    "type": "monster_27",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 268,
+    "stageId": 75,
+    "wordId": 268,
+    "type": "monster_28",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 269,
+    "stageId": 76,
+    "wordId": 269,
+    "type": "monster_29",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 270,
+    "stageId": 76,
+    "wordId": 270,
+    "type": "monster_30",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 271,
+    "stageId": 76,
+    "wordId": 271,
+    "type": "monster_31",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 272,
+    "stageId": 76,
+    "wordId": 272,
+    "type": "monster_32",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 273,
+    "stageId": 77,
+    "wordId": 273,
+    "type": "monster_33",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 274,
+    "stageId": 77,
+    "wordId": 274,
+    "type": "monster_34",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 275,
+    "stageId": 77,
+    "wordId": 275,
+    "type": "monster_35",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 276,
+    "stageId": 77,
+    "wordId": 276,
+    "type": "monster_36",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 277,
+    "stageId": 78,
+    "wordId": 277,
+    "type": "monster_37",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 278,
+    "stageId": 78,
+    "wordId": 278,
+    "type": "monster_38",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 279,
+    "stageId": 78,
+    "wordId": 279,
+    "type": "monster_39",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 280,
+    "stageId": 78,
+    "wordId": 280,
+    "type": "monster_40",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 281,
+    "stageId": 79,
+    "wordId": 281,
+    "type": "monster_41",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 282,
+    "stageId": 79,
+    "wordId": 282,
+    "type": "monster_42",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 283,
+    "stageId": 79,
+    "wordId": 283,
+    "type": "monster_43",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 284,
+    "stageId": 79,
+    "wordId": 284,
+    "type": "monster_44",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 285,
+    "stageId": 80,
+    "wordId": 285,
+    "type": "monster_45",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 286,
+    "stageId": 80,
+    "wordId": 286,
+    "type": "monster_46",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 287,
+    "stageId": 80,
+    "wordId": 287,
+    "type": "monster_47",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 288,
+    "stageId": 80,
+    "wordId": 288,
+    "type": "monster_48",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 289,
+    "stageId": 81,
+    "wordId": 289,
+    "type": "monster_49",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 290,
+    "stageId": 81,
+    "wordId": 290,
+    "type": "monster_50",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 291,
+    "stageId": 81,
+    "wordId": 291,
+    "type": "monster_51",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 292,
+    "stageId": 81,
+    "wordId": 292,
+    "type": "monster_52",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 293,
+    "stageId": 82,
+    "wordId": 293,
+    "type": "monster_53",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 294,
+    "stageId": 82,
+    "wordId": 294,
+    "type": "monster_54",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 295,
+    "stageId": 82,
+    "wordId": 295,
+    "type": "monster_55",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 296,
+    "stageId": 82,
+    "wordId": 296,
+    "type": "monster_56",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 297,
+    "stageId": 83,
+    "wordId": 297,
+    "type": "monster_57",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 298,
+    "stageId": 83,
+    "wordId": 298,
+    "type": "monster_58",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 299,
+    "stageId": 83,
+    "wordId": 299,
+    "type": "monster_59",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 300,
+    "stageId": 83,
+    "wordId": 300,
+    "type": "monster_60",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 301,
+    "stageId": 84,
+    "wordId": 301,
+    "type": "monster_61",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 302,
+    "stageId": 84,
+    "wordId": 302,
+    "type": "monster_62",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 303,
+    "stageId": 84,
+    "wordId": 303,
+    "type": "monster_63",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 304,
+    "stageId": 84,
+    "wordId": 304,
+    "type": "monster_64",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 305,
+    "stageId": 85,
+    "wordId": 305,
+    "type": "monster_65",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 306,
+    "stageId": 85,
+    "wordId": 306,
+    "type": "monster_66",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 307,
+    "stageId": 85,
+    "wordId": 307,
+    "type": "monster_67",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 308,
+    "stageId": 85,
+    "wordId": 308,
+    "type": "monster_68",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 309,
+    "stageId": 86,
+    "wordId": 309,
+    "type": "monster_69",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 310,
+    "stageId": 86,
+    "wordId": 310,
+    "type": "monster_70",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1000
+  },
+  {
+    "id": 311,
+    "stageId": 87,
+    "wordId": 311,
+    "type": "monster_71",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 312,
+    "stageId": 87,
+    "wordId": 312,
+    "type": "monster_72",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 313,
+    "stageId": 87,
+    "wordId": 313,
+    "type": "monster_73",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 314,
+    "stageId": 87,
+    "wordId": 314,
+    "type": "monster_74",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 315,
+    "stageId": 88,
+    "wordId": 315,
+    "type": "monster_75",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 316,
+    "stageId": 88,
+    "wordId": 316,
+    "type": "monster_76",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 317,
+    "stageId": 88,
+    "wordId": 317,
+    "type": "monster_77",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 318,
+    "stageId": 88,
+    "wordId": 318,
+    "type": "monster_78",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 319,
+    "stageId": 89,
+    "wordId": 319,
+    "type": "monster_79",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 320,
+    "stageId": 89,
+    "wordId": 320,
+    "type": "monster_80",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 321,
+    "stageId": 89,
+    "wordId": 321,
+    "type": "monster_01",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 322,
+    "stageId": 89,
+    "wordId": 322,
+    "type": "monster_02",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 323,
+    "stageId": 90,
+    "wordId": 323,
+    "type": "monster_03",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 324,
+    "stageId": 90,
+    "wordId": 324,
+    "type": "monster_04",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 325,
+    "stageId": 90,
+    "wordId": 325,
+    "type": "monster_05",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 326,
+    "stageId": 90,
+    "wordId": 326,
+    "type": "monster_06",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 327,
+    "stageId": 91,
+    "wordId": 327,
+    "type": "monster_07",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 328,
+    "stageId": 91,
+    "wordId": 328,
+    "type": "monster_08",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 329,
+    "stageId": 91,
+    "wordId": 329,
+    "type": "monster_09",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 330,
+    "stageId": 91,
+    "wordId": 330,
+    "type": "monster_10",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 331,
+    "stageId": 92,
+    "wordId": 331,
+    "type": "monster_11",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 332,
+    "stageId": 92,
+    "wordId": 332,
+    "type": "monster_12",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 333,
+    "stageId": 92,
+    "wordId": 333,
+    "type": "monster_13",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 334,
+    "stageId": 92,
+    "wordId": 334,
+    "type": "monster_14",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 335,
+    "stageId": 93,
+    "wordId": 335,
+    "type": "monster_15",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 336,
+    "stageId": 93,
+    "wordId": 336,
+    "type": "monster_16",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 337,
+    "stageId": 93,
+    "wordId": 337,
+    "type": "monster_17",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 338,
+    "stageId": 94,
+    "wordId": 338,
+    "type": "monster_18",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 339,
+    "stageId": 94,
+    "wordId": 339,
+    "type": "monster_19",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 340,
+    "stageId": 94,
+    "wordId": 340,
+    "type": "monster_20",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 341,
+    "stageId": 94,
+    "wordId": 341,
+    "type": "monster_21",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 342,
+    "stageId": 95,
+    "wordId": 342,
+    "type": "monster_22",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 343,
+    "stageId": 95,
+    "wordId": 343,
+    "type": "monster_23",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 344,
+    "stageId": 95,
+    "wordId": 344,
+    "type": "monster_24",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 345,
+    "stageId": 95,
+    "wordId": 345,
+    "type": "monster_25",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 346,
+    "stageId": 96,
+    "wordId": 346,
+    "type": "monster_26",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 347,
+    "stageId": 96,
+    "wordId": 347,
+    "type": "monster_27",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 348,
+    "stageId": 96,
+    "wordId": 348,
+    "type": "monster_28",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 349,
+    "stageId": 96,
+    "wordId": 349,
+    "type": "monster_29",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 350,
+    "stageId": 97,
+    "wordId": 350,
+    "type": "monster_30",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 351,
+    "stageId": 97,
+    "wordId": 351,
+    "type": "monster_31",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 352,
+    "stageId": 97,
+    "wordId": 352,
+    "type": "monster_32",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 353,
+    "stageId": 97,
+    "wordId": 353,
+    "type": "monster_33",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 2000
+  },
+  {
+    "id": 354,
+    "stageId": 98,
+    "wordId": 354,
+    "type": "monster_34",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 355,
+    "stageId": 98,
+    "wordId": 355,
+    "type": "monster_35",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 356,
+    "stageId": 98,
+    "wordId": 356,
+    "type": "monster_36",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 357,
+    "stageId": 98,
+    "wordId": 357,
+    "type": "monster_37",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 358,
+    "stageId": 99,
+    "wordId": 358,
+    "type": "monster_38",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 359,
+    "stageId": 99,
+    "wordId": 359,
+    "type": "monster_39",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 360,
+    "stageId": 99,
+    "wordId": 360,
+    "type": "monster_40",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 361,
+    "stageId": 99,
+    "wordId": 361,
+    "type": "monster_41",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 362,
+    "stageId": 100,
+    "wordId": 362,
+    "type": "monster_42",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 363,
+    "stageId": 100,
+    "wordId": 363,
+    "type": "monster_43",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 364,
+    "stageId": 100,
+    "wordId": 364,
+    "type": "monster_44",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 365,
+    "stageId": 100,
+    "wordId": 365,
+    "type": "monster_45",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 366,
+    "stageId": 101,
+    "wordId": 366,
+    "type": "monster_46",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 367,
+    "stageId": 101,
+    "wordId": 367,
+    "type": "monster_47",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 368,
+    "stageId": 101,
+    "wordId": 368,
+    "type": "monster_48",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 369,
+    "stageId": 101,
+    "wordId": 369,
+    "type": "monster_49",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 370,
+    "stageId": 102,
+    "wordId": 370,
+    "type": "monster_50",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 371,
+    "stageId": 102,
+    "wordId": 371,
+    "type": "monster_51",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 372,
+    "stageId": 102,
+    "wordId": 372,
+    "type": "monster_52",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 373,
+    "stageId": 102,
+    "wordId": 373,
+    "type": "monster_53",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 374,
+    "stageId": 103,
+    "wordId": 374,
+    "type": "monster_54",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 375,
+    "stageId": 103,
+    "wordId": 375,
+    "type": "monster_55",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 376,
+    "stageId": 103,
+    "wordId": 376,
+    "type": "monster_56",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 377,
+    "stageId": 103,
+    "wordId": 377,
+    "type": "monster_57",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 378,
+    "stageId": 104,
+    "wordId": 378,
+    "type": "monster_58",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 379,
+    "stageId": 104,
+    "wordId": 379,
+    "type": "monster_59",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 380,
+    "stageId": 104,
+    "wordId": 380,
+    "type": "monster_60",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 381,
+    "stageId": 104,
+    "wordId": 381,
+    "type": "monster_61",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 382,
+    "stageId": 105,
+    "wordId": 382,
+    "type": "monster_62",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 383,
+    "stageId": 105,
+    "wordId": 383,
+    "type": "monster_63",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 384,
+    "stageId": 105,
+    "wordId": 384,
+    "type": "monster_64",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 385,
+    "stageId": 105,
+    "wordId": 385,
+    "type": "monster_65",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 386,
+    "stageId": 106,
+    "wordId": 386,
+    "type": "monster_66",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 387,
+    "stageId": 106,
+    "wordId": 387,
+    "type": "monster_67",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 388,
+    "stageId": 106,
+    "wordId": 388,
+    "type": "monster_68",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 389,
+    "stageId": 106,
+    "wordId": 389,
+    "type": "monster_69",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 390,
+    "stageId": 107,
+    "wordId": 390,
+    "type": "monster_70",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 391,
+    "stageId": 107,
+    "wordId": 391,
+    "type": "monster_71",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 392,
+    "stageId": 107,
+    "wordId": 392,
+    "type": "monster_72",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 393,
+    "stageId": 107,
+    "wordId": 393,
+    "type": "monster_73",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 394,
+    "stageId": 108,
+    "wordId": 394,
+    "type": "monster_74",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 395,
+    "stageId": 108,
+    "wordId": 395,
+    "type": "monster_75",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 396,
+    "stageId": 108,
+    "wordId": 396,
+    "type": "monster_76",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 397,
+    "stageId": 108,
+    "wordId": 397,
+    "type": "monster_77",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 398,
+    "stageId": 109,
+    "wordId": 398,
+    "type": "monster_78",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 399,
+    "stageId": 109,
+    "wordId": 399,
+    "type": "monster_79",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 400,
+    "stageId": 109,
+    "wordId": 400,
+    "type": "monster_80",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 401,
+    "stageId": 109,
+    "wordId": 401,
+    "type": "monster_01",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 402,
+    "stageId": 110,
+    "wordId": 402,
+    "type": "monster_02",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 403,
+    "stageId": 110,
+    "wordId": 403,
+    "type": "monster_03",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 404,
+    "stageId": 110,
+    "wordId": 404,
+    "type": "monster_04",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 405,
+    "stageId": 110,
+    "wordId": 405,
+    "type": "monster_05",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 406,
+    "stageId": 111,
+    "wordId": 406,
+    "type": "monster_06",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 407,
+    "stageId": 111,
+    "wordId": 407,
+    "type": "monster_07",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 408,
+    "stageId": 111,
+    "wordId": 408,
+    "type": "monster_08",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 409,
+    "stageId": 111,
+    "wordId": 409,
+    "type": "monster_09",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 410,
+    "stageId": 112,
+    "wordId": 410,
+    "type": "monster_10",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 411,
+    "stageId": 112,
+    "wordId": 411,
+    "type": "monster_11",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 412,
+    "stageId": 112,
+    "wordId": 412,
+    "type": "monster_12",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 413,
+    "stageId": 112,
+    "wordId": 413,
+    "type": "monster_13",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 414,
+    "stageId": 113,
+    "wordId": 414,
+    "type": "monster_14",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 415,
+    "stageId": 113,
+    "wordId": 415,
+    "type": "monster_15",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 416,
+    "stageId": 113,
+    "wordId": 416,
+    "type": "monster_16",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 417,
+    "stageId": 113,
+    "wordId": 417,
+    "type": "monster_17",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 418,
+    "stageId": 114,
+    "wordId": 418,
+    "type": "monster_18",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 419,
+    "stageId": 114,
+    "wordId": 419,
+    "type": "monster_19",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 420,
+    "stageId": 114,
+    "wordId": 420,
+    "type": "monster_20",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 421,
+    "stageId": 114,
+    "wordId": 421,
+    "type": "monster_21",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 422,
+    "stageId": 115,
+    "wordId": 422,
+    "type": "monster_22",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 423,
+    "stageId": 115,
+    "wordId": 423,
+    "type": "monster_23",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 424,
+    "stageId": 115,
+    "wordId": 424,
+    "type": "monster_24",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 425,
+    "stageId": 115,
+    "wordId": 425,
+    "type": "monster_25",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 426,
+    "stageId": 116,
+    "wordId": 426,
+    "type": "monster_26",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 427,
+    "stageId": 116,
+    "wordId": 427,
+    "type": "monster_27",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 428,
+    "stageId": 116,
+    "wordId": 428,
+    "type": "monster_28",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 429,
+    "stageId": 116,
+    "wordId": 429,
+    "type": "monster_29",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 430,
+    "stageId": 117,
+    "wordId": 430,
+    "type": "monster_30",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 431,
+    "stageId": 117,
+    "wordId": 431,
+    "type": "monster_31",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 432,
+    "stageId": 117,
+    "wordId": 432,
+    "type": "monster_32",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 433,
+    "stageId": 117,
+    "wordId": 433,
+    "type": "monster_33",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 434,
+    "stageId": 118,
+    "wordId": 434,
+    "type": "monster_34",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 435,
+    "stageId": 118,
+    "wordId": 435,
+    "type": "monster_35",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 436,
+    "stageId": 118,
+    "wordId": 436,
+    "type": "monster_36",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 437,
+    "stageId": 118,
+    "wordId": 437,
+    "type": "monster_37",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 438,
+    "stageId": 119,
+    "wordId": 438,
+    "type": "monster_38",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 439,
+    "stageId": 119,
+    "wordId": 439,
+    "type": "monster_39",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 440,
+    "stageId": 119,
+    "wordId": 440,
+    "type": "monster_40",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 441,
+    "stageId": 119,
+    "wordId": 441,
+    "type": "monster_41",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 442,
+    "stageId": 120,
+    "wordId": 442,
+    "type": "monster_42",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 443,
+    "stageId": 120,
+    "wordId": 443,
+    "type": "monster_43",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 444,
+    "stageId": 120,
+    "wordId": 444,
+    "type": "monster_44",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 445,
+    "stageId": 120,
+    "wordId": 445,
+    "type": "monster_45",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 446,
+    "stageId": 121,
+    "wordId": 446,
+    "type": "monster_46",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 447,
+    "stageId": 121,
+    "wordId": 447,
+    "type": "monster_47",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 448,
+    "stageId": 121,
+    "wordId": 448,
+    "type": "monster_48",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 449,
+    "stageId": 121,
+    "wordId": 449,
+    "type": "monster_49",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 450,
+    "stageId": 122,
+    "wordId": 450,
+    "type": "monster_50",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 451,
+    "stageId": 122,
+    "wordId": 451,
+    "type": "monster_51",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 452,
+    "stageId": 122,
+    "wordId": 452,
+    "type": "monster_52",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 453,
+    "stageId": 123,
+    "wordId": 453,
+    "type": "monster_53",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 454,
+    "stageId": 123,
+    "wordId": 454,
+    "type": "monster_54",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 455,
+    "stageId": 123,
+    "wordId": 455,
+    "type": "monster_55",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 456,
+    "stageId": 123,
+    "wordId": 456,
+    "type": "monster_56",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 457,
+    "stageId": 124,
+    "wordId": 457,
+    "type": "monster_57",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 458,
+    "stageId": 124,
+    "wordId": 458,
+    "type": "monster_58",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 459,
+    "stageId": 125,
+    "wordId": 459,
+    "type": "monster_59",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 460,
+    "stageId": 125,
+    "wordId": 460,
+    "type": "monster_60",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 461,
+    "stageId": 125,
+    "wordId": 461,
+    "type": "monster_61",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 462,
+    "stageId": 125,
+    "wordId": 462,
+    "type": "monster_62",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 463,
+    "stageId": 126,
+    "wordId": 463,
+    "type": "monster_63",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 464,
+    "stageId": 126,
+    "wordId": 464,
+    "type": "monster_64",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 465,
+    "stageId": 126,
+    "wordId": 465,
+    "type": "monster_65",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 466,
+    "stageId": 126,
+    "wordId": 466,
+    "type": "monster_66",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 467,
+    "stageId": 127,
+    "wordId": 467,
+    "type": "monster_67",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 468,
+    "stageId": 127,
+    "wordId": 468,
+    "type": "monster_68",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 469,
+    "stageId": 127,
+    "wordId": 469,
+    "type": "monster_69",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 470,
+    "stageId": 127,
+    "wordId": 470,
+    "type": "monster_70",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 471,
+    "stageId": 128,
+    "wordId": 471,
+    "type": "monster_71",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 472,
+    "stageId": 128,
+    "wordId": 472,
+    "type": "monster_72",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 473,
+    "stageId": 128,
+    "wordId": 473,
+    "type": "monster_73",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 474,
+    "stageId": 128,
+    "wordId": 474,
+    "type": "monster_74",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 475,
+    "stageId": 129,
+    "wordId": 475,
+    "type": "monster_75",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 476,
+    "stageId": 129,
+    "wordId": 476,
+    "type": "monster_76",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 477,
+    "stageId": 129,
+    "wordId": 477,
+    "type": "monster_77",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 478,
+    "stageId": 129,
+    "wordId": 478,
+    "type": "monster_78",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 479,
+    "stageId": 130,
+    "wordId": 479,
+    "type": "monster_79",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 480,
+    "stageId": 130,
+    "wordId": 480,
+    "type": "monster_80",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 481,
+    "stageId": 130,
+    "wordId": 481,
+    "type": "monster_01",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 482,
+    "stageId": 130,
+    "wordId": 482,
+    "type": "monster_02",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 483,
+    "stageId": 131,
+    "wordId": 483,
+    "type": "monster_03",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 484,
+    "stageId": 131,
+    "wordId": 484,
+    "type": "monster_04",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 485,
+    "stageId": 131,
+    "wordId": 485,
+    "type": "monster_05",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 486,
+    "stageId": 131,
+    "wordId": 486,
+    "type": "monster_06",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 487,
+    "stageId": 132,
+    "wordId": 487,
+    "type": "monster_07",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 488,
+    "stageId": 132,
+    "wordId": 488,
+    "type": "monster_08",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 489,
+    "stageId": 132,
+    "wordId": 489,
+    "type": "monster_09",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 490,
+    "stageId": 132,
+    "wordId": 490,
+    "type": "monster_10",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 491,
+    "stageId": 133,
+    "wordId": 491,
+    "type": "monster_11",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 492,
+    "stageId": 133,
+    "wordId": 492,
+    "type": "monster_12",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 493,
+    "stageId": 134,
+    "wordId": 493,
+    "type": "monster_13",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 494,
+    "stageId": 134,
+    "wordId": 494,
+    "type": "monster_14",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 495,
+    "stageId": 134,
+    "wordId": 495,
+    "type": "monster_15",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 496,
+    "stageId": 134,
+    "wordId": 496,
+    "type": "monster_16",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 497,
+    "stageId": 135,
+    "wordId": 497,
+    "type": "monster_17",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 498,
+    "stageId": 135,
+    "wordId": 498,
+    "type": "monster_18",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 499,
+    "stageId": 135,
+    "wordId": 499,
+    "type": "monster_19",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 500,
+    "stageId": 135,
+    "wordId": 500,
+    "type": "monster_20",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 501,
+    "stageId": 136,
+    "wordId": 501,
+    "type": "monster_21",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 502,
+    "stageId": 136,
+    "wordId": 502,
+    "type": "monster_22",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 503,
+    "stageId": 136,
+    "wordId": 503,
+    "type": "monster_23",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 504,
+    "stageId": 136,
+    "wordId": 504,
+    "type": "monster_24",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 505,
+    "stageId": 137,
+    "wordId": 505,
+    "type": "monster_25",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 506,
+    "stageId": 137,
+    "wordId": 506,
+    "type": "monster_26",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 507,
+    "stageId": 137,
+    "wordId": 507,
+    "type": "monster_27",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 508,
+    "stageId": 137,
+    "wordId": 508,
+    "type": "monster_28",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 509,
+    "stageId": 138,
+    "wordId": 509,
+    "type": "monster_29",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 510,
+    "stageId": 138,
+    "wordId": 510,
+    "type": "monster_30",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 511,
+    "stageId": 138,
+    "wordId": 511,
+    "type": "monster_31",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 512,
+    "stageId": 138,
+    "wordId": 512,
+    "type": "monster_32",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 513,
+    "stageId": 139,
+    "wordId": 513,
+    "type": "monster_33",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 514,
+    "stageId": 139,
+    "wordId": 514,
+    "type": "monster_34",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 515,
+    "stageId": 139,
+    "wordId": 515,
+    "type": "monster_35",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 516,
+    "stageId": 139,
+    "wordId": 516,
+    "type": "monster_36",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 517,
+    "stageId": 140,
+    "wordId": 517,
+    "type": "monster_37",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 518,
+    "stageId": 140,
+    "wordId": 518,
+    "type": "monster_38",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 519,
+    "stageId": 140,
+    "wordId": 519,
+    "type": "monster_39",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 520,
+    "stageId": 140,
+    "wordId": 520,
+    "type": "monster_40",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 521,
+    "stageId": 141,
+    "wordId": 521,
+    "type": "monster_41",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 522,
+    "stageId": 141,
+    "wordId": 522,
+    "type": "monster_42",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 523,
+    "stageId": 141,
+    "wordId": 523,
+    "type": "monster_43",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 524,
+    "stageId": 141,
+    "wordId": 524,
+    "type": "monster_44",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 525,
+    "stageId": 142,
+    "wordId": 525,
+    "type": "monster_45",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 526,
+    "stageId": 142,
+    "wordId": 526,
+    "type": "monster_46",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 527,
+    "stageId": 142,
+    "wordId": 527,
+    "type": "monster_47",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 528,
+    "stageId": 142,
+    "wordId": 528,
+    "type": "monster_48",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 529,
+    "stageId": 143,
+    "wordId": 529,
+    "type": "monster_49",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 530,
+    "stageId": 143,
+    "wordId": 530,
+    "type": "monster_50",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 531,
+    "stageId": 143,
+    "wordId": 531,
+    "type": "monster_51",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 532,
+    "stageId": 143,
+    "wordId": 532,
+    "type": "monster_52",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 533,
+    "stageId": 144,
+    "wordId": 533,
+    "type": "monster_53",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 534,
+    "stageId": 144,
+    "wordId": 534,
+    "type": "monster_54",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 535,
+    "stageId": 144,
+    "wordId": 535,
+    "type": "monster_55",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 536,
+    "stageId": 144,
+    "wordId": 536,
+    "type": "monster_56",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 537,
+    "stageId": 145,
+    "wordId": 537,
+    "type": "monster_57",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 538,
+    "stageId": 145,
+    "wordId": 538,
+    "type": "monster_58",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 539,
+    "stageId": 145,
+    "wordId": 539,
+    "type": "monster_59",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 540,
+    "stageId": 145,
+    "wordId": 540,
+    "type": "monster_60",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 541,
+    "stageId": 146,
+    "wordId": 541,
+    "type": "monster_61",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 542,
+    "stageId": 146,
+    "wordId": 542,
+    "type": "monster_62",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 543,
+    "stageId": 146,
+    "wordId": 543,
+    "type": "monster_63",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 544,
+    "stageId": 146,
+    "wordId": 544,
+    "type": "monster_64",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 545,
+    "stageId": 147,
+    "wordId": 545,
+    "type": "monster_65",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 546,
+    "stageId": 147,
+    "wordId": 546,
+    "type": "monster_66",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 547,
+    "stageId": 147,
+    "wordId": 547,
+    "type": "monster_67",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 548,
+    "stageId": 147,
+    "wordId": 548,
+    "type": "monster_68",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 549,
+    "stageId": 148,
+    "wordId": 549,
+    "type": "monster_69",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 550,
+    "stageId": 148,
+    "wordId": 550,
+    "type": "monster_70",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 551,
+    "stageId": 148,
+    "wordId": 551,
+    "type": "monster_71",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 552,
+    "stageId": 148,
+    "wordId": 552,
+    "type": "monster_72",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 553,
+    "stageId": 149,
+    "wordId": 553,
+    "type": "monster_73",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 554,
+    "stageId": 149,
+    "wordId": 554,
+    "type": "monster_74",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 555,
+    "stageId": 149,
+    "wordId": 555,
+    "type": "monster_75",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 556,
+    "stageId": 149,
+    "wordId": 556,
+    "type": "monster_76",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 557,
+    "stageId": 150,
+    "wordId": 557,
+    "type": "monster_77",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 558,
+    "stageId": 150,
+    "wordId": 558,
+    "type": "monster_78",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 559,
+    "stageId": 150,
+    "wordId": 559,
+    "type": "monster_79",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 560,
+    "stageId": 150,
+    "wordId": 560,
+    "type": "monster_80",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 561,
+    "stageId": 151,
+    "wordId": 561,
+    "type": "monster_01",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 562,
+    "stageId": 151,
+    "wordId": 562,
+    "type": "monster_02",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 563,
+    "stageId": 151,
+    "wordId": 563,
+    "type": "monster_03",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 564,
+    "stageId": 151,
+    "wordId": 564,
+    "type": "monster_04",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 565,
+    "stageId": 152,
+    "wordId": 565,
+    "type": "monster_05",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 566,
+    "stageId": 152,
+    "wordId": 566,
+    "type": "monster_06",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 567,
+    "stageId": 152,
+    "wordId": 567,
+    "type": "monster_07",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 568,
+    "stageId": 152,
+    "wordId": 568,
+    "type": "monster_08",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 569,
+    "stageId": 153,
+    "wordId": 569,
+    "type": "monster_09",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 570,
+    "stageId": 153,
+    "wordId": 570,
+    "type": "monster_10",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 571,
+    "stageId": 153,
+    "wordId": 571,
+    "type": "monster_11",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 572,
+    "stageId": 153,
+    "wordId": 572,
+    "type": "monster_12",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 573,
+    "stageId": 154,
+    "wordId": 573,
+    "type": "monster_13",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 574,
+    "stageId": 154,
+    "wordId": 574,
+    "type": "monster_14",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 575,
+    "stageId": 154,
+    "wordId": 575,
+    "type": "monster_15",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 576,
+    "stageId": 154,
+    "wordId": 576,
+    "type": "monster_16",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 577,
+    "stageId": 155,
+    "wordId": 577,
+    "type": "monster_17",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 578,
+    "stageId": 155,
+    "wordId": 578,
+    "type": "monster_18",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 579,
+    "stageId": 155,
+    "wordId": 579,
+    "type": "monster_19",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 580,
+    "stageId": 155,
+    "wordId": 580,
+    "type": "monster_20",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 581,
+    "stageId": 156,
+    "wordId": 581,
+    "type": "monster_21",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 582,
+    "stageId": 156,
+    "wordId": 582,
+    "type": "monster_22",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 583,
+    "stageId": 156,
+    "wordId": 583,
+    "type": "monster_23",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 584,
+    "stageId": 156,
+    "wordId": 584,
+    "type": "monster_24",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 585,
+    "stageId": 157,
+    "wordId": 585,
+    "type": "monster_25",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 586,
+    "stageId": 157,
+    "wordId": 586,
+    "type": "monster_26",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 587,
+    "stageId": 157,
+    "wordId": 587,
+    "type": "monster_27",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 588,
+    "stageId": 157,
+    "wordId": 588,
+    "type": "monster_28",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 589,
+    "stageId": 158,
+    "wordId": 589,
+    "type": "monster_29",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 590,
+    "stageId": 158,
+    "wordId": 590,
+    "type": "monster_30",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 591,
+    "stageId": 158,
+    "wordId": 591,
+    "type": "monster_31",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 592,
+    "stageId": 158,
+    "wordId": 592,
+    "type": "monster_32",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 593,
+    "stageId": 159,
+    "wordId": 593,
+    "type": "monster_33",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 594,
+    "stageId": 159,
+    "wordId": 594,
+    "type": "monster_34",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 595,
+    "stageId": 159,
+    "wordId": 595,
+    "type": "monster_35",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 596,
+    "stageId": 159,
+    "wordId": 596,
+    "type": "monster_36",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 597,
+    "stageId": 160,
+    "wordId": 597,
+    "type": "monster_37",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 598,
+    "stageId": 160,
+    "wordId": 598,
+    "type": "monster_38",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 599,
+    "stageId": 160,
+    "wordId": 599,
+    "type": "monster_39",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 600,
+    "stageId": 160,
+    "wordId": 600,
+    "type": "monster_40",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 601,
+    "stageId": 161,
+    "wordId": 601,
+    "type": "monster_41",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 602,
+    "stageId": 161,
+    "wordId": 602,
+    "type": "monster_42",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 603,
+    "stageId": 161,
+    "wordId": 603,
+    "type": "monster_43",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 604,
+    "stageId": 161,
+    "wordId": 604,
+    "type": "monster_44",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 605,
+    "stageId": 162,
+    "wordId": 605,
+    "type": "monster_45",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 606,
+    "stageId": 162,
+    "wordId": 606,
+    "type": "monster_46",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 607,
+    "stageId": 162,
+    "wordId": 607,
+    "type": "monster_47",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 608,
+    "stageId": 162,
+    "wordId": 608,
+    "type": "monster_48",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 609,
+    "stageId": 163,
+    "wordId": 609,
+    "type": "monster_49",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 610,
+    "stageId": 163,
+    "wordId": 610,
+    "type": "monster_50",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 611,
+    "stageId": 163,
+    "wordId": 611,
+    "type": "monster_51",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 612,
+    "stageId": 163,
+    "wordId": 612,
+    "type": "monster_52",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 613,
+    "stageId": 164,
+    "wordId": 613,
+    "type": "monster_53",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 614,
+    "stageId": 164,
+    "wordId": 614,
+    "type": "monster_54",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 615,
+    "stageId": 164,
+    "wordId": 615,
+    "type": "monster_55",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 616,
+    "stageId": 164,
+    "wordId": 616,
+    "type": "monster_56",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 617,
+    "stageId": 165,
+    "wordId": 617,
+    "type": "monster_57",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 618,
+    "stageId": 165,
+    "wordId": 618,
+    "type": "monster_58",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 619,
+    "stageId": 165,
+    "wordId": 619,
+    "type": "monster_59",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 620,
+    "stageId": 165,
+    "wordId": 620,
+    "type": "monster_60",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 621,
+    "stageId": 166,
+    "wordId": 621,
+    "type": "monster_61",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 622,
+    "stageId": 166,
+    "wordId": 622,
+    "type": "monster_62",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 623,
+    "stageId": 166,
+    "wordId": 623,
+    "type": "monster_63",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 624,
+    "stageId": 166,
+    "wordId": 624,
+    "type": "monster_64",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 625,
+    "stageId": 167,
+    "wordId": 625,
+    "type": "monster_65",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 626,
+    "stageId": 167,
+    "wordId": 626,
+    "type": "monster_66",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 627,
+    "stageId": 167,
+    "wordId": 627,
+    "type": "monster_67",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 628,
+    "stageId": 167,
+    "wordId": 628,
+    "type": "monster_68",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 629,
+    "stageId": 168,
+    "wordId": 629,
+    "type": "monster_69",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 630,
+    "stageId": 168,
+    "wordId": 630,
+    "type": "monster_70",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 631,
+    "stageId": 168,
+    "wordId": 631,
+    "type": "monster_71",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 632,
+    "stageId": 168,
+    "wordId": 632,
+    "type": "monster_72",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 633,
+    "stageId": 169,
+    "wordId": 633,
+    "type": "monster_73",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 634,
+    "stageId": 169,
+    "wordId": 634,
+    "type": "monster_74",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 635,
+    "stageId": 169,
+    "wordId": 635,
+    "type": "monster_75",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 636,
+    "stageId": 169,
+    "wordId": 636,
+    "type": "monster_76",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 637,
+    "stageId": 170,
+    "wordId": 637,
+    "type": "monster_77",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 638,
+    "stageId": 170,
+    "wordId": 638,
+    "type": "monster_78",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 639,
+    "stageId": 170,
+    "wordId": 639,
+    "type": "monster_79",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 640,
+    "stageId": 170,
+    "wordId": 640,
+    "type": "monster_80",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 641,
+    "stageId": 171,
+    "wordId": 641,
+    "type": "monster_01",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 642,
+    "stageId": 171,
+    "wordId": 642,
+    "type": "monster_02",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 643,
+    "stageId": 171,
+    "wordId": 643,
+    "type": "monster_03",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 644,
+    "stageId": 171,
+    "wordId": 644,
+    "type": "monster_04",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 645,
+    "stageId": 172,
+    "wordId": 645,
+    "type": "monster_05",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 646,
+    "stageId": 172,
+    "wordId": 646,
+    "type": "monster_06",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 647,
+    "stageId": 172,
+    "wordId": 647,
+    "type": "monster_07",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 648,
+    "stageId": 172,
+    "wordId": 648,
+    "type": "monster_08",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 649,
+    "stageId": 173,
+    "wordId": 649,
+    "type": "monster_09",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 650,
+    "stageId": 173,
+    "wordId": 650,
+    "type": "monster_10",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 651,
+    "stageId": 173,
+    "wordId": 651,
+    "type": "monster_11",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1500
+  },
+  {
+    "id": 652,
+    "stageId": 173,
+    "wordId": 652,
+    "type": "monster_12",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 2000
+  },
+  {
+    "id": 653,
+    "stageId": 174,
+    "wordId": 653,
+    "type": "monster_13",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 500
+  },
+  {
+    "id": 654,
+    "stageId": 174,
+    "wordId": 654,
+    "type": "monster_14",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1000
+  },
+  {
+    "id": 655,
+    "stageId": 174,
+    "wordId": 655,
+    "type": "monster_15",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1500
+  },
+  {
+    "id": 656,
+    "stageId": 174,
+    "wordId": 656,
+    "type": "monster_16",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 2000
+  },
+  {
+    "id": 657,
+    "stageId": 175,
+    "wordId": 657,
+    "type": "monster_17",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 500
+  },
+  {
+    "id": 658,
+    "stageId": 175,
+    "wordId": 658,
+    "type": "monster_18",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1000
+  },
+  {
+    "id": 659,
+    "stageId": 175,
+    "wordId": 659,
+    "type": "monster_19",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1500
+  },
+  {
+    "id": 660,
+    "stageId": 175,
+    "wordId": 660,
+    "type": "monster_20",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 2000
+  },
+  {
+    "id": 661,
+    "stageId": 176,
+    "wordId": 661,
+    "type": "monster_21",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 500
+  },
+  {
+    "id": 662,
+    "stageId": 176,
+    "wordId": 662,
+    "type": "monster_22",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1000
+  },
+  {
+    "id": 663,
+    "stageId": 176,
+    "wordId": 663,
+    "type": "monster_23",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1500
+  },
+  {
+    "id": 664,
+    "stageId": 176,
+    "wordId": 664,
+    "type": "monster_24",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 2000
+  },
+  {
+    "id": 665,
+    "stageId": 177,
+    "wordId": 665,
+    "type": "monster_25",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 500
+  },
+  {
+    "id": 666,
+    "stageId": 177,
+    "wordId": 666,
+    "type": "monster_26",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1000
+  },
+  {
+    "id": 667,
+    "stageId": 178,
+    "wordId": 667,
+    "type": "monster_27",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 668,
+    "stageId": 178,
+    "wordId": 668,
+    "type": "monster_28",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 669,
+    "stageId": 178,
+    "wordId": 669,
+    "type": "monster_29",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 670,
+    "stageId": 178,
+    "wordId": 670,
+    "type": "monster_30",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 671,
+    "stageId": 179,
+    "wordId": 671,
+    "type": "monster_31",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 672,
+    "stageId": 179,
+    "wordId": 672,
+    "type": "monster_32",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 673,
+    "stageId": 179,
+    "wordId": 673,
+    "type": "monster_33",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 674,
+    "stageId": 179,
+    "wordId": 674,
+    "type": "monster_34",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 675,
+    "stageId": 180,
+    "wordId": 675,
+    "type": "monster_35",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 676,
+    "stageId": 180,
+    "wordId": 676,
+    "type": "monster_36",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 677,
+    "stageId": 180,
+    "wordId": 677,
+    "type": "monster_37",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 678,
+    "stageId": 180,
+    "wordId": 678,
+    "type": "monster_38",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 679,
+    "stageId": 181,
+    "wordId": 679,
+    "type": "monster_39",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 680,
+    "stageId": 181,
+    "wordId": 680,
+    "type": "monster_40",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 681,
+    "stageId": 181,
+    "wordId": 681,
+    "type": "monster_41",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  },
+  {
+    "id": 682,
+    "stageId": 181,
+    "wordId": 682,
+    "type": "monster_42",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 683,
+    "stageId": 182,
+    "wordId": 683,
+    "type": "monster_43",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 684,
+    "stageId": 182,
+    "wordId": 684,
+    "type": "monster_44",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1000
+  },
+  {
+    "id": 685,
+    "stageId": 182,
+    "wordId": 685,
+    "type": "monster_45",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1500
+  },
+  {
+    "id": 686,
+    "stageId": 182,
+    "wordId": 686,
+    "type": "monster_46",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 2000
+  },
+  {
+    "id": 687,
+    "stageId": 183,
+    "wordId": 687,
+    "type": "monster_47",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 500
+  },
+  {
+    "id": 688,
+    "stageId": 183,
+    "wordId": 688,
+    "type": "monster_48",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1000
+  },
+  {
+    "id": 689,
+    "stageId": 183,
+    "wordId": 689,
+    "type": "monster_49",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1500
+  },
+  {
+    "id": 690,
+    "stageId": 183,
+    "wordId": 690,
+    "type": "monster_50",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 2000
+  },
+  {
+    "id": 691,
+    "stageId": 184,
+    "wordId": 691,
+    "type": "monster_51",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 500
+  },
+  {
+    "id": 692,
+    "stageId": 184,
+    "wordId": 692,
+    "type": "monster_52",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1000
+  },
+  {
+    "id": 693,
+    "stageId": 184,
+    "wordId": 693,
+    "type": "monster_53",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1500
+  },
+  {
+    "id": 694,
+    "stageId": 184,
+    "wordId": 694,
+    "type": "monster_54",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 2000
+  },
+  {
+    "id": 695,
+    "stageId": 185,
+    "wordId": 695,
+    "type": "monster_55",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 500
+  },
+  {
+    "id": 696,
+    "stageId": 185,
+    "wordId": 696,
+    "type": "monster_56",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1000
+  },
+  {
+    "id": 697,
+    "stageId": 185,
+    "wordId": 697,
+    "type": "monster_57",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1500
+  },
+  {
+    "id": 698,
+    "stageId": 185,
+    "wordId": 698,
+    "type": "monster_58",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 2000
+  },
+  {
+    "id": 699,
+    "stageId": 186,
+    "wordId": 699,
+    "type": "monster_59",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 500
+  },
+  {
+    "id": 700,
+    "stageId": 186,
+    "wordId": 700,
+    "type": "monster_60",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1000
+  },
+  {
+    "id": 701,
+    "stageId": 186,
+    "wordId": 701,
+    "type": "monster_61",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1500
+  },
+  {
+    "id": 702,
+    "stageId": 186,
+    "wordId": 702,
+    "type": "monster_62",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 2000
+  },
+  {
+    "id": 703,
+    "stageId": 187,
+    "wordId": 703,
+    "type": "monster_63",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 500
+  },
+  {
+    "id": 704,
+    "stageId": 187,
+    "wordId": 704,
+    "type": "monster_64",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1000
+  },
+  {
+    "id": 705,
+    "stageId": 187,
+    "wordId": 705,
+    "type": "monster_65",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1500
+  },
+  {
+    "id": 706,
+    "stageId": 187,
+    "wordId": 706,
+    "type": "monster_66",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 2000
+  },
+  {
+    "id": 707,
+    "stageId": 188,
+    "wordId": 707,
+    "type": "monster_67",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 500
+  },
+  {
+    "id": 708,
+    "stageId": 188,
+    "wordId": 708,
+    "type": "monster_68",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1000
+  },
+  {
+    "id": 709,
+    "stageId": 188,
+    "wordId": 709,
+    "type": "monster_69",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1500
+  },
+  {
+    "id": 710,
+    "stageId": 188,
+    "wordId": 710,
+    "type": "monster_70",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 2000
+  },
+  {
+    "id": 711,
+    "stageId": 189,
+    "wordId": 711,
+    "type": "monster_71",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 500
+  },
+  {
+    "id": 712,
+    "stageId": 189,
+    "wordId": 712,
+    "type": "monster_72",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1000
+  },
+  {
+    "id": 713,
+    "stageId": 189,
+    "wordId": 713,
+    "type": "monster_73",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1500
+  },
+  {
+    "id": 714,
+    "stageId": 189,
+    "wordId": 714,
+    "type": "monster_74",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 2000
+  },
+  {
+    "id": 715,
+    "stageId": 190,
+    "wordId": 715,
+    "type": "monster_75",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 500
+  },
+  {
+    "id": 716,
+    "stageId": 190,
+    "wordId": 716,
+    "type": "monster_76",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1000
+  },
+  {
+    "id": 717,
+    "stageId": 190,
+    "wordId": 717,
+    "type": "monster_77",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1500
+  },
+  {
+    "id": 718,
+    "stageId": 190,
+    "wordId": 718,
+    "type": "monster_78",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 2000
+  },
+  {
+    "id": 719,
+    "stageId": 191,
+    "wordId": 719,
+    "type": "monster_79",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 500
+  },
+  {
+    "id": 720,
+    "stageId": 192,
+    "wordId": 720,
+    "type": "monster_80",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 721,
+    "stageId": 192,
+    "wordId": 721,
+    "type": "monster_01",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1000
+  },
+  {
+    "id": 722,
+    "stageId": 192,
+    "wordId": 722,
+    "type": "monster_02",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1500
+  },
+  {
+    "id": 723,
+    "stageId": 192,
+    "wordId": 723,
+    "type": "monster_03",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 2000
+  },
+  {
+    "id": 724,
+    "stageId": 193,
+    "wordId": 724,
+    "type": "monster_04",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 500
+  },
+  {
+    "id": 725,
+    "stageId": 193,
+    "wordId": 725,
+    "type": "monster_05",
+    "hp": 160,
+    "hintDropRate": 0.3,
+    "positionX": 1000
+  },
+  {
+    "id": 726,
+    "stageId": 194,
+    "wordId": 726,
+    "type": "monster_06",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 727,
+    "stageId": 194,
+    "wordId": 727,
+    "type": "monster_07",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 728,
+    "stageId": 194,
+    "wordId": 728,
+    "type": "monster_08",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 729,
+    "stageId": 194,
+    "wordId": 729,
+    "type": "monster_09",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 2000
+  },
+  {
+    "id": 730,
+    "stageId": 195,
+    "wordId": 730,
+    "type": "monster_10",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 731,
+    "stageId": 195,
+    "wordId": 731,
+    "type": "monster_11",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 732,
+    "stageId": 195,
+    "wordId": 732,
+    "type": "monster_12",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 733,
+    "stageId": 195,
+    "wordId": 733,
+    "type": "monster_13",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 2000
+  },
+  {
+    "id": 734,
+    "stageId": 196,
+    "wordId": 734,
+    "type": "monster_14",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 735,
+    "stageId": 196,
+    "wordId": 735,
+    "type": "monster_15",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 736,
+    "stageId": 196,
+    "wordId": 736,
+    "type": "monster_16",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 737,
+    "stageId": 196,
+    "wordId": 737,
+    "type": "monster_17",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 2000
+  },
+  {
+    "id": 738,
+    "stageId": 197,
+    "wordId": 738,
+    "type": "monster_18",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 739,
+    "stageId": 197,
+    "wordId": 739,
+    "type": "monster_19",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 740,
+    "stageId": 197,
+    "wordId": 740,
+    "type": "monster_20",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 741,
+    "stageId": 197,
+    "wordId": 741,
+    "type": "monster_21",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 2000
+  },
+  {
+    "id": 742,
+    "stageId": 198,
+    "wordId": 742,
+    "type": "monster_22",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 743,
+    "stageId": 198,
+    "wordId": 743,
+    "type": "monster_23",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 744,
+    "stageId": 198,
+    "wordId": 744,
+    "type": "monster_24",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 745,
+    "stageId": 198,
+    "wordId": 745,
+    "type": "monster_25",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 2000
+  },
+  {
+    "id": 746,
+    "stageId": 199,
+    "wordId": 746,
+    "type": "monster_26",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 747,
+    "stageId": 199,
+    "wordId": 747,
+    "type": "monster_27",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 748,
+    "stageId": 200,
+    "wordId": 748,
+    "type": "monster_28",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 749,
+    "stageId": 200,
+    "wordId": 749,
+    "type": "monster_29",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 750,
+    "stageId": 200,
+    "wordId": 750,
+    "type": "monster_30",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 751,
+    "stageId": 200,
+    "wordId": 751,
+    "type": "monster_31",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 2000
+  },
+  {
+    "id": 752,
+    "stageId": 201,
+    "wordId": 752,
+    "type": "monster_32",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 753,
+    "stageId": 201,
+    "wordId": 753,
+    "type": "monster_33",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 754,
+    "stageId": 201,
+    "wordId": 754,
+    "type": "monster_34",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 755,
+    "stageId": 201,
+    "wordId": 755,
+    "type": "monster_35",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 2000
+  },
+  {
+    "id": 756,
+    "stageId": 202,
+    "wordId": 756,
+    "type": "monster_36",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 757,
+    "stageId": 202,
+    "wordId": 757,
+    "type": "monster_37",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 758,
+    "stageId": 202,
+    "wordId": 758,
+    "type": "monster_38",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 759,
+    "stageId": 202,
+    "wordId": 759,
+    "type": "monster_39",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 760,
+    "stageId": 203,
+    "wordId": 760,
+    "type": "monster_40",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 761,
+    "stageId": 203,
+    "wordId": 761,
+    "type": "monster_41",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 762,
+    "stageId": 203,
+    "wordId": 762,
+    "type": "monster_42",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 763,
+    "stageId": 203,
+    "wordId": 763,
+    "type": "monster_43",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 764,
+    "stageId": 204,
+    "wordId": 764,
+    "type": "monster_44",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 765,
+    "stageId": 204,
+    "wordId": 765,
+    "type": "monster_45",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 766,
+    "stageId": 204,
+    "wordId": 766,
+    "type": "monster_46",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 767,
+    "stageId": 204,
+    "wordId": 767,
+    "type": "monster_47",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 2000
+  },
+  {
+    "id": 768,
+    "stageId": 205,
+    "wordId": 768,
+    "type": "monster_48",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 500
+  },
+  {
+    "id": 769,
+    "stageId": 205,
+    "wordId": 769,
+    "type": "monster_49",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1000
+  },
+  {
+    "id": 770,
+    "stageId": 205,
+    "wordId": 770,
+    "type": "monster_50",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 1500
+  },
+  {
+    "id": 771,
+    "stageId": 205,
+    "wordId": 771,
+    "type": "monster_51",
+    "hp": 80,
+    "hintDropRate": 0.7,
+    "positionX": 2000
+  },
+  {
+    "id": 772,
+    "stageId": 206,
+    "wordId": 772,
+    "type": "monster_52",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 773,
+    "stageId": 206,
+    "wordId": 773,
+    "type": "monster_53",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 774,
+    "stageId": 206,
+    "wordId": 774,
+    "type": "monster_54",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 775,
+    "stageId": 206,
+    "wordId": 775,
+    "type": "monster_55",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 776,
+    "stageId": 207,
+    "wordId": 776,
+    "type": "monster_56",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 777,
+    "stageId": 207,
+    "wordId": 777,
+    "type": "monster_57",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 778,
+    "stageId": 207,
+    "wordId": 778,
+    "type": "monster_58",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 779,
+    "stageId": 207,
+    "wordId": 779,
+    "type": "monster_59",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 780,
+    "stageId": 208,
+    "wordId": 780,
+    "type": "monster_60",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 781,
+    "stageId": 208,
+    "wordId": 781,
+    "type": "monster_61",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1000
+  },
+  {
+    "id": 782,
+    "stageId": 208,
+    "wordId": 782,
+    "type": "monster_62",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 1500
+  },
+  {
+    "id": 783,
+    "stageId": 208,
+    "wordId": 783,
+    "type": "monster_63",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 2000
+  },
+  {
+    "id": 784,
+    "stageId": 209,
+    "wordId": 784,
+    "type": "monster_64",
+    "hp": 100,
+    "hintDropRate": 0.6,
+    "positionX": 500
+  },
+  {
+    "id": 785,
+    "stageId": 209,
+    "wordId": 785,
+    "type": "monster_65",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 786,
+    "stageId": 209,
+    "wordId": 786,
+    "type": "monster_66",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 787,
+    "stageId": 209,
+    "wordId": 787,
+    "type": "monster_67",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 788,
+    "stageId": 210,
+    "wordId": 788,
+    "type": "monster_68",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 789,
+    "stageId": 210,
+    "wordId": 789,
+    "type": "monster_69",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 790,
+    "stageId": 210,
+    "wordId": 790,
+    "type": "monster_70",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 791,
+    "stageId": 210,
+    "wordId": 791,
+    "type": "monster_71",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 2000
+  },
+  {
+    "id": 792,
+    "stageId": 211,
+    "wordId": 792,
+    "type": "monster_72",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 500
+  },
+  {
+    "id": 793,
+    "stageId": 211,
+    "wordId": 793,
+    "type": "monster_73",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1000
+  },
+  {
+    "id": 794,
+    "stageId": 211,
+    "wordId": 794,
+    "type": "monster_74",
+    "hp": 120,
+    "hintDropRate": 0.5,
+    "positionX": 1500
+  },
+  {
+    "id": 795,
+    "stageId": 211,
+    "wordId": 795,
+    "type": "monster_75",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 2000
+  },
+  {
+    "id": 796,
+    "stageId": 212,
+    "wordId": 796,
+    "type": "monster_76",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 500
+  },
+  {
+    "id": 797,
+    "stageId": 212,
+    "wordId": 797,
+    "type": "monster_77",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1000
+  },
+  {
+    "id": 798,
+    "stageId": 212,
+    "wordId": 798,
+    "type": "monster_78",
+    "hp": 140,
+    "hintDropRate": 0.4,
+    "positionX": 1500
+  }
 ]

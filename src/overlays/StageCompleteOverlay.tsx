@@ -1,15 +1,23 @@
 import React from 'react';
 import { BALANCE } from '../data/gameBalance';
+import { getRarityColor, getRarityLabel, WeaponRarity } from '../data/weapons';
+
+interface WeaponRewardInfo {
+  name: string;
+  emoji: string;
+  rarity: WeaponRarity;
+}
 
 interface Props {
   score: number;
   gems: number;
   jams: number;
+  weaponReward?: WeaponRewardInfo | null;
   onBackToMap: () => void;
   onNextStage: () => void;
 }
 
-export const StageCompleteOverlay: React.FC<Props> = ({ score, gems, jams, onBackToMap, onNextStage }) => {
+export const StageCompleteOverlay: React.FC<Props> = ({ score, gems, jams, weaponReward, onBackToMap, onNextStage }) => {
   const stars = score >= BALANCE.STAR_THREE ? 3
     : score >= BALANCE.STAR_TWO ? 2
     : score >= BALANCE.STAR_ONE ? 1 : 0;
@@ -38,7 +46,7 @@ export const StageCompleteOverlay: React.FC<Props> = ({ score, gems, jams, onBac
           display: 'flex',
           justifyContent: 'center',
           gap: 24,
-          marginBottom: 24,
+          marginBottom: weaponReward ? 12 : 24,
           padding: '12px 0',
           borderTop: '1px solid #333',
           borderBottom: '1px solid #333',
@@ -52,6 +60,30 @@ export const StageCompleteOverlay: React.FC<Props> = ({ score, gems, jams, onBac
             <div style={{ color: '#FF69B4', fontSize: 16 }}>{jams}</div>
           </div>
         </div>
+
+        {/* Weapon reward */}
+        {weaponReward && (
+          <div style={{
+            background: `${getRarityColor(weaponReward.rarity)}15`,
+            border: `2px solid ${getRarityColor(weaponReward.rarity)}`,
+            borderRadius: 12,
+            padding: 14,
+            marginBottom: 16,
+            textAlign: 'center',
+            animation: 'fadeIn 0.5s ease',
+          }}>
+            <div style={{ fontSize: 13, color: '#FFD700', fontWeight: 'bold', marginBottom: 6 }}>
+              새로운 무기 획득!
+            </div>
+            <div style={{ fontSize: 36 }}>{weaponReward.emoji}</div>
+            <div style={{ fontWeight: 'bold', fontSize: 16, color: '#fff', marginTop: 4 }}>
+              {weaponReward.name}
+            </div>
+            <div style={{ fontSize: 12, color: getRarityColor(weaponReward.rarity), marginTop: 2 }}>
+              {getRarityLabel(weaponReward.rarity)}
+            </div>
+          </div>
+        )}
 
         {/* Buttons */}
         <div style={{ display: 'flex', gap: 12 }}>

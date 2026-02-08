@@ -37,8 +37,13 @@ export class TreasureBox extends Phaser.GameObjects.Container {
 
   open() {
     this.isOpened = true;
-    this.sprite.setText('🎁');
-    if (this.scene && this.scene.tweens) {
+
+    // Safety check: ensure scene and sprite are still valid
+    if (!this.scene || !this.scene.sys || !this.scene.sys.isActive()) return;
+    if (!this.sprite || !this.sprite.active) return;
+
+    try {
+      this.sprite.setText('🎁');
       this.scene.tweens.add({
         targets: this,
         scaleX: 1.2,
@@ -46,6 +51,9 @@ export class TreasureBox extends Phaser.GameObjects.Container {
         duration: 300,
         yoyo: true,
       });
+    } catch (e) {
+      // Scene may have been destroyed during HMR or navigation
+      console.warn('[TreasureBox] open() error ignored:', e);
     }
   }
 }

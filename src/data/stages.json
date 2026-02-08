@@ -1,13 +1,1698 @@
 [
-  { "id": 1, "unitId": 1, "name": "Stage 1-1", "orderNum": 1, "monsterCount": 3, "requiredStars": 0 },
-  { "id": 2, "unitId": 1, "name": "Stage 1-2", "orderNum": 2, "monsterCount": 4, "requiredStars": 1 },
-  { "id": 3, "unitId": 1, "name": "Stage 1-3", "orderNum": 3, "monsterCount": 5, "requiredStars": 3 },
-  { "id": 4, "unitId": 2, "name": "Stage 2-1", "orderNum": 1, "monsterCount": 3, "requiredStars": 0 },
-  { "id": 5, "unitId": 2, "name": "Stage 2-2", "orderNum": 2, "monsterCount": 4, "requiredStars": 1 },
-  { "id": 6, "unitId": 3, "name": "Stage 3-1", "orderNum": 1, "monsterCount": 3, "requiredStars": 0 },
-  { "id": 7, "unitId": 3, "name": "Stage 3-2", "orderNum": 2, "monsterCount": 4, "requiredStars": 1 },
-  { "id": 8, "unitId": 4, "name": "Stage 4-1", "orderNum": 1, "monsterCount": 3, "requiredStars": 0 },
-  { "id": 9, "unitId": 4, "name": "Stage 4-2", "orderNum": 2, "monsterCount": 4, "requiredStars": 1 },
-  { "id": 10, "unitId": 5, "name": "Stage 5-1", "orderNum": 1, "monsterCount": 4, "requiredStars": 0 },
-  { "id": 11, "unitId": 5, "name": "Stage 5-2", "orderNum": 2, "monsterCount": 5, "requiredStars": 2 }
+  {
+    "id": 1,
+    "unitId": 1,
+    "name": "Stage 1-1",
+    "orderNum": 1,
+    "monsterCount": 3,
+    "requiredStars": 0
+  },
+  {
+    "id": 2,
+    "unitId": 1,
+    "name": "Stage 1-2",
+    "orderNum": 2,
+    "monsterCount": 3,
+    "requiredStars": 1
+  },
+  {
+    "id": 3,
+    "unitId": 1,
+    "name": "Stage 1-3",
+    "orderNum": 3,
+    "monsterCount": 3,
+    "requiredStars": 2
+  },
+  {
+    "id": 4,
+    "unitId": 1,
+    "name": "Stage 1-4",
+    "orderNum": 4,
+    "monsterCount": 3,
+    "requiredStars": 3
+  },
+  {
+    "id": 5,
+    "unitId": 1,
+    "name": "Stage 1-5",
+    "orderNum": 5,
+    "monsterCount": 3,
+    "requiredStars": 3
+  },
+  {
+    "id": 6,
+    "unitId": 1,
+    "name": "Stage 1-6",
+    "orderNum": 6,
+    "monsterCount": 3,
+    "requiredStars": 3
+  },
+  {
+    "id": 7,
+    "unitId": 1,
+    "name": "Stage 1-7",
+    "orderNum": 7,
+    "monsterCount": 1,
+    "requiredStars": 3
+  },
+  {
+    "id": 8,
+    "unitId": 2,
+    "name": "Stage 2-1",
+    "orderNum": 1,
+    "monsterCount": 3,
+    "requiredStars": 0
+  },
+  {
+    "id": 9,
+    "unitId": 2,
+    "name": "Stage 2-2",
+    "orderNum": 2,
+    "monsterCount": 3,
+    "requiredStars": 1
+  },
+  {
+    "id": 10,
+    "unitId": 2,
+    "name": "Stage 2-3",
+    "orderNum": 3,
+    "monsterCount": 1,
+    "requiredStars": 2
+  },
+  {
+    "id": 11,
+    "unitId": 3,
+    "name": "Stage 3-1",
+    "orderNum": 1,
+    "monsterCount": 3,
+    "requiredStars": 0
+  },
+  {
+    "id": 12,
+    "unitId": 3,
+    "name": "Stage 3-2",
+    "orderNum": 2,
+    "monsterCount": 3,
+    "requiredStars": 1
+  },
+  {
+    "id": 13,
+    "unitId": 3,
+    "name": "Stage 3-3",
+    "orderNum": 3,
+    "monsterCount": 2,
+    "requiredStars": 2
+  },
+  {
+    "id": 14,
+    "unitId": 4,
+    "name": "Stage 4-1",
+    "orderNum": 1,
+    "monsterCount": 3,
+    "requiredStars": 0
+  },
+  {
+    "id": 15,
+    "unitId": 4,
+    "name": "Stage 4-2",
+    "orderNum": 2,
+    "monsterCount": 3,
+    "requiredStars": 1
+  },
+  {
+    "id": 16,
+    "unitId": 4,
+    "name": "Stage 4-3",
+    "orderNum": 3,
+    "monsterCount": 3,
+    "requiredStars": 2
+  },
+  {
+    "id": 17,
+    "unitId": 4,
+    "name": "Stage 4-4",
+    "orderNum": 4,
+    "monsterCount": 3,
+    "requiredStars": 3
+  },
+  {
+    "id": 18,
+    "unitId": 4,
+    "name": "Stage 4-5",
+    "orderNum": 5,
+    "monsterCount": 2,
+    "requiredStars": 3
+  },
+  {
+    "id": 19,
+    "unitId": 5,
+    "name": "Stage 5-1",
+    "orderNum": 1,
+    "monsterCount": 3,
+    "requiredStars": 0
+  },
+  {
+    "id": 20,
+    "unitId": 5,
+    "name": "Stage 5-2",
+    "orderNum": 2,
+    "monsterCount": 3,
+    "requiredStars": 1
+  },
+  {
+    "id": 21,
+    "unitId": 5,
+    "name": "Stage 5-3",
+    "orderNum": 3,
+    "monsterCount": 2,
+    "requiredStars": 2
+  },
+  {
+    "id": 22,
+    "unitId": 6,
+    "name": "Stage 6-1",
+    "orderNum": 1,
+    "monsterCount": 4,
+    "requiredStars": 0
+  },
+  {
+    "id": 23,
+    "unitId": 6,
+    "name": "Stage 6-2",
+    "orderNum": 2,
+    "monsterCount": 4,
+    "requiredStars": 1
+  },
+  {
+    "id": 24,
+    "unitId": 6,
+    "name": "Stage 6-3",
+    "orderNum": 3,
+    "monsterCount": 4,
+    "requiredStars": 2
+  },
+  {
+    "id": 25,
+    "unitId": 6,
+    "name": "Stage 6-4",
+    "orderNum": 4,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 26,
+    "unitId": 6,
+    "name": "Stage 6-5",
+    "orderNum": 5,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 27,
+    "unitId": 6,
+    "name": "Stage 6-6",
+    "orderNum": 6,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 28,
+    "unitId": 6,
+    "name": "Stage 6-7",
+    "orderNum": 7,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 29,
+    "unitId": 6,
+    "name": "Stage 6-8",
+    "orderNum": 8,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 30,
+    "unitId": 6,
+    "name": "Stage 6-9",
+    "orderNum": 9,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 31,
+    "unitId": 6,
+    "name": "Stage 6-10",
+    "orderNum": 10,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 32,
+    "unitId": 6,
+    "name": "Stage 6-11",
+    "orderNum": 11,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 33,
+    "unitId": 6,
+    "name": "Stage 6-12",
+    "orderNum": 12,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 34,
+    "unitId": 6,
+    "name": "Stage 6-13",
+    "orderNum": 13,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 35,
+    "unitId": 6,
+    "name": "Stage 6-14",
+    "orderNum": 14,
+    "monsterCount": 2,
+    "requiredStars": 3
+  },
+  {
+    "id": 36,
+    "unitId": 7,
+    "name": "Stage 7-1",
+    "orderNum": 1,
+    "monsterCount": 4,
+    "requiredStars": 0
+  },
+  {
+    "id": 37,
+    "unitId": 7,
+    "name": "Stage 7-2",
+    "orderNum": 2,
+    "monsterCount": 4,
+    "requiredStars": 1
+  },
+  {
+    "id": 38,
+    "unitId": 7,
+    "name": "Stage 7-3",
+    "orderNum": 3,
+    "monsterCount": 4,
+    "requiredStars": 2
+  },
+  {
+    "id": 39,
+    "unitId": 7,
+    "name": "Stage 7-4",
+    "orderNum": 4,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 40,
+    "unitId": 7,
+    "name": "Stage 7-5",
+    "orderNum": 5,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 41,
+    "unitId": 7,
+    "name": "Stage 7-6",
+    "orderNum": 6,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 42,
+    "unitId": 7,
+    "name": "Stage 7-7",
+    "orderNum": 7,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 43,
+    "unitId": 7,
+    "name": "Stage 7-8",
+    "orderNum": 8,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 44,
+    "unitId": 7,
+    "name": "Stage 7-9",
+    "orderNum": 9,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 45,
+    "unitId": 7,
+    "name": "Stage 7-10",
+    "orderNum": 10,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 46,
+    "unitId": 7,
+    "name": "Stage 7-11",
+    "orderNum": 11,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 47,
+    "unitId": 7,
+    "name": "Stage 7-12",
+    "orderNum": 12,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 48,
+    "unitId": 7,
+    "name": "Stage 7-13",
+    "orderNum": 13,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 49,
+    "unitId": 7,
+    "name": "Stage 7-14",
+    "orderNum": 14,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 50,
+    "unitId": 7,
+    "name": "Stage 7-15",
+    "orderNum": 15,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 51,
+    "unitId": 7,
+    "name": "Stage 7-16",
+    "orderNum": 16,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 52,
+    "unitId": 7,
+    "name": "Stage 7-17",
+    "orderNum": 17,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 53,
+    "unitId": 7,
+    "name": "Stage 7-18",
+    "orderNum": 18,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 54,
+    "unitId": 7,
+    "name": "Stage 7-19",
+    "orderNum": 19,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 55,
+    "unitId": 7,
+    "name": "Stage 7-20",
+    "orderNum": 20,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 56,
+    "unitId": 7,
+    "name": "Stage 7-21",
+    "orderNum": 21,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 57,
+    "unitId": 7,
+    "name": "Stage 7-22",
+    "orderNum": 22,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 58,
+    "unitId": 7,
+    "name": "Stage 7-23",
+    "orderNum": 23,
+    "monsterCount": 2,
+    "requiredStars": 3
+  },
+  {
+    "id": 59,
+    "unitId": 8,
+    "name": "Stage 8-1",
+    "orderNum": 1,
+    "monsterCount": 4,
+    "requiredStars": 0
+  },
+  {
+    "id": 60,
+    "unitId": 8,
+    "name": "Stage 8-2",
+    "orderNum": 2,
+    "monsterCount": 4,
+    "requiredStars": 1
+  },
+  {
+    "id": 61,
+    "unitId": 8,
+    "name": "Stage 8-3",
+    "orderNum": 3,
+    "monsterCount": 4,
+    "requiredStars": 2
+  },
+  {
+    "id": 62,
+    "unitId": 8,
+    "name": "Stage 8-4",
+    "orderNum": 4,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 63,
+    "unitId": 8,
+    "name": "Stage 8-5",
+    "orderNum": 5,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 64,
+    "unitId": 8,
+    "name": "Stage 8-6",
+    "orderNum": 6,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 65,
+    "unitId": 8,
+    "name": "Stage 8-7",
+    "orderNum": 7,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 66,
+    "unitId": 8,
+    "name": "Stage 8-8",
+    "orderNum": 8,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 67,
+    "unitId": 8,
+    "name": "Stage 8-9",
+    "orderNum": 9,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 68,
+    "unitId": 8,
+    "name": "Stage 8-10",
+    "orderNum": 10,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 69,
+    "unitId": 8,
+    "name": "Stage 8-11",
+    "orderNum": 11,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 70,
+    "unitId": 8,
+    "name": "Stage 8-12",
+    "orderNum": 12,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 71,
+    "unitId": 9,
+    "name": "Stage 9-1",
+    "orderNum": 1,
+    "monsterCount": 4,
+    "requiredStars": 0
+  },
+  {
+    "id": 72,
+    "unitId": 9,
+    "name": "Stage 9-2",
+    "orderNum": 2,
+    "monsterCount": 4,
+    "requiredStars": 1
+  },
+  {
+    "id": 73,
+    "unitId": 9,
+    "name": "Stage 9-3",
+    "orderNum": 3,
+    "monsterCount": 4,
+    "requiredStars": 2
+  },
+  {
+    "id": 74,
+    "unitId": 9,
+    "name": "Stage 9-4",
+    "orderNum": 4,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 75,
+    "unitId": 9,
+    "name": "Stage 9-5",
+    "orderNum": 5,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 76,
+    "unitId": 9,
+    "name": "Stage 9-6",
+    "orderNum": 6,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 77,
+    "unitId": 9,
+    "name": "Stage 9-7",
+    "orderNum": 7,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 78,
+    "unitId": 9,
+    "name": "Stage 9-8",
+    "orderNum": 8,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 79,
+    "unitId": 9,
+    "name": "Stage 9-9",
+    "orderNum": 9,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 80,
+    "unitId": 9,
+    "name": "Stage 9-10",
+    "orderNum": 10,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 81,
+    "unitId": 9,
+    "name": "Stage 9-11",
+    "orderNum": 11,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 82,
+    "unitId": 9,
+    "name": "Stage 9-12",
+    "orderNum": 12,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 83,
+    "unitId": 9,
+    "name": "Stage 9-13",
+    "orderNum": 13,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 84,
+    "unitId": 9,
+    "name": "Stage 9-14",
+    "orderNum": 14,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 85,
+    "unitId": 9,
+    "name": "Stage 9-15",
+    "orderNum": 15,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 86,
+    "unitId": 9,
+    "name": "Stage 9-16",
+    "orderNum": 16,
+    "monsterCount": 2,
+    "requiredStars": 3
+  },
+  {
+    "id": 87,
+    "unitId": 10,
+    "name": "Stage 10-1",
+    "orderNum": 1,
+    "monsterCount": 4,
+    "requiredStars": 0
+  },
+  {
+    "id": 88,
+    "unitId": 10,
+    "name": "Stage 10-2",
+    "orderNum": 2,
+    "monsterCount": 4,
+    "requiredStars": 1
+  },
+  {
+    "id": 89,
+    "unitId": 10,
+    "name": "Stage 10-3",
+    "orderNum": 3,
+    "monsterCount": 4,
+    "requiredStars": 2
+  },
+  {
+    "id": 90,
+    "unitId": 10,
+    "name": "Stage 10-4",
+    "orderNum": 4,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 91,
+    "unitId": 10,
+    "name": "Stage 10-5",
+    "orderNum": 5,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 92,
+    "unitId": 10,
+    "name": "Stage 10-6",
+    "orderNum": 6,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 93,
+    "unitId": 10,
+    "name": "Stage 10-7",
+    "orderNum": 7,
+    "monsterCount": 3,
+    "requiredStars": 3
+  },
+  {
+    "id": 94,
+    "unitId": 11,
+    "name": "Stage 11-1",
+    "orderNum": 1,
+    "monsterCount": 4,
+    "requiredStars": 0
+  },
+  {
+    "id": 95,
+    "unitId": 11,
+    "name": "Stage 11-2",
+    "orderNum": 2,
+    "monsterCount": 4,
+    "requiredStars": 1
+  },
+  {
+    "id": 96,
+    "unitId": 11,
+    "name": "Stage 11-3",
+    "orderNum": 3,
+    "monsterCount": 4,
+    "requiredStars": 2
+  },
+  {
+    "id": 97,
+    "unitId": 12,
+    "name": "Stage 12-1",
+    "orderNum": 1,
+    "monsterCount": 4,
+    "requiredStars": 0
+  },
+  {
+    "id": 98,
+    "unitId": 12,
+    "name": "Stage 12-2",
+    "orderNum": 2,
+    "monsterCount": 4,
+    "requiredStars": 1
+  },
+  {
+    "id": 99,
+    "unitId": 12,
+    "name": "Stage 12-3",
+    "orderNum": 3,
+    "monsterCount": 4,
+    "requiredStars": 2
+  },
+  {
+    "id": 100,
+    "unitId": 12,
+    "name": "Stage 12-4",
+    "orderNum": 4,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 101,
+    "unitId": 12,
+    "name": "Stage 12-5",
+    "orderNum": 5,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 102,
+    "unitId": 12,
+    "name": "Stage 12-6",
+    "orderNum": 6,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 103,
+    "unitId": 12,
+    "name": "Stage 12-7",
+    "orderNum": 7,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 104,
+    "unitId": 12,
+    "name": "Stage 12-8",
+    "orderNum": 8,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 105,
+    "unitId": 12,
+    "name": "Stage 12-9",
+    "orderNum": 9,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 106,
+    "unitId": 12,
+    "name": "Stage 12-10",
+    "orderNum": 10,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 107,
+    "unitId": 12,
+    "name": "Stage 12-11",
+    "orderNum": 11,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 108,
+    "unitId": 13,
+    "name": "Stage 13-1",
+    "orderNum": 1,
+    "monsterCount": 4,
+    "requiredStars": 0
+  },
+  {
+    "id": 109,
+    "unitId": 14,
+    "name": "Stage 14-1",
+    "orderNum": 1,
+    "monsterCount": 4,
+    "requiredStars": 0
+  },
+  {
+    "id": 110,
+    "unitId": 14,
+    "name": "Stage 14-2",
+    "orderNum": 2,
+    "monsterCount": 4,
+    "requiredStars": 1
+  },
+  {
+    "id": 111,
+    "unitId": 14,
+    "name": "Stage 14-3",
+    "orderNum": 3,
+    "monsterCount": 4,
+    "requiredStars": 2
+  },
+  {
+    "id": 112,
+    "unitId": 14,
+    "name": "Stage 14-4",
+    "orderNum": 4,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 113,
+    "unitId": 14,
+    "name": "Stage 14-5",
+    "orderNum": 5,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 114,
+    "unitId": 14,
+    "name": "Stage 14-6",
+    "orderNum": 6,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 115,
+    "unitId": 14,
+    "name": "Stage 14-7",
+    "orderNum": 7,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 116,
+    "unitId": 14,
+    "name": "Stage 14-8",
+    "orderNum": 8,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 117,
+    "unitId": 14,
+    "name": "Stage 14-9",
+    "orderNum": 9,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 118,
+    "unitId": 14,
+    "name": "Stage 14-10",
+    "orderNum": 10,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 119,
+    "unitId": 14,
+    "name": "Stage 14-11",
+    "orderNum": 11,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 120,
+    "unitId": 15,
+    "name": "Stage 15-1",
+    "orderNum": 1,
+    "monsterCount": 4,
+    "requiredStars": 0
+  },
+  {
+    "id": 121,
+    "unitId": 15,
+    "name": "Stage 15-2",
+    "orderNum": 2,
+    "monsterCount": 4,
+    "requiredStars": 1
+  },
+  {
+    "id": 122,
+    "unitId": 15,
+    "name": "Stage 15-3",
+    "orderNum": 3,
+    "monsterCount": 3,
+    "requiredStars": 2
+  },
+  {
+    "id": 123,
+    "unitId": 16,
+    "name": "Stage 16-1",
+    "orderNum": 1,
+    "monsterCount": 4,
+    "requiredStars": 0
+  },
+  {
+    "id": 124,
+    "unitId": 16,
+    "name": "Stage 16-2",
+    "orderNum": 2,
+    "monsterCount": 2,
+    "requiredStars": 1
+  },
+  {
+    "id": 125,
+    "unitId": 17,
+    "name": "Stage 17-1",
+    "orderNum": 1,
+    "monsterCount": 4,
+    "requiredStars": 0
+  },
+  {
+    "id": 126,
+    "unitId": 18,
+    "name": "Stage 18-1",
+    "orderNum": 1,
+    "monsterCount": 4,
+    "requiredStars": 0
+  },
+  {
+    "id": 127,
+    "unitId": 18,
+    "name": "Stage 18-2",
+    "orderNum": 2,
+    "monsterCount": 4,
+    "requiredStars": 1
+  },
+  {
+    "id": 128,
+    "unitId": 18,
+    "name": "Stage 18-3",
+    "orderNum": 3,
+    "monsterCount": 4,
+    "requiredStars": 2
+  },
+  {
+    "id": 129,
+    "unitId": 18,
+    "name": "Stage 18-4",
+    "orderNum": 4,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 130,
+    "unitId": 18,
+    "name": "Stage 18-5",
+    "orderNum": 5,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 131,
+    "unitId": 18,
+    "name": "Stage 18-6",
+    "orderNum": 6,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 132,
+    "unitId": 18,
+    "name": "Stage 18-7",
+    "orderNum": 7,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 133,
+    "unitId": 18,
+    "name": "Stage 18-8",
+    "orderNum": 8,
+    "monsterCount": 2,
+    "requiredStars": 3
+  },
+  {
+    "id": 134,
+    "unitId": 19,
+    "name": "Stage 19-1",
+    "orderNum": 1,
+    "monsterCount": 4,
+    "requiredStars": 0
+  },
+  {
+    "id": 135,
+    "unitId": 19,
+    "name": "Stage 19-2",
+    "orderNum": 2,
+    "monsterCount": 4,
+    "requiredStars": 1
+  },
+  {
+    "id": 136,
+    "unitId": 19,
+    "name": "Stage 19-3",
+    "orderNum": 3,
+    "monsterCount": 4,
+    "requiredStars": 2
+  },
+  {
+    "id": 137,
+    "unitId": 19,
+    "name": "Stage 19-4",
+    "orderNum": 4,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 138,
+    "unitId": 19,
+    "name": "Stage 19-5",
+    "orderNum": 5,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 139,
+    "unitId": 19,
+    "name": "Stage 19-6",
+    "orderNum": 6,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 140,
+    "unitId": 19,
+    "name": "Stage 19-7",
+    "orderNum": 7,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 141,
+    "unitId": 19,
+    "name": "Stage 19-8",
+    "orderNum": 8,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 142,
+    "unitId": 19,
+    "name": "Stage 19-9",
+    "orderNum": 9,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 143,
+    "unitId": 19,
+    "name": "Stage 19-10",
+    "orderNum": 10,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 144,
+    "unitId": 19,
+    "name": "Stage 19-11",
+    "orderNum": 11,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 145,
+    "unitId": 19,
+    "name": "Stage 19-12",
+    "orderNum": 12,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 146,
+    "unitId": 19,
+    "name": "Stage 19-13",
+    "orderNum": 13,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 147,
+    "unitId": 19,
+    "name": "Stage 19-14",
+    "orderNum": 14,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 148,
+    "unitId": 19,
+    "name": "Stage 19-15",
+    "orderNum": 15,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 149,
+    "unitId": 19,
+    "name": "Stage 19-16",
+    "orderNum": 16,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 150,
+    "unitId": 19,
+    "name": "Stage 19-17",
+    "orderNum": 17,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 151,
+    "unitId": 19,
+    "name": "Stage 19-18",
+    "orderNum": 18,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 152,
+    "unitId": 19,
+    "name": "Stage 19-19",
+    "orderNum": 19,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 153,
+    "unitId": 19,
+    "name": "Stage 19-20",
+    "orderNum": 20,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 154,
+    "unitId": 19,
+    "name": "Stage 19-21",
+    "orderNum": 21,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 155,
+    "unitId": 19,
+    "name": "Stage 19-22",
+    "orderNum": 22,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 156,
+    "unitId": 19,
+    "name": "Stage 19-23",
+    "orderNum": 23,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 157,
+    "unitId": 19,
+    "name": "Stage 19-24",
+    "orderNum": 24,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 158,
+    "unitId": 19,
+    "name": "Stage 19-25",
+    "orderNum": 25,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 159,
+    "unitId": 19,
+    "name": "Stage 19-26",
+    "orderNum": 26,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 160,
+    "unitId": 19,
+    "name": "Stage 19-27",
+    "orderNum": 27,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 161,
+    "unitId": 19,
+    "name": "Stage 19-28",
+    "orderNum": 28,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 162,
+    "unitId": 19,
+    "name": "Stage 19-29",
+    "orderNum": 29,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 163,
+    "unitId": 19,
+    "name": "Stage 19-30",
+    "orderNum": 30,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 164,
+    "unitId": 19,
+    "name": "Stage 19-31",
+    "orderNum": 31,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 165,
+    "unitId": 19,
+    "name": "Stage 19-32",
+    "orderNum": 32,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 166,
+    "unitId": 19,
+    "name": "Stage 19-33",
+    "orderNum": 33,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 167,
+    "unitId": 19,
+    "name": "Stage 19-34",
+    "orderNum": 34,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 168,
+    "unitId": 19,
+    "name": "Stage 19-35",
+    "orderNum": 35,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 169,
+    "unitId": 19,
+    "name": "Stage 19-36",
+    "orderNum": 36,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 170,
+    "unitId": 19,
+    "name": "Stage 19-37",
+    "orderNum": 37,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 171,
+    "unitId": 19,
+    "name": "Stage 19-38",
+    "orderNum": 38,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 172,
+    "unitId": 19,
+    "name": "Stage 19-39",
+    "orderNum": 39,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 173,
+    "unitId": 19,
+    "name": "Stage 19-40",
+    "orderNum": 40,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 174,
+    "unitId": 19,
+    "name": "Stage 19-41",
+    "orderNum": 41,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 175,
+    "unitId": 19,
+    "name": "Stage 19-42",
+    "orderNum": 42,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 176,
+    "unitId": 19,
+    "name": "Stage 19-43",
+    "orderNum": 43,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 177,
+    "unitId": 19,
+    "name": "Stage 19-44",
+    "orderNum": 44,
+    "monsterCount": 2,
+    "requiredStars": 3
+  },
+  {
+    "id": 178,
+    "unitId": 20,
+    "name": "Stage 20-1",
+    "orderNum": 1,
+    "monsterCount": 4,
+    "requiredStars": 0
+  },
+  {
+    "id": 179,
+    "unitId": 20,
+    "name": "Stage 20-2",
+    "orderNum": 2,
+    "monsterCount": 4,
+    "requiredStars": 1
+  },
+  {
+    "id": 180,
+    "unitId": 20,
+    "name": "Stage 20-3",
+    "orderNum": 3,
+    "monsterCount": 4,
+    "requiredStars": 2
+  },
+  {
+    "id": 181,
+    "unitId": 20,
+    "name": "Stage 20-4",
+    "orderNum": 4,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 182,
+    "unitId": 20,
+    "name": "Stage 20-5",
+    "orderNum": 5,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 183,
+    "unitId": 20,
+    "name": "Stage 20-6",
+    "orderNum": 6,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 184,
+    "unitId": 20,
+    "name": "Stage 20-7",
+    "orderNum": 7,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 185,
+    "unitId": 20,
+    "name": "Stage 20-8",
+    "orderNum": 8,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 186,
+    "unitId": 20,
+    "name": "Stage 20-9",
+    "orderNum": 9,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 187,
+    "unitId": 20,
+    "name": "Stage 20-10",
+    "orderNum": 10,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 188,
+    "unitId": 20,
+    "name": "Stage 20-11",
+    "orderNum": 11,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 189,
+    "unitId": 20,
+    "name": "Stage 20-12",
+    "orderNum": 12,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 190,
+    "unitId": 20,
+    "name": "Stage 20-13",
+    "orderNum": 13,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 191,
+    "unitId": 20,
+    "name": "Stage 20-14",
+    "orderNum": 14,
+    "monsterCount": 1,
+    "requiredStars": 3
+  },
+  {
+    "id": 192,
+    "unitId": 21,
+    "name": "Stage 21-1",
+    "orderNum": 1,
+    "monsterCount": 4,
+    "requiredStars": 0
+  },
+  {
+    "id": 193,
+    "unitId": 21,
+    "name": "Stage 21-2",
+    "orderNum": 2,
+    "monsterCount": 2,
+    "requiredStars": 1
+  },
+  {
+    "id": 194,
+    "unitId": 22,
+    "name": "Stage 22-1",
+    "orderNum": 1,
+    "monsterCount": 4,
+    "requiredStars": 0
+  },
+  {
+    "id": 195,
+    "unitId": 22,
+    "name": "Stage 22-2",
+    "orderNum": 2,
+    "monsterCount": 4,
+    "requiredStars": 1
+  },
+  {
+    "id": 196,
+    "unitId": 22,
+    "name": "Stage 22-3",
+    "orderNum": 3,
+    "monsterCount": 4,
+    "requiredStars": 2
+  },
+  {
+    "id": 197,
+    "unitId": 22,
+    "name": "Stage 22-4",
+    "orderNum": 4,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 198,
+    "unitId": 22,
+    "name": "Stage 22-5",
+    "orderNum": 5,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 199,
+    "unitId": 22,
+    "name": "Stage 22-6",
+    "orderNum": 6,
+    "monsterCount": 2,
+    "requiredStars": 3
+  },
+  {
+    "id": 200,
+    "unitId": 23,
+    "name": "Stage 23-1",
+    "orderNum": 1,
+    "monsterCount": 4,
+    "requiredStars": 0
+  },
+  {
+    "id": 201,
+    "unitId": 23,
+    "name": "Stage 23-2",
+    "orderNum": 2,
+    "monsterCount": 4,
+    "requiredStars": 1
+  },
+  {
+    "id": 202,
+    "unitId": 23,
+    "name": "Stage 23-3",
+    "orderNum": 3,
+    "monsterCount": 4,
+    "requiredStars": 2
+  },
+  {
+    "id": 203,
+    "unitId": 23,
+    "name": "Stage 23-4",
+    "orderNum": 4,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 204,
+    "unitId": 24,
+    "name": "Stage 24-1",
+    "orderNum": 1,
+    "monsterCount": 4,
+    "requiredStars": 0
+  },
+  {
+    "id": 205,
+    "unitId": 24,
+    "name": "Stage 24-2",
+    "orderNum": 2,
+    "monsterCount": 4,
+    "requiredStars": 1
+  },
+  {
+    "id": 206,
+    "unitId": 24,
+    "name": "Stage 24-3",
+    "orderNum": 3,
+    "monsterCount": 4,
+    "requiredStars": 2
+  },
+  {
+    "id": 207,
+    "unitId": 24,
+    "name": "Stage 24-4",
+    "orderNum": 4,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 208,
+    "unitId": 24,
+    "name": "Stage 24-5",
+    "orderNum": 5,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 209,
+    "unitId": 24,
+    "name": "Stage 24-6",
+    "orderNum": 6,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 210,
+    "unitId": 24,
+    "name": "Stage 24-7",
+    "orderNum": 7,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 211,
+    "unitId": 24,
+    "name": "Stage 24-8",
+    "orderNum": 8,
+    "monsterCount": 4,
+    "requiredStars": 3
+  },
+  {
+    "id": 212,
+    "unitId": 24,
+    "name": "Stage 24-9",
+    "orderNum": 9,
+    "monsterCount": 3,
+    "requiredStars": 3
+  }
 ]

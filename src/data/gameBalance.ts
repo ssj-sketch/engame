@@ -20,4 +20,34 @@ export const BALANCE = {
   PLAYER_SPEED: 200,
   PLAYER_JUMP: -350,
   ATTACK_COOLDOWN: 500,
+
+  // Weapon forge upgrade costs per level (1-5)
+  FORGE_UPGRADE: [
+    { level: 1, costJams: 10, costGems: 3, atkBonus: 2, durBonus: 10 },
+    { level: 2, costJams: 20, costGems: 5, atkBonus: 2, durBonus: 10 },
+    { level: 3, costJams: 35, costGems: 10, atkBonus: 3, durBonus: 15 },
+    { level: 4, costJams: 50, costGems: 15, atkBonus: 3, durBonus: 15 },
+    { level: 5, costJams: 80, costGems: 25, atkBonus: 5, durBonus: 20 },
+  ] as const,
+
+  // Weapon craft recipes (weaponId -> cost)
+  CRAFT_RECIPES: {
+    5: { costJams: 30, costGems: 15 },
+    8: { costJams: 50, costGems: 25 },
+    10: { costJams: 80, costGems: 40 },
+  } as Record<number, { costJams: number; costGems: number }>,
+
+  WEAPON_MAX_UPGRADE: 5,
+
+  // Shop prices
+  SHOP: {
+    REPAIR_KIT_SMALL_COST: 2,
+    REPAIR_KIT_LARGE_COST: 5,
+    JAM_PACK_SMALL_COST: 3,
+    JAM_PACK_LARGE_COST: 8,
+    GEM_PACK_SMALL_COST: 15,
+    GEM_PACK_LARGE_COST: 40,
+    ENHANCED_REPAIR_COST: 10,
+    STARTER_BUNDLE_COST: 12,
+  },
 };

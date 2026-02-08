@@ -8,6 +8,7 @@ import { MonsterQuizOverlay } from '../overlays/MonsterQuizOverlay';
 import { TreasureBoxOverlay } from '../overlays/TreasureBoxOverlay';
 import { StageCompleteOverlay } from '../overlays/StageCompleteOverlay';
 import { BALANCE } from '../data/gameBalance';
+import { getWeaponDef, checkWeaponUnlocks, WeaponRarity } from '../data/weapons';
 import monstersData from '../data/monsters.json';
 import wordsData from '../data/words.json';
 import stagesData from '../data/stages.json';
@@ -29,6 +30,12 @@ interface TreasureEncounterData {
   word: string;
 }
 
+interface WeaponRewardInfo {
+  name: string;
+  emoji: string;
+  rarity: WeaponRarity;
+}
+
 export const PhaserGame: React.FC = () => {
   const { unitId, stageId } = useParams<{ unitId: string; stageId: string }>();
   const navigate = useNavigate();
@@ -41,9 +48,15 @@ export const PhaserGame: React.FC = () => {
   const [stageScore, setStageScore] = useState(0);
   const [sessionGems, setSessionGems] = useState(0);
   const [sessionJams, setSessionJams] = useState(0);
+  const [weaponReward, setWeaponReward] = useState<WeaponRewardInfo | null>(null);
 
   const store = useGameStore();
   const stageIdNum = parseInt(stageId || '1', 10);
+
+  // Get equipped weapon info
+  const equippedDef = getWeaponDef(store.equippedWeaponId);
+  const weaponEmoji = equippedDef?.emoji || '⚔️';
+  const weaponName = equippedDef?.name || '무기';
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -59,7 +72,6 @@ export const PhaserGame: React.FC = () => {
       const allWords = wordsData as Word[];
       const stageMonsters = allMonsters.filter(m => m.stageId === stageIdNum);
 
-      // Pick a treasure word from the stage's words
       const stageWordIds = stageMonsters.map(m => m.wordId);
       const stageWords = allWords.filter(w => stageWordIds.includes(w.id));
       const treasureWord = stageWords.length > 0
@@ -68,14 +80,18 @@ export const PhaserGame: React.FC = () => {
 
       const game = gameRef.current;
       if (game) {
+        const currentState = useGameStore.getState();
+        const currentChar = currentState.selectedCharacter;
+        const currentWeaponDef = getWeaponDef(currentState.equippedWeaponId);
         game.scene.start('GamePlay', {
           stageId: stageIdNum,
           monsters: stageMonsters,
           treasureWord,
+          characterType: currentChar,
+          weaponEmoji: currentWeaponDef?.emoji || '⚔️',
         });
       }
 
-      // Update HUD after a short delay to ensure UIScene is created
       setTimeout(() => {
         const currentState = useGameStore.getState();
         EventBridge.emit('hud:update', {
@@ -97,16 +113,33 @@ export const PhaserGame: React.FC = () => {
     };
 
     const handleStageComplete = () => {
-      // Use getState() to read the latest store state, avoiding stale closure
       const currentState = useGameStore.getState();
       const sessionLogs = currentState.session.sessionQuizLogs;
       const totalMonsters = (monstersData as MonsterData[]).filter(m => m.stageId === stageIdNum).length;
-      // Only count monster quizzes (exclude treasure box spelling quizzes)
       const monsterLogs = sessionLogs.filter(q => q.monsterId !== 0);
       const correctFirst = monsterLogs.filter(q => q.isCorrect && q.attempts === 1).length;
       const score = totalMonsters > 0 ? Math.round((correctFirst / totalMonsters) * 100) : 100;
       setStageScore(score);
       currentState.completeStage(stageIdNum, score);
+
+      // Check for weapon unlocks
+      const latestState = useGameStore.getState();
+      const ownedIds = latestState.weaponInventory.map(w => w.weaponId);
+      const newWeapons = checkWeaponUnlocks(latestState.progress, ownedIds);
+
+      if (newWeapons.length > 0) {
+        const firstReward = newWeapons[0];
+        // Add all unlocked weapons to inventory
+        newWeapons.forEach(w => latestState.addWeaponToInventory(w.id));
+        setWeaponReward({
+          name: firstReward.name,
+          emoji: firstReward.emoji,
+          rarity: firstReward.rarity,
+        });
+      } else {
+        setWeaponReward(null);
+      }
+
       setOverlay('stage-complete');
     };
 
@@ -148,9 +181,16 @@ export const PhaserGame: React.FC = () => {
     });
 
     if (correct) {
-      // Random gem reward
-      const gemReward = BALANCE.STAGE_CLEAR_GEMS_MIN +
+      // Base gem reward
+      let gemReward = BALANCE.STAGE_CLEAR_GEMS_MIN +
         Math.floor(Math.random() * (BALANCE.STAGE_CLEAR_GEMS_MAX - BALANCE.STAGE_CLEAR_GEMS_MIN + 1));
+
+      // Apply weapon gem_bonus special effect
+      const wDef = getWeaponDef(currentState.equippedWeaponId);
+      if (wDef?.specialEffect?.type === 'gem_bonus') {
+        gemReward = Math.ceil(gemReward * (1 + wDef.specialEffect.value / 100));
+      }
+
       currentState.addGems(gemReward);
       currentState.defeatMonster(monsterId);
       setSessionGems(prev => prev + gemReward);
@@ -171,10 +211,17 @@ export const PhaserGame: React.FC = () => {
       return;
     }
 
-    // Consume durability
-    currentState.updateDurability(-BALANCE.ATTACK_DURABILITY_COST);
+    // Check durability_save special effect
+    const wDef = getWeaponDef(currentState.equippedWeaponId);
+    let shouldSaveDurability = false;
+    if (wDef?.specialEffect?.type === 'durability_save') {
+      shouldSaveDurability = Math.random() * 100 < wDef.specialEffect.value;
+    }
 
-    // Record as skipped quiz (not correct, so no score contribution)
+    if (!shouldSaveDurability) {
+      currentState.updateDurability(-BALANCE.ATTACK_DURABILITY_COST);
+    }
+
     currentState.recordQuiz({
       wordId: monster.wordId,
       monsterId,
@@ -187,7 +234,6 @@ export const PhaserGame: React.FC = () => {
 
     currentState.defeatMonster(monsterId);
 
-    // Defeat monster in Phaser scene (no gem reward for skipping)
     EventBridge.emit(EVENTS.QUIZ_ANSWERED, { monsterId, correct: true });
 
     const updatedState = useGameStore.getState();
@@ -197,12 +243,19 @@ export const PhaserGame: React.FC = () => {
 
   const handleTreasureSubmit = useCallback((correct: boolean) => {
     if (correct) {
-      const gemReward = BALANCE.TREASURE_GEMS_MIN +
+      let gemReward = BALANCE.TREASURE_GEMS_MIN +
         Math.floor(Math.random() * (BALANCE.TREASURE_GEMS_MAX - BALANCE.TREASURE_GEMS_MIN + 1));
       const jamReward = BALANCE.TREASURE_JAMS_MIN +
         Math.floor(Math.random() * (BALANCE.TREASURE_JAMS_MAX - BALANCE.TREASURE_JAMS_MIN + 1));
 
       const currentState = useGameStore.getState();
+
+      // Apply gem_bonus
+      const wDef = getWeaponDef(currentState.equippedWeaponId);
+      if (wDef?.specialEffect?.type === 'gem_bonus') {
+        gemReward = Math.ceil(gemReward * (1 + wDef.specialEffect.value / 100));
+      }
+
       currentState.addGems(gemReward);
       currentState.addJams(jamReward);
 
@@ -273,7 +326,7 @@ export const PhaserGame: React.FC = () => {
         <button
           className="action-btn attack-btn"
           onClick={() => EventBridge.emit(EVENTS.CONTROL_ATTACK)}
-        >⚔️</button>
+        >{weaponEmoji}</button>
       </div>
 
       {/* Overlays */}
@@ -282,6 +335,8 @@ export const PhaserGame: React.FC = () => {
           monsterData={monsterData}
           collectedHints={store.session.collectedHints}
           weaponDurability={store.weapon.durability}
+          weaponEmoji={weaponEmoji}
+          weaponName={weaponName}
           onAnswer={handleQuizAnswer}
           onAttack={handleAttack}
           onClose={() => setOverlay('none')}
@@ -302,6 +357,7 @@ export const PhaserGame: React.FC = () => {
           score={stageScore}
           gems={sessionGems}
           jams={sessionJams}
+          weaponReward={weaponReward}
           onBackToMap={handleBackToMap}
           onNextStage={handleNextStage}
         />

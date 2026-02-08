@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useSpeechRecognition, matchWord } from '../hooks/useSpeechRecognition';
 import { BALANCE } from '../data/gameBalance';
+import { getMonsterDisplayName } from '../data/monsterTypes';
 
 interface MonsterEncounterData {
   monsterId: number;
@@ -14,6 +15,8 @@ interface Props {
   monsterData: MonsterEncounterData;
   collectedHints: string[];
   weaponDurability: number;
+  weaponEmoji?: string;
+  weaponName?: string;
   onAnswer: (monsterId: number, correct: boolean, attempts: number) => void;
   onAttack: (monsterId: number) => void;
   onClose: () => void;
@@ -23,6 +26,8 @@ export const MonsterQuizOverlay: React.FC<Props> = ({
   monsterData,
   collectedHints,
   weaponDurability,
+  weaponEmoji = '⚔️',
+  weaponName = '무기',
   onAnswer,
   onAttack,
   onClose,
@@ -124,6 +129,30 @@ export const MonsterQuizOverlay: React.FC<Props> = ({
     <div className="overlay-backdrop">
       <div className="overlay-panel monster-quiz-panel">
 
+        {/* Monster image display */}
+        <div style={{ textAlign: 'center', marginBottom: 12 }}>
+          <div style={{
+            display: 'inline-block',
+            background: 'radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%)',
+            borderRadius: '50%',
+            padding: 8,
+          }}>
+            <img
+              src={`${process.env.PUBLIC_URL}/assets/monsters/${monsterData.type}.png`}
+              alt={getMonsterDisplayName(monsterData.type)}
+              style={{
+                width: 96,
+                height: 96,
+                imageRendering: 'pixelated',
+                filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.5))',
+              }}
+            />
+          </div>
+          <div style={{ fontSize: 14, color: '#ccc', marginTop: 4, fontWeight: 'bold' }}>
+            {getMonsterDisplayName(monsterData.type)}
+          </div>
+        </div>
+
         {/* Word display - centered, prominent */}
         <div className="quiz-word-area">
           <div className="quiz-word-label">Say the word!</div>
@@ -199,17 +228,17 @@ export const MonsterQuizOverlay: React.FC<Props> = ({
         {mode === 'attack' && (
           <div className="attack-section">
             <div style={{ fontSize: 14, color: '#aaa', marginBottom: 8 }}>
-              무기: ⚔️ 내구도 {weaponDurability}%
+              {weaponEmoji} {weaponName} · 내구도 {weaponDurability}%
             </div>
             <button
               onClick={handleAttack}
               className="attack-action-btn"
               disabled={weaponDurability <= 0}
             >
-              ⚔️ 공격하여 처치
+              {weaponEmoji} 공격하여 처치
             </button>
             <div style={{ fontSize: 12, color: '#888', marginTop: 4 }}>
-              내구도 -{BALANCE.ATTACK_DURABILITY_COST}% | 보석 보상 없음
+              내구도 -{BALANCE.ATTACK_DURABILITY_COST} | 보석 보상 없음
             </div>
           </div>
         )}

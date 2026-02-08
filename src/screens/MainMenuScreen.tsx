@@ -2,9 +2,15 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useGameStore } from '../store/gameStore';
 
+const CHAR_NAMES: Record<string, string> = {
+  knight: '기사',
+  archer: '궁수',
+  viking: '바이킹',
+};
+
 const MainMenuScreen: React.FC = () => {
   const navigate = useNavigate();
-  const { user, loadFromStorage } = useGameStore();
+  const { user, selectedCharacter, loadFromStorage } = useGameStore();
 
   useEffect(() => {
     loadFromStorage();
@@ -27,21 +33,43 @@ const MainMenuScreen: React.FC = () => {
         </div>
       </div>
 
-      {/* Character */}
-      <div style={{
-        width: 120,
-        height: 120,
-        borderRadius: '50%',
-        background: 'rgba(74, 144, 217, 0.2)',
-        border: '2px solid #4A90D9',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        margin: '0 auto 12px',
-      }}>
-        <span style={{ fontSize: 56 }}>🧙‍♂️</span>
+      {/* Character - clickable to change */}
+      <button
+        onClick={() => navigate('/character')}
+        style={{
+          width: 120,
+          height: 120,
+          borderRadius: '50%',
+          background: 'rgba(74, 144, 217, 0.2)',
+          border: '2px solid #4A90D9',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          margin: '0 auto 8px',
+          cursor: 'pointer',
+          transition: 'all 0.3s',
+          position: 'relative',
+        }}
+      >
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/characters/${selectedCharacter}.png`}
+          alt={selectedCharacter}
+          style={{ width: 80, height: 80 }}
+        />
+        <div style={{
+          position: 'absolute', bottom: -4, right: -4,
+          width: 28, height: 28, borderRadius: '50%',
+          background: '#4A90D9', color: '#fff',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          fontSize: 14, border: '2px solid #0a0a1a',
+        }}>
+          ✏️
+        </div>
+      </button>
+      <div style={{ color: '#ccc', fontSize: 14, marginBottom: 4 }}>
+        {CHAR_NAMES[selectedCharacter] || selectedCharacter}
       </div>
-      <div style={{ color: '#aaa', fontSize: 14, marginBottom: 32 }}>
+      <div style={{ color: '#aaa', fontSize: 13, marginBottom: 28 }}>
         Lv.{user.level} | 💎 {user.totalGems} | 🫙 {user.totalJams}
       </div>
 
@@ -61,6 +89,21 @@ const MainMenuScreen: React.FC = () => {
           }}
         >
           🎮 게임 시작
+        </button>
+
+        <button
+          onClick={() => navigate('/character')}
+          style={{
+            padding: '14px 0',
+            borderRadius: 28,
+            background: '#2a2a4a',
+            color: '#fff',
+            fontSize: 16,
+            border: '1px solid #444',
+            cursor: 'pointer',
+          }}
+        >
+          ⚔️ 캐릭터 선택
         </button>
 
         <button
@@ -91,6 +134,21 @@ const MainMenuScreen: React.FC = () => {
           }}
         >
           ⚒️ 대장간
+        </button>
+
+        <button
+          onClick={() => navigate('/shop')}
+          style={{
+            padding: '14px 0',
+            borderRadius: 28,
+            background: '#2a2a4a',
+            color: '#fff',
+            fontSize: 16,
+            border: '1px solid #444',
+            cursor: 'pointer',
+          }}
+        >
+          🛒 상점
         </button>
 
         <button

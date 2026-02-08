@@ -1,7 +1,194 @@
 [
-  { "id": 1, "name": "A-E 단모음", "description": "기본 모음 소리 배우기", "orderNum": 1, "phonicsFocus": "a, e, i, o, u (short vowels)", "emoji": "🅰️" },
-  { "id": 2, "name": "F-J 자음", "description": "자음 소리 배우기 1", "orderNum": 2, "phonicsFocus": "f, g, h, i, j", "emoji": "🔤" },
-  { "id": 3, "name": "K-O 자음", "description": "자음 소리 배우기 2", "orderNum": 3, "phonicsFocus": "k, l, m, n, o", "emoji": "📝" },
-  { "id": 4, "name": "P-T 자음", "description": "자음 소리 배우기 3", "orderNum": 4, "phonicsFocus": "p, q, r, s, t", "emoji": "📖" },
-  { "id": 5, "name": "U-Z + 복합", "description": "복합 자음과 모음", "orderNum": 5, "phonicsFocus": "u, v, w, x, y, z + blends", "emoji": "🌟" }
+  {
+    "id": 1,
+    "name": "Short A (CVC)",
+    "description": "cat, bat, man, hat...",
+    "orderNum": 1,
+    "phonicsFocus": "Short vowel a",
+    "emoji": "🐱"
+  },
+  {
+    "id": 2,
+    "name": "Short E (CVC)",
+    "description": "bed, red, pen, net...",
+    "orderNum": 2,
+    "phonicsFocus": "Short vowel e",
+    "emoji": "🛏️"
+  },
+  {
+    "id": 3,
+    "name": "Short I (CVC)",
+    "description": "pig, sit, pin, dig...",
+    "orderNum": 3,
+    "phonicsFocus": "Short vowel i",
+    "emoji": "🐷"
+  },
+  {
+    "id": 4,
+    "name": "Short O (CVC)",
+    "description": "dog, hot, top, log...",
+    "orderNum": 4,
+    "phonicsFocus": "Short vowel o",
+    "emoji": "🐶"
+  },
+  {
+    "id": 5,
+    "name": "Short U (CVC)",
+    "description": "cup, bug, run, sun...",
+    "orderNum": 5,
+    "phonicsFocus": "Short vowel u",
+    "emoji": "☕"
+  },
+  {
+    "id": 6,
+    "name": "초성 블렌드",
+    "description": "bl-, br-, cl-, dr-, fl-...",
+    "orderNum": 6,
+    "phonicsFocus": "Initial consonant blends",
+    "emoji": "🔗"
+  },
+  {
+    "id": 7,
+    "name": "종성 블렌드",
+    "description": "-ck, -ng, -nk, -nd, -nt...",
+    "orderNum": 7,
+    "phonicsFocus": "Final consonant blends",
+    "emoji": "🔚"
+  },
+  {
+    "id": 8,
+    "name": "다이그래프",
+    "description": "ch, sh, th, wh, ph",
+    "orderNum": 8,
+    "phonicsFocus": "Consonant digraphs",
+    "emoji": "✌️"
+  },
+  {
+    "id": 9,
+    "name": "Silent-e (a_e, i_e)",
+    "description": "cake, bike, name, like...",
+    "orderNum": 9,
+    "phonicsFocus": "Long a_e, i_e",
+    "emoji": "🎂"
+  },
+  {
+    "id": 10,
+    "name": "Silent-e (o_e, u_e)",
+    "description": "home, cute, bone, use...",
+    "orderNum": 10,
+    "phonicsFocus": "Long o_e, u_e, e_e",
+    "emoji": "🏠"
+  },
+  {
+    "id": 11,
+    "name": "이중모음 AI/AY",
+    "description": "rain, day, play, wait...",
+    "orderNum": 11,
+    "phonicsFocus": "ai, ay vowel teams",
+    "emoji": "🌧️"
+  },
+  {
+    "id": 12,
+    "name": "이중모음 EA/EE",
+    "description": "eat, sea, bee, tree...",
+    "orderNum": 12,
+    "phonicsFocus": "ea, ee vowel teams",
+    "emoji": "🌊"
+  },
+  {
+    "id": 13,
+    "name": "이중모음 OA",
+    "description": "boat, road, coat, goal...",
+    "orderNum": 13,
+    "phonicsFocus": "oa vowel team",
+    "emoji": "⛵"
+  },
+  {
+    "id": 14,
+    "name": "이중모음 OO/OU/OI/OW",
+    "description": "moon, out, coin, cow...",
+    "orderNum": 14,
+    "phonicsFocus": "oo, ou, oi, ow, ew, aw",
+    "emoji": "🌙"
+  },
+  {
+    "id": 15,
+    "name": "R-통제 AR",
+    "description": "car, farm, star, park...",
+    "orderNum": 15,
+    "phonicsFocus": "ar",
+    "emoji": "🚗"
+  },
+  {
+    "id": 16,
+    "name": "R-통제 ER/IR/UR",
+    "description": "her, bird, nurse, turn...",
+    "orderNum": 16,
+    "phonicsFocus": "er, ir, ur",
+    "emoji": "🐦"
+  },
+  {
+    "id": 17,
+    "name": "R-통제 OR",
+    "description": "for, more, born, short...",
+    "orderNum": 17,
+    "phonicsFocus": "or, ore",
+    "emoji": "🔮"
+  },
+  {
+    "id": 18,
+    "name": "2음절 (-y 끝)",
+    "description": "baby, happy, candy...",
+    "orderNum": 18,
+    "phonicsFocus": "-y ending 2-syllable",
+    "emoji": "👶"
+  },
+  {
+    "id": 19,
+    "name": "2음절 기타",
+    "description": "water, table, apple...",
+    "orderNum": 19,
+    "phonicsFocus": "Other 2-syllable",
+    "emoji": "📗"
+  },
+  {
+    "id": 20,
+    "name": "3음절",
+    "description": "animal, beautiful...",
+    "orderNum": 20,
+    "phonicsFocus": "3-syllable words",
+    "emoji": "📘"
+  },
+  {
+    "id": 21,
+    "name": "4음절+",
+    "description": "elementary, examination...",
+    "orderNum": 21,
+    "phonicsFocus": "4+ syllable words",
+    "emoji": "📙"
+  },
+  {
+    "id": 22,
+    "name": "사이트워드 기초",
+    "description": "a, I, the, is, it, in...",
+    "orderNum": 22,
+    "phonicsFocus": "Basic sight words",
+    "emoji": "👁️"
+  },
+  {
+    "id": 23,
+    "name": "사이트워드 중급",
+    "description": "are, was, have, they...",
+    "orderNum": 23,
+    "phonicsFocus": "Intermediate sight words",
+    "emoji": "👀"
+  },
+  {
+    "id": 24,
+    "name": "사이트워드 고급",
+    "description": "could, should, enough...",
+    "orderNum": 24,
+    "phonicsFocus": "Advanced sight words",
+    "emoji": "🔍"
+  }
 ]

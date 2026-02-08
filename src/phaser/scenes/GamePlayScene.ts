@@ -5,12 +5,15 @@ import { Monster } from '../objects/Monster';
 import { HintLetter } from '../objects/HintLetter';
 import { buildLevel, LevelData } from '../utils/LevelBuilder';
 import { MonsterData, Word } from '../../types/game';
+import { TOTAL_MONSTER_TYPES } from '../../data/monsterTypes';
 import wordsData from '../../data/words.json';
 
 interface GamePlayData {
   stageId: number;
   monsters: MonsterData[];
   treasureWord: string;
+  characterType?: string;
+  weaponEmoji?: string;
 }
 
 export class GamePlayScene extends Phaser.Scene {
@@ -29,6 +32,16 @@ export class GamePlayScene extends Phaser.Scene {
 
   init(data: GamePlayData) {
     this.stageId = data.stageId;
+  }
+
+  preload() {
+    // Ensure monster textures are loaded (fallback if PreloadScene missed them)
+    for (let i = 1; i <= TOTAL_MONSTER_TYPES; i++) {
+      const key = `monster_${String(i).padStart(2, '0')}`;
+      if (!this.textures.exists(key)) {
+        this.load.image(key, `/assets/monsters/${key}.png`);
+      }
+    }
   }
 
   create(data: GamePlayData) {
@@ -50,8 +63,8 @@ export class GamePlayScene extends Phaser.Scene {
     );
     this.ground.add(groundBody);
 
-    // Create player
-    this.player = new Player(this, 100, groundY - 30);
+    // Create player with selected character
+    this.player = new Player(this, 100, groundY - 30, data.characterType || 'knight', data.weaponEmoji || '⚔️');
     this.physics.add.collider(this.player, this.ground);
 
     // Camera setup
@@ -229,7 +242,9 @@ export class GamePlayScene extends Phaser.Scene {
 
   private handleTreasureOpened = (data: { success: boolean }) => {
     if (data.success) {
-      if (this.levelData) this.levelData.treasureBox.open();
+      if (this.levelData && this.sys && this.sys.isActive()) {
+        this.levelData.treasureBox.open();
+      }
       this.isOverlayOpen = false;
 
       // Stage complete
@@ -238,7 +253,6 @@ export class GamePlayScene extends Phaser.Scene {
           EventBridge.emit(EVENTS.STAGE_COMPLETE, { stageId: this.stageId });
         });
       } else {
-        // Fallback: emit immediately if scene is not active
         EventBridge.emit(EVENTS.STAGE_COMPLETE, { stageId: this.stageId });
       }
     }

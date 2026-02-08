@@ -1,8 +1,10 @@
 import { create } from 'zustand';
 import { UserState, WeaponState, StageProgress } from '../types/player';
+import { WeaponInventoryItem } from '../types/weapon';
 import { QuizLog } from '../types/quiz';
-import { storageService, SaveData } from '../services/storageService';
+import { storageService, SaveData, CharacterType } from '../services/storageService';
 import { BALANCE } from '../data/gameBalance';
+import { getWeaponDef, getMaxDurability } from '../data/weapons';
 
 interface GameSession {
   currentStageId: number | null;
@@ -14,10 +16,13 @@ interface GameSession {
 interface GameStore {
   user: UserState;
   weapon: WeaponState;
+  weaponInventory: WeaponInventoryItem[];
+  equippedWeaponId: number;
   progress: Record<number, StageProgress>;
   inventory: { gems: Record<string, number>; jams: number };
   quizLogs: QuizLog[];
   session: GameSession;
+  selectedCharacter: CharacterType;
 
   // Actions
   loadFromStorage: () => void;
@@ -28,6 +33,12 @@ interface GameStore {
   repairWeapon: (type: 'basic' | 'full' | 'enhanced') => boolean;
   recordQuiz: (log: Omit<QuizLog, 'id' | 'createdAt'>) => void;
   completeStage: (stageId: number, score: number) => void;
+  selectCharacter: (character: CharacterType) => void;
+
+  // Weapon actions
+  equipWeapon: (weaponId: number) => void;
+  addWeaponToInventory: (weaponId: number) => boolean;
+  upgradeWeapon: () => boolean;
 
   // Session actions
   startSession: (stageId: number) => void;
@@ -43,26 +54,53 @@ const defaultSession: GameSession = {
   sessionQuizLogs: [],
 };
 
+/** Compute derived WeaponState from inventory item + WeaponDef */
+function computeWeapon(inventory: WeaponInventoryItem[], equippedId: number): WeaponState {
+  const item = inventory.find(w => w.weaponId === equippedId);
+  const def = getWeaponDef(equippedId);
+
+  if (!item || !def) {
+    return { id: 1, name: '초보자의 검', durability: 100, attackPower: 10 };
+  }
+
+  return {
+    id: def.id,
+    name: def.name,
+    durability: item.durability,
+    attackPower: def.baseAttackPower + item.upgradeLevel * 2,
+  };
+}
+
 export const useGameStore = create<GameStore>((set, get) => {
   const defaults = storageService.getDefaultSave();
+  const defaultInv = defaults.weaponInventory || [{ weaponId: 1, durability: 100, upgradeLevel: 0, acquiredAt: new Date().toISOString() }];
+  const defaultEquipped = defaults.equippedWeaponId || 1;
 
   return {
     user: defaults.user,
-    weapon: defaults.weapon,
+    weapon: computeWeapon(defaultInv, defaultEquipped),
+    weaponInventory: defaultInv,
+    equippedWeaponId: defaultEquipped,
     progress: defaults.progress,
     inventory: defaults.inventory,
     quizLogs: defaults.quizLogs,
     session: { ...defaultSession },
+    selectedCharacter: defaults.selectedCharacter || 'knight',
 
     loadFromStorage: () => {
       const saved = storageService.load();
       if (saved) {
+        const weaponInv = saved.weaponInventory || [{ weaponId: 1, durability: 100, upgradeLevel: 0, acquiredAt: new Date().toISOString() }];
+        const equippedId = saved.equippedWeaponId || 1;
         set({
           user: saved.user,
-          weapon: saved.weapon,
+          weapon: computeWeapon(weaponInv, equippedId),
+          weaponInventory: weaponInv,
+          equippedWeaponId: equippedId,
           progress: saved.progress,
           inventory: saved.inventory,
           quizLogs: saved.quizLogs,
+          selectedCharacter: saved.selectedCharacter || 'knight',
         });
       }
     },
@@ -70,14 +108,22 @@ export const useGameStore = create<GameStore>((set, get) => {
     saveToStorage: () => {
       const state = get();
       const data: SaveData = {
-        version: 1,
+        version: 2,
         user: state.user,
         weapon: state.weapon,
         progress: state.progress,
         inventory: state.inventory,
         quizLogs: state.quizLogs,
+        selectedCharacter: state.selectedCharacter,
+        weaponInventory: state.weaponInventory,
+        equippedWeaponId: state.equippedWeaponId,
       };
       storageService.save(data);
+    },
+
+    selectCharacter: (character) => {
+      set({ selectedCharacter: character });
+      get().saveToStorage();
     },
 
     addGems: (amount) => {
@@ -96,12 +142,20 @@ export const useGameStore = create<GameStore>((set, get) => {
     },
 
     updateDurability: (delta) => {
-      set((state) => ({
-        weapon: {
-          ...state.weapon,
-          durability: Math.max(0, Math.min(100, state.weapon.durability + delta)),
-        },
-      }));
+      set((state) => {
+        const equippedId = state.equippedWeaponId;
+        const item = state.weaponInventory.find(w => w.weaponId === equippedId);
+        const maxDur = item ? getMaxDurability(item) : 100;
+        const newInventory = state.weaponInventory.map(w =>
+          w.weaponId === equippedId
+            ? { ...w, durability: Math.max(0, Math.min(maxDur, w.durability + delta)) }
+            : w
+        );
+        return {
+          weaponInventory: newInventory,
+          weapon: computeWeapon(newInventory, equippedId),
+        };
+      });
       get().saveToStorage();
     },
 
@@ -114,22 +168,104 @@ export const useGameStore = create<GameStore>((set, get) => {
       if (state.user.totalJams < config.costJams) return false;
       if (config.costGems > 0 && state.user.totalGems < config.costGems) return false;
 
+      set((s) => {
+        const equippedId = s.equippedWeaponId;
+        const item = s.weaponInventory.find(w => w.weaponId === equippedId);
+        const maxDur = item ? getMaxDurability(item) : 100;
+
+        const newInventory = s.weaponInventory.map(w => {
+          if (w.weaponId !== equippedId) return w;
+          const newDur = type === 'basic'
+            ? Math.min(maxDur, w.durability + config.restore)
+            : maxDur;
+          return { ...w, durability: newDur };
+        });
+
+        return {
+          user: {
+            ...s.user,
+            totalJams: s.user.totalJams - config.costJams,
+            totalGems: s.user.totalGems - config.costGems,
+          },
+          inventory: {
+            ...s.inventory,
+            jams: s.inventory.jams - config.costJams,
+          },
+          weaponInventory: newInventory,
+          weapon: computeWeapon(newInventory, equippedId),
+        };
+      });
+      get().saveToStorage();
+      return true;
+    },
+
+    // ─── Weapon Actions ───
+
+    equipWeapon: (weaponId) => {
+      const state = get();
+      if (!state.weaponInventory.some(w => w.weaponId === weaponId)) return;
+
       set((s) => ({
-        user: {
-          ...s.user,
-          totalJams: s.user.totalJams - config.costJams,
-          totalGems: s.user.totalGems - config.costGems,
-        },
-        weapon: {
-          ...s.weapon,
-          durability: Math.min(100, type === 'basic' ? s.weapon.durability + config.restore : config.restore),
-          attackPower: type === 'enhanced' ? s.weapon.attackPower + (BALANCE.REPAIR_ENHANCED.bonusAttack || 0) : s.weapon.attackPower,
-        },
-        inventory: {
-          ...s.inventory,
-          jams: s.inventory.jams - config.costJams,
-        },
+        equippedWeaponId: weaponId,
+        weapon: computeWeapon(s.weaponInventory, weaponId),
       }));
+      get().saveToStorage();
+    },
+
+    addWeaponToInventory: (weaponId) => {
+      const state = get();
+      if (state.weaponInventory.some(w => w.weaponId === weaponId)) return false;
+
+      const def = getWeaponDef(weaponId);
+      if (!def) return false;
+
+      const newItem: WeaponInventoryItem = {
+        weaponId,
+        durability: def.maxDurability,
+        upgradeLevel: 0,
+        acquiredAt: new Date().toISOString(),
+      };
+
+      set((s) => ({
+        weaponInventory: [...s.weaponInventory, newItem],
+      }));
+      get().saveToStorage();
+      return true;
+    },
+
+    upgradeWeapon: () => {
+      const state = get();
+      const item = state.weaponInventory.find(w => w.weaponId === state.equippedWeaponId);
+      if (!item) return false;
+
+      const nextLevel = item.upgradeLevel + 1;
+      if (nextLevel > BALANCE.WEAPON_MAX_UPGRADE) return false;
+
+      const upgradeCost = BALANCE.FORGE_UPGRADE[nextLevel - 1];
+      if (!upgradeCost) return false;
+      if (state.user.totalJams < upgradeCost.costJams) return false;
+      if (state.user.totalGems < upgradeCost.costGems) return false;
+
+      set((s) => {
+        const newInventory = s.weaponInventory.map(w =>
+          w.weaponId === s.equippedWeaponId
+            ? { ...w, upgradeLevel: nextLevel }
+            : w
+        );
+        return {
+          user: {
+            ...s.user,
+            totalJams: s.user.totalJams - upgradeCost.costJams,
+            totalGems: s.user.totalGems - upgradeCost.costGems,
+          },
+          inventory: {
+            ...s.inventory,
+            jams: s.inventory.jams - upgradeCost.costJams,
+          },
+          weaponInventory: newInventory,
+          weapon: computeWeapon(newInventory, s.equippedWeaponId),
+        };
+      });
       get().saveToStorage();
       return true;
     },
